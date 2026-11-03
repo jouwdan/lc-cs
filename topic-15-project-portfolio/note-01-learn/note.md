@@ -1,3 +1,6 @@
+---
+order: 1
+---
 # 1. Learn: Projects
 
 Organise evidence from a small project.

@@ -1,3 +1,6 @@
+---
+order: 1
+---
 # 1. Learn: Society
 
 Explain how computing affects people.

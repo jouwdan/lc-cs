@@ -40,3 +40,9 @@ See [the complete walkthrough](STUDENT-EXPERIENCE.md) for the pain points and to
 - Downloader tests: **2 passed**. `scripts/check_course.py` and `git diff --check` pass.
 
 This remains an editorial and software walkthrough, not a classroom trial. Browser checks used desktop Tutors; every viewport, browser and assistive technology was not tested. Hardware, Irish/English equivalence and streaming limits still apply. Reload an already-open course tab after publication to replace its cached course data.
+
+## Resource ordering correction — 3 November 2026
+
+Numbering the titles did not override Tutors' default grouping by resource type. Added explicit `order: 1` through `order: 6` to all 96 primary resources across the 16 teaching topics. The reader now places Learn, Practise, Quiz, Answers, Exam and Recap before extra resources.
+
+Rebuilt with the pinned 5.3.0 generator. A check using the actual Tutors `getUnits()` function passes for all 16 topics, including extras following the six stages. All 292 routes are unchanged. The repository validator now checks source and generated ordering metadata; its complete checks and `git diff --check` pass.

@@ -1,3 +1,6 @@
+---
+order: 3
+---
 # 3. Quiz: Search & sort
 
 Test yourself, then check the answers.

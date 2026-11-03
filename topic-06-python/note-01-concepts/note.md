@@ -1,3 +1,6 @@
+---
+order: 1
+---
 # 1. Learn: Python
 
 Learn Python through small working programs.

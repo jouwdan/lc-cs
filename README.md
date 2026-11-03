@@ -78,6 +78,8 @@ This produces `json/tutors.json` and the PDF/ZIP/whiteboard assets. Generated fi
 
 Use the full Tutors generator: `tutors-lite` does not provide all the interactive object types used here.
 
+The six study cards in each teaching topic use YAML front matter `order: 1` through `order: 6`. Keep this metadata on the resource's Markdown file (the first step for labs, `talk.md` for slides). Numbers in titles alone do not control display order. Unordered extra resources follow the six study stages.
+
 The course is published at [tutors.dev/course/lc-cs](https://tutors.dev/course/lc-cs), using assets at `https://lc-cs.netlify.app`. Netlify builds the `main` branch using `netlify.toml`.
 
 For your own copy, connect the repository to a Netlify site and use that site name in the Tutors course URL. Internal course links in the source currently point to `lc-cs`; update them when making a separately hosted copy.

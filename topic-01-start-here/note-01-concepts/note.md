@@ -1,3 +1,6 @@
+---
+order: 1
+---
 # 1. Learn: Start here
 
 Run Python and plan your first study session.

@@ -1,3 +1,6 @@
+---
+order: 1
+---
 # 1. Learn: Algorithms
 
 Break a problem into clear steps.

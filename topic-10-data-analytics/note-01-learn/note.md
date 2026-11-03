@@ -1,3 +1,6 @@
+---
+order: 1
+---
 # 1. Learn: Data
 
 Clean data and explain what it shows.

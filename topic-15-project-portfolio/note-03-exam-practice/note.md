@@ -1,3 +1,6 @@
+---
+order: 5
+---
 # 5. Exam: Projects
 
 Try a past question, then use its scheme.

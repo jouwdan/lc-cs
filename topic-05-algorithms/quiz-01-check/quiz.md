@@ -1,3 +1,6 @@
+---
+order: 3
+---
 # 3. Quiz: Algorithms
 
 Test yourself, then check the answers.

@@ -1,3 +1,6 @@
+---
+order: 3
+---
 # 3. Quiz: Projects
 
 Test yourself, then check the answers.

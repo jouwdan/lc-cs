@@ -1,3 +1,6 @@
+---
+order: 6
+---
 # 6. Recap: Networks
 
 Review the key ideas in a few slides.

@@ -1,3 +1,6 @@
+---
+order: 1
+---
 # 1. Learn: Binary & logic
 
 Represent data and work with truth tables.

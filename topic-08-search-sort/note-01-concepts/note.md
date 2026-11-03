@@ -1,3 +1,6 @@
+---
+order: 1
+---
 # 1. Learn: Search & sort
 
 Find, order and trace values.

@@ -1,3 +1,6 @@
+---
+order: 6
+---
 # 6. Recap: Start here
 
 Review the key ideas in a few slides.

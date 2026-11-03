@@ -1,3 +1,6 @@
+---
+order: 4
+---
 # 4. Answers: Binary & logic
 
 Check your reasoning and repair one gap.

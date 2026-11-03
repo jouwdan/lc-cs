@@ -13,7 +13,7 @@ The revision gives each topic a visible route: **Learn → Practise → Quiz →
 | Pain point | Change |
 |---|---|
 | The course opened with a large catalogue and no visible first action. | A short welcome panel links directly to Start here and explains the study route. |
-| Resource cards appeared in type order, with recap slides before learning notes. | A numbered route sits above the cards. Titles identify each stage. |
+| Resource cards appeared in type order, with recap slides before learning notes. | Explicit card order now follows Learn, Practise, Quiz, Answers, Exam, Recap, with extras afterwards. A numbered route also sits above the cards. |
 | Ordinary Markdown links opened new tabs; fragment links could be rewritten to the asset host. | Internal course links use same-tab HTML anchors. Year/index jumps stay on the current page. |
 | Titles repeated long topic names; descriptions were too long for cards. | Short contextual titles and one-sentence summaries; setup instructions and caveats stay inside activities. |
 | Lessons introduced several abstract terms in one paragraph. | Short sections define terms, show worked examples and give small questions with checks. |

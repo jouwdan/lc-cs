@@ -1,3 +1,6 @@
+---
+order: 4
+---
 # 4. Answers: Search & sort
 
 Check your reasoning and repair one gap.

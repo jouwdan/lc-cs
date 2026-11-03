@@ -1,3 +1,6 @@
+---
+order: 6
+---
 # 6. Recap: Exam skills
 
 Review the key ideas in a few slides.

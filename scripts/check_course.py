@@ -39,6 +39,12 @@ def main():
         route_panels = list(topic.glob('panelnote-*/*.md'))
         assert any(all(f'/{kind}/lc-cs/{topic.name}/' in p.read_text()
                        for kind in ('note', 'lab', 'quiz')) for p in route_panels), f'{topic}: missing visible study route'
+        sequence = ['note-01-*', 'book-01-practice', 'quiz-01-check',
+                    'note-02-feedback', 'note-03-exam-practice', 'talk-01-recap']
+        for order, pattern in enumerate(sequence, 1):
+            resource = next(topic.glob(pattern))
+            metadata = sorted(resource.glob('*.md'))[0].read_text()
+            assert metadata.startswith(f'---\norder: {order}\n---\n'), f'{resource}: missing study-route card order'
         for p in topic.glob('quiz-*/*.md'):
             text = p.read_text()
             assert f'/note/lc-cs/{topic.name}/note-02-feedback' in text, f'{p}: missing answer explanations link'
@@ -129,6 +135,11 @@ def main():
         for lo in nodes:
             if lo['type'] == 'lab':
                 assert lo['id'].startswith('book-'), f"Reader requires a book-* lab root: {lo['route']}"
+            if lo['type'] == 'topic' and lo['id'] != 'topic-17-past-papers':
+                ordered = sorted((child for child in lo['los'] if 'order' in child.get('frontMatter', {})),
+                                 key=lambda child: child['frontMatter']['order'])
+                assert [child['frontMatter']['order'] for child in ordered] == list(range(1, 7)), lo['id']
+                assert [child['title'].strip()[:2] for child in ordered] == [f'{n}.' for n in range(1, 7)], lo['id']
         internal = [lo['route'] for lo in nodes if lo['type'] not in {'unit', 'side', 'web', 'github'}]
         assert len(internal) == len(set(internal)), 'Duplicate navigable routes'
         assert sum(lo['type'] == 'quiz' for lo in nodes) == quiz_count

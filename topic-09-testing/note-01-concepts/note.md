@@ -1,3 +1,6 @@
+---
+order: 1
+---
 # 1. Learn: Testing
 
 Find a fault, repair it and retest.

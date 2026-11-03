@@ -1,3 +1,6 @@
+---
+order: 3
+---
 # 3. Quiz: Testing
 
 Test yourself, then check the answers.

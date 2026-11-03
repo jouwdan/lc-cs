@@ -1,3 +1,6 @@
+---
+order: 1
+---
 # 1. Learn: Models
 
 Test a model and explain its limits.

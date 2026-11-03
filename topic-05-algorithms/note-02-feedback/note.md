@@ -1,3 +1,6 @@
+---
+order: 4
+---
 # 4. Answers: Algorithms
 
 Check your reasoning and repair one gap.

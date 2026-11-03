@@ -1,3 +1,6 @@
+---
+order: 1
+---
 # 1. Learn: Lists & files
 
 Use text, lists, functions and files.

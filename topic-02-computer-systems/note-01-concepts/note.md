@@ -1,3 +1,6 @@
+---
+order: 1
+---
 # 1. Learn: Systems
 
 See how CPU, memory and the OS work.

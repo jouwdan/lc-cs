@@ -1,3 +1,6 @@
+---
+order: 3
+---
 # 3. Quiz: Embedded
 
 Test yourself, then check the answers.

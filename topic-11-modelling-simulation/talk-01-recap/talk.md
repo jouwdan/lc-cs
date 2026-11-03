@@ -1,3 +1,6 @@
+---
+order: 6
+---
 # 6. Recap: Models
 
 Review the key ideas in a few slides.
