@@ -1,0 +1,53 @@
+---
+marp: true
+theme: default
+paginate: true
+---
+
+# A request crosses systems
+
+Client → local network → router → server
+
+---
+
+## Different roles
+
+Switch • router • access point • DNS • server
+
+---
+
+## Higher Level: protocols
+
+IP: route packets
+
+TCP: reliable ordered stream
+
+HTTPS: protected web communication
+
+---
+
+## Voice depends on timing
+
+Bandwidth, latency and jitter are different.
+
+---
+
+## Start with the threat
+
+Confidentiality • integrity • availability
+
+---
+
+## Match control to failure
+
+Backups restore
+
+Permissions restrict
+
+Encryption protects data in transit
+
+---
+
+## Exit task
+
+Explain one control, its mechanism and its limitation.

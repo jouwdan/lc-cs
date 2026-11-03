@@ -1,0 +1,49 @@
+---
+marp: true
+theme: default
+paginate: true
+---
+# Start with a task
+Who needs what information?
+Write measurable acceptance criteria.
+
+---
+
+# Separate responsibilities
+HTML: meaning
+CSS: presentation
+JavaScript: behaviour
+Database: structured records
+
+---
+
+# Trace the data
+Form → HTTP → Python → SQL
+→ JSON → DOM → user
+
+---
+
+# Design for access
+Labels · Semantic controls · Visible focus
+Text alternatives · Clear status and errors
+
+Test with keyboard and zoom.
+
+---
+
+# Relational structure
+Book.category_id → Category.category_id
+Join related records; parameterise values.
+
+---
+
+# Test every state
+Loading · Results · No match · Failure
+
+A correct query and a usable interface both matter.
+
+---
+
+# ALT1 evidence
+User need · Schema · Actual query
+Working interaction · Test record · Reflection

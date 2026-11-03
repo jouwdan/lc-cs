@@ -1,0 +1,55 @@
+---
+marp: true
+theme: default
+paginate: true
+---
+
+# Represent the same value
+
+45₁₀ = 00101101₂ = 2D₁₆
+
+---
+
+## Place value
+
+128 64 32 16 8 4 2 1
+
+Which places encode 73?
+
+---
+
+## Size with units
+
+40 × 30 × 24 = 28,800 bits
+
+Divide by 8 → 3,600 bytes
+
+---
+
+## Text encoding
+
+ASCII repertoire ≠ Unicode repertoire
+
+UTF-8 uses variable numbers of bytes.
+
+---
+
+## Truth-table habits
+
+All combinations; intermediate wires; final output
+
+---
+
+## Half-adder
+
+Sum = XOR
+
+Carry = AND
+
+---
+
+## Counterexample
+
+C AND (B OR S) vs (C AND B) OR S
+
+Try C=0, B=1, S=1.

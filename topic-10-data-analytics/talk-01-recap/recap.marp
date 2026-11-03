@@ -1,0 +1,53 @@
+---
+marp: true
+theme: default
+paginate: true
+---
+# Data → evidence
+A question determines the fields you need.
+
+What does one row represent?
+
+---
+
+# Quality before calculation
+Missing ≠ zero.
+Validation ≠ proof of truth.
+Keep the source and record rejected rows.
+
+---
+
+# Work the example
+2, 4, 6, 6, 12
+
+Mean 6 · Median 6 · Mode 6 · Range 10
+
+What changes if 12 becomes 120?
+
+---
+
+# Database structure
+Records and fields
+Primary keys identify; foreign keys relate
+Parameterised queries separate data from instructions
+
+---
+
+# Interpret carefully
+Label units and sample size.
+Correlation does not establish causation.
+State a limitation and a next measurement.
+
+---
+
+# Practical transfer
+Read → validate → summarise → test → explain
+
+Test empty, odd, even, repeated and unsorted data.
+
+---
+
+# Exit ticket
+Why can a correct average support a misleading claim?
+
+Explain one database query in plain English.

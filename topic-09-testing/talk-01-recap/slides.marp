@@ -1,0 +1,67 @@
+---
+marp: true
+theme: default
+paginate: true
+---
+# Testing: evidence against requirements
+
+Pause at each prompt. Explain before revealing a model answer.
+
+---
+
+## Make requirements observable
+
+1–4 tickets: 1200 cents each.
+5–8 tickets: 1000 cents each.
+Other quantities: reject.
+
+**Predict:** total for quantity 5?
+
+---
+
+## Choose revealing cases
+
+- Normal: 2.
+- Boundary: 1, 4, 5, 8.
+- Invalid: 0, 9, text, fractional count.
+
+Write the expected result **before** running.
+
+---
+
+## Test levels
+
+- Unit: price calculation.
+- Integration: parsed input reaches calculation.
+- System: complete workflow.
+- Acceptance: agreed user needs.
+
+Regression: earlier behaviour survives a change.
+
+---
+
+## Debug with a hypothesis
+
+Reproduce → reduce → inspect → explain → repair → rerun.
+
+`> 5` wrongly excludes quantity 5.
+`>= 5` matches the inclusive requirement.
+
+---
+
+## Language matters
+
+JavaScript `y = x++`: use old value, then increment.
+JavaScript `y = ++x`: increment, then use new value.
+
+Python uses `x += 1`; it has no increment operator.
+
+---
+
+## Evaluate honestly
+
+Passing selected tests is evidence, not proof of no faults.
+
+Coverage does not prove correctness.
+
+**Exit ticket:** name one passing check, one limitation, and the next useful test.

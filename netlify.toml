@@ -1,0 +1,13 @@
+[build]
+  command = "deno run -A jsr:@tutors/tutors@5.3.0"
+  publish = "json"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"

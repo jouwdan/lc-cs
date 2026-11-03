@@ -1,0 +1,5 @@
+requirement,input_or_setup,expected,actual,outcome,action
+Search gives clear feedback,Search for absent fictional title,No-match message and no stale records,,,
+Median handles even counts,"Values 9 1 3 3",3,,,
+Model obeys conservation,Record arrivals and service,Final queue equals arrivals minus served,,,
+Indicator uses hysteresis,Previous on and level 35,Warning remains on,,,

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fictional library · ALT1 practice</title>
+<style>
+body { font: 1.1rem/1.6 system-ui, sans-serif; color: #192e36; background: #f3f7f5; margin: 0; }
+main { max-width: 48rem; margin: 3rem auto; padding: 1.5rem; }
+h1 { line-height: 1.15; } label { display: block; font-weight: 650; }
+input, button { font: inherit; padding: .65rem; border: 2px solid #42605b; border-radius: .3rem; }
+input { max-width: 100%; box-sizing: border-box; } button { background: #164c40; color: white; cursor: pointer; }
+:focus-visible { outline: 3px solid #825100; outline-offset: 3px; }
+li { margin: 1rem 0; padding: 1rem; background: white; border-left: .3rem solid #42605b; }
+small { display: block; } #status { min-height: 1.6em; }
+</style>
+</head>
+<body><main>
+<p>Leaving Certificate Computer Science · ALT1 practice</p>
+<h1>Find a library book</h1>
+<p>This demonstration uses fictional records. Search part of a title, or leave the field empty to list all books.</p>
+<form id="search-form">
+<label for="search">Book title</label>
+<input id="search" name="q" type="search" maxlength="100">
+<button type="submit">Search books</button>
+</form>
+<p id="status" role="status"></p>
+<ul id="results" aria-label="Matching books"></ul>
+<noscript>This practice interface requires JavaScript. The database can also be inspected through the supplied Python program.</noscript>
+<p><small>Local learning example: no accounts or personal information are collected.</small></p>
+</main>
+<script>
+const form = document.querySelector('#search-form');
+const status = document.querySelector('#status');
+const results = document.querySelector('#results');
+let latestRequest = 0;
+async function searchBooks() {
+  const requestNumber = ++latestRequest;
+  status.textContent = 'Loading books…';
+  results.replaceChildren();
+  try {
+    const query = document.querySelector('#search').value;
+    const response = await fetch('/api/books?q=' + encodeURIComponent(query));
+    if (!response.ok) throw new Error('Request failed');
+    const books = await response.json();
+    if (requestNumber !== latestRequest) return;
+    for (const book of books) {
+      const item = document.createElement('li');
+      item.textContent = `${book.title} · ${book.category} · ${book.available ? 'Available' : 'On loan'}`;
+      results.append(item);
+    }
+    status.textContent = books.length ? `${books.length} book(s) found.` : 'No matching books. Try a different title.';
+  } catch (error) {
+    if (requestNumber !== latestRequest) return;
+    status.textContent = 'Books could not be loaded. Check that the local Python server is running and try again.';
+  }
+}
+form.addEventListener('submit', event => { event.preventDefault(); searchBooks(); });
+searchBooks();
+</script>
+</body></html>

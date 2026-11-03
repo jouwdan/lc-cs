@@ -1,0 +1,2978 @@
+{
+  "scope": "All 176 numbered question groups in every English-language exam-paper variant listed for 2020\u20132025. Multi-part questions are summarised as a group; original PDFs and matching schemes remain authoritative. Irish-language PDFs are archived but are not separately translated or cross-mapped.",
+  "question_count": 176,
+  "method": "Educator review of extracted English papers and marking schemes; original skill summaries, with start pages checked against PDF page markers. Selected diagram pages visually inspected. No prediction of future paper content.",
+  "questions": [
+    {
+      "year": 2020,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 1,
+      "pdf_page_start": 3,
+      "skills": "Trace JavaScript multiplication, exponentiation, division, remainder and pre-increment.",
+      "course_topics": [
+        6
+      ],
+      "paper": "topic-17-past-papers/unit-2020/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2020/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2020/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 4
+    },
+    {
+      "year": 2020,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 2,
+      "pdf_page_start": 3,
+      "skills": "Interpret storage units and compare SSD with HDD reliability and speed.",
+      "course_topics": [
+        2
+      ],
+      "paper": "topic-17-past-papers/unit-2020/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2020/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2020/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 4
+    },
+    {
+      "year": 2020,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 3,
+      "pdf_page_start": 4,
+      "skills": "Explain the program counter's role in instruction execution.",
+      "course_topics": [
+        2
+      ],
+      "paper": "topic-17-past-papers/unit-2020/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2020/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2020/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 5
+    },
+    {
+      "year": 2020,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 4,
+      "pdf_page_start": 4,
+      "skills": "Define a communication protocol and connect an example to its purpose.",
+      "course_topics": [
+        4
+      ],
+      "paper": "topic-17-past-papers/unit-2020/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2020/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2020/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 5
+    },
+    {
+      "year": 2020,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 5,
+      "pdf_page_start": 5,
+      "skills": "Evaluate the sum and carry outputs of a half-adder logic circuit.",
+      "course_topics": [
+        3
+      ],
+      "paper": "topic-17-past-papers/unit-2020/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2020/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2020/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 6
+    },
+    {
+      "year": 2020,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 6,
+      "pdf_page_start": 6,
+      "skills": "Explain character-encoding standards and ASCII limitations.",
+      "course_topics": [
+        3
+      ],
+      "paper": "topic-17-past-papers/unit-2020/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2020/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2020/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 6
+    },
+    {
+      "year": 2020,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 7,
+      "pdf_page_start": 6,
+      "skills": "Convert an eight-bit character representation into hexadecimal.",
+      "course_topics": [
+        3
+      ],
+      "paper": "topic-17-past-papers/unit-2020/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2020/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2020/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 6
+    },
+    {
+      "year": 2020,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 8,
+      "pdf_page_start": 7,
+      "skills": "Trace each bubble-sort pass, preserving intermediate list states.",
+      "course_topics": [
+        8
+      ],
+      "paper": "topic-17-past-papers/unit-2020/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2020/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2020/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 7
+    },
+    {
+      "year": 2020,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 9,
+      "pdf_page_start": 7,
+      "skills": "Identify inconsistent, missing, duplicated and implausible data.",
+      "course_topics": [
+        10
+      ],
+      "paper": "topic-17-past-papers/unit-2020/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2020/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2020/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 7
+    },
+    {
+      "year": 2020,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 10,
+      "pdf_page_start": 8,
+      "skills": "Complete HTML document, heading, list and hyperlink markup.",
+      "course_topics": [
+        13
+      ],
+      "paper": "topic-17-past-papers/unit-2020/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2020/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2020/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 8
+    },
+    {
+      "year": 2020,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 11,
+      "pdf_page_start": 9,
+      "skills": "Diagnose overwritten selection results in a JavaScript grading function.",
+      "course_topics": [
+        6,
+        9
+      ],
+      "paper": "topic-17-past-papers/unit-2020/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2020/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2020/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 8
+    },
+    {
+      "year": 2020,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 12,
+      "pdf_page_start": 10,
+      "skills": "Explain why heuristics help with computationally expensive route optimisation.",
+      "course_topics": [
+        5,
+        8
+      ],
+      "paper": "topic-17-past-papers/unit-2020/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2020/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2020/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 8
+    },
+    {
+      "year": 2020,
+      "level": "Higher",
+      "language": "English",
+      "section": "B",
+      "question": 13,
+      "pdf_page_start": 11,
+      "skills": "Trace linear and binary search; handle absent targets and justify complexity.",
+      "course_topics": [
+        8,
+        7
+      ],
+      "paper": "topic-17-past-papers/unit-2020/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2020/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2020/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 9
+    },
+    {
+      "year": 2020,
+      "level": "Higher",
+      "language": "English",
+      "section": "B",
+      "question": 14,
+      "pdf_page_start": 16,
+      "skills": "Trace a Turing machine and finite-state transitions; evaluate societal effects of AI.",
+      "course_topics": [
+        14,
+        5
+      ],
+      "paper": "topic-17-past-papers/unit-2020/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2020/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2020/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 12
+    },
+    {
+      "year": 2020,
+      "level": "Higher",
+      "language": "English",
+      "section": "B",
+      "question": 15,
+      "pdf_page_start": 20,
+      "skills": "Choose a development lifecycle, assign roles, evaluate interfaces and propose assistive technology.",
+      "course_topics": [
+        9,
+        13
+      ],
+      "paper": "topic-17-past-papers/unit-2020/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2020/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2020/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 15
+    },
+    {
+      "year": 2020,
+      "level": "Higher",
+      "language": "English",
+      "section": "C",
+      "question": 16,
+      "pdf_page_start": 3,
+      "skills": "Extend password scoring with flags, character categories, threshold rules, functions and list processing.",
+      "course_topics": [
+        6,
+        7,
+        9
+      ],
+      "paper": "topic-17-past-papers/unit-2020/tutorial-exam-paper-section-c-higher-level-ev/exam-paper-section-c-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2020/exam-papers/section-c-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2020/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 17
+    },
+    {
+      "year": 2021,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 1,
+      "pdf_page_start": 3,
+      "skills": "Trace assignment, arithmetic, exponentiation and literal-string output.",
+      "course_topics": [
+        6
+      ],
+      "paper": "topic-17-past-papers/unit-2021/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2021/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2021/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 4
+    },
+    {
+      "year": 2021,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 2,
+      "pdf_page_start": 3,
+      "skills": "Explain binary representation and calculate capacities from bit counts.",
+      "course_topics": [
+        3
+      ],
+      "paper": "topic-17-past-papers/unit-2021/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2021/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2021/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 4
+    },
+    {
+      "year": 2021,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 3,
+      "pdf_page_start": 4,
+      "skills": "Compare RAM and ROM and explain the effect of RAM capacity on performance.",
+      "course_topics": [
+        2
+      ],
+      "paper": "topic-17-past-papers/unit-2021/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2021/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2021/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 5
+    },
+    {
+      "year": 2021,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 4,
+      "pdf_page_start": 5,
+      "skills": "Explain failed variable swapping and use a temporary value or simultaneous assignment.",
+      "course_topics": [
+        6
+      ],
+      "paper": "topic-17-past-papers/unit-2021/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2021/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2021/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 5
+    },
+    {
+      "year": 2021,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 5,
+      "pdf_page_start": 6,
+      "skills": "Trace an accumulating flowchart and determine its final output.",
+      "course_topics": [
+        5,
+        6
+      ],
+      "paper": "topic-17-past-papers/unit-2021/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2021/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2021/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 6
+    },
+    {
+      "year": 2021,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 6,
+      "pdf_page_start": 7,
+      "skills": "Evaluate fairness and overlapping conditions in a discount algorithm.",
+      "course_topics": [
+        6,
+        14
+      ],
+      "paper": "topic-17-past-papers/unit-2021/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2021/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2021/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 7
+    },
+    {
+      "year": 2021,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 7,
+      "pdf_page_start": 8,
+      "skills": "Distinguish HTTP and HTTPS and explain TCP reliability.",
+      "course_topics": [
+        4
+      ],
+      "paper": "topic-17-past-papers/unit-2021/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2021/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2021/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 7
+    },
+    {
+      "year": 2021,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 8,
+      "pdf_page_start": 8,
+      "skills": "Relate Unicode and ASCII coverage and convert hexadecimal to binary.",
+      "course_topics": [
+        3
+      ],
+      "paper": "topic-17-past-papers/unit-2021/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2021/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2021/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 8
+    },
+    {
+      "year": 2021,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 9,
+      "pdf_page_start": 9,
+      "skills": "Explain operating-system responsibilities and layered computer systems.",
+      "course_topics": [
+        2
+      ],
+      "paper": "topic-17-past-papers/unit-2021/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2021/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2021/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 8
+    },
+    {
+      "year": 2021,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 10,
+      "pdf_page_start": 10,
+      "skills": "Describe project-manager duties and distinguish high-level and low-level code.",
+      "course_topics": [
+        9,
+        2
+      ],
+      "paper": "topic-17-past-papers/unit-2021/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2021/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2021/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 9
+    },
+    {
+      "year": 2021,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 11,
+      "pdf_page_start": 11,
+      "skills": "Evaluate modelling benefits and agent-based disease simulations.",
+      "course_topics": [
+        11
+      ],
+      "paper": "topic-17-past-papers/unit-2021/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2021/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2021/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 10
+    },
+    {
+      "year": 2021,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 12,
+      "pdf_page_start": 12,
+      "skills": "Choose primary keys and model one-to-many relationships using foreign keys.",
+      "course_topics": [
+        10
+      ],
+      "paper": "topic-17-past-papers/unit-2021/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2021/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2021/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 10
+    },
+    {
+      "year": 2021,
+      "level": "Higher",
+      "language": "English",
+      "section": "B",
+      "question": 13,
+      "pdf_page_start": 13,
+      "skills": "Inspect string validation, slicing and missing length checks; compare testing types and equivalent Boolean expressions.",
+      "course_topics": [
+        7,
+        9,
+        3
+      ],
+      "paper": "topic-17-past-papers/unit-2021/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2021/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2021/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 12
+    },
+    {
+      "year": 2021,
+      "level": "Higher",
+      "language": "English",
+      "section": "B",
+      "question": 14,
+      "pdf_page_start": 18,
+      "skills": "Analyse winning positions and game trees; generalise a strategy using decomposition and patterns.",
+      "course_topics": [
+        5,
+        8
+      ],
+      "paper": "topic-17-past-papers/unit-2021/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2021/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2021/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 16
+    },
+    {
+      "year": 2021,
+      "level": "Higher",
+      "language": "English",
+      "section": "B",
+      "question": 15,
+      "pdf_page_start": 24,
+      "skills": "Compare sensors and real-time embedded systems; apply universal design and assess stakeholder impacts.",
+      "course_topics": [
+        12,
+        13,
+        14
+      ],
+      "paper": "topic-17-past-papers/unit-2021/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2021/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2021/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 20
+    },
+    {
+      "year": 2021,
+      "level": "Higher",
+      "language": "English",
+      "section": "C",
+      "question": 16,
+      "pdf_page_start": 3,
+      "skills": "Extend an anagram checker with user input, normalisation, functions and phrase filtering.",
+      "course_topics": [
+        6,
+        7
+      ],
+      "paper": "topic-17-past-papers/unit-2021/tutorial-exam-paper-section-c-higher-level-ev/exam-paper-section-c-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2021/exam-papers/section-c-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2021/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 23
+    },
+    {
+      "year": 2021,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 1,
+      "pdf_page_start": 3,
+      "skills": "Match Python values to integer, float, Boolean, string and list types.",
+      "course_topics": [
+        6
+      ],
+      "paper": "topic-17-past-papers/unit-2021/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2021/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2021/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 4
+    },
+    {
+      "year": 2021,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 2,
+      "pdf_page_start": 3,
+      "skills": "Convert a binary value into decimal.",
+      "course_topics": [
+        3
+      ],
+      "paper": "topic-17-past-papers/unit-2021/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2021/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2021/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 4
+    },
+    {
+      "year": 2021,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 3,
+      "pdf_page_start": 4,
+      "skills": "Explain the wider character coverage of Unicode.",
+      "course_topics": [
+        3
+      ],
+      "paper": "topic-17-past-papers/unit-2021/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2021/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2021/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 5
+    },
+    {
+      "year": 2021,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 4,
+      "pdf_page_start": 4,
+      "skills": "Give a computing automation example and explain its benefit.",
+      "course_topics": [
+        12,
+        14
+      ],
+      "paper": "topic-17-past-papers/unit-2021/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2021/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2021/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 5
+    },
+    {
+      "year": 2021,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 5,
+      "pdf_page_start": 5,
+      "skills": "Apply the client-server model to everyday computing.",
+      "course_topics": [
+        4
+      ],
+      "paper": "topic-17-past-papers/unit-2021/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2021/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2021/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 5
+    },
+    {
+      "year": 2021,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 6,
+      "pdf_page_start": 5,
+      "skills": "Explain HTTP and distinguish the web from the Internet.",
+      "course_topics": [
+        4
+      ],
+      "paper": "topic-17-past-papers/unit-2021/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2021/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2021/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 5
+    },
+    {
+      "year": 2021,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 7,
+      "pdf_page_start": 6,
+      "skills": "Compare analogue and digital signal characteristics.",
+      "course_topics": [
+        12
+      ],
+      "paper": "topic-17-past-papers/unit-2021/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2021/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2021/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 6
+    },
+    {
+      "year": 2021,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 8,
+      "pdf_page_start": 6,
+      "skills": "Trace a flowchart and determine its output.",
+      "course_topics": [
+        5
+      ],
+      "paper": "topic-17-past-papers/unit-2021/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2021/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2021/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 6
+    },
+    {
+      "year": 2021,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 9,
+      "pdf_page_start": 7,
+      "skills": "Complete a while-loop trace table and calculate the final output.",
+      "course_topics": [
+        6
+      ],
+      "paper": "topic-17-past-papers/unit-2021/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2021/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2021/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 7
+    },
+    {
+      "year": 2021,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 10,
+      "pdf_page_start": 8,
+      "skills": "Trace linear search for present and absent list values.",
+      "course_topics": [
+        8
+      ],
+      "paper": "topic-17-past-papers/unit-2021/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2021/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2021/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 7
+    },
+    {
+      "year": 2021,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 11,
+      "pdf_page_start": 9,
+      "skills": "Explain an assistive or adaptive technology in a real user's context.",
+      "course_topics": [
+        13
+      ],
+      "paper": "topic-17-past-papers/unit-2021/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2021/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2021/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 8
+    },
+    {
+      "year": 2021,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 12,
+      "pdf_page_start": 9,
+      "skills": "Propose practical format validation checks for an email input.",
+      "course_topics": [
+        9,
+        13
+      ],
+      "paper": "topic-17-past-papers/unit-2021/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2021/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2021/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 8
+    },
+    {
+      "year": 2021,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "B",
+      "question": 13,
+      "pdf_page_start": 10,
+      "skills": "Evaluate an iterative app project, development roles, privacy and universal design.",
+      "course_topics": [
+        9,
+        13,
+        14
+      ],
+      "paper": "topic-17-past-papers/unit-2021/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2021/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2021/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 9
+    },
+    {
+      "year": 2021,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "B",
+      "question": 14,
+      "pdf_page_start": 14,
+      "skills": "Trace binary search, explain sorted-input requirements and consider automated decision-making.",
+      "course_topics": [
+        8,
+        14
+      ],
+      "paper": "topic-17-past-papers/unit-2021/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2021/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2021/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 11
+    },
+    {
+      "year": 2021,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "B",
+      "question": 15,
+      "pdf_page_start": 17,
+      "skills": "Diagnose hardware performance, evaluate logic gates and system layers, and explain a computing milestone.",
+      "course_topics": [
+        2,
+        3,
+        14
+      ],
+      "paper": "topic-17-past-papers/unit-2021/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2021/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2021/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 13
+    },
+    {
+      "year": 2021,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "C",
+      "question": 16,
+      "pdf_page_start": 3,
+      "skills": "Extend a PIN-checking program with messages, flags, loops and a bounded number of attempts.",
+      "course_topics": [
+        6,
+        9
+      ],
+      "paper": "topic-17-past-papers/unit-2021/tutorial-exam-paper-section-c-ordinary-level-ev/exam-paper-section-c-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2021/exam-papers/section-c-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2021/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 15
+    },
+    {
+      "year": 2022,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 1,
+      "pdf_page_start": 3,
+      "skills": "Trace local variables, parameters, return values and global values through a function call.",
+      "course_topics": [
+        6,
+        7
+      ],
+      "paper": "topic-17-past-papers/unit-2022/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2022/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2022/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 4
+    },
+    {
+      "year": 2022,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 2,
+      "pdf_page_start": 3,
+      "skills": "Explain volatility and compare CPU registers with RAM.",
+      "course_topics": [
+        2
+      ],
+      "paper": "topic-17-past-papers/unit-2022/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2022/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2022/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 4
+    },
+    {
+      "year": 2022,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 3,
+      "pdf_page_start": 4,
+      "skills": "Explain transistors, integrated circuits and physical constraints on Moore's Law.",
+      "course_topics": [
+        2,
+        14
+      ],
+      "paper": "topic-17-past-papers/unit-2022/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2022/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2022/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 5
+    },
+    {
+      "year": 2022,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 4,
+      "pdf_page_start": 5,
+      "skills": "Build a truth table and circuit for a compound Boolean condition.",
+      "course_topics": [
+        3
+      ],
+      "paper": "topic-17-past-papers/unit-2022/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2022/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2022/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 5
+    },
+    {
+      "year": 2022,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 5,
+      "pdf_page_start": 6,
+      "skills": "Complete branching logic in a pH-classification flowchart.",
+      "course_topics": [
+        5,
+        6
+      ],
+      "paper": "topic-17-past-papers/unit-2022/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2022/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2022/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 6
+    },
+    {
+      "year": 2022,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 6,
+      "pdf_page_start": 7,
+      "skills": "Explain client requests, server processing and responses.",
+      "course_topics": [
+        4
+      ],
+      "paper": "topic-17-past-papers/unit-2022/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2022/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2022/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 6
+    },
+    {
+      "year": 2022,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 7,
+      "pdf_page_start": 7,
+      "skills": "Explain ransomware and propose measures that reduce cyberattack risk.",
+      "course_topics": [
+        4
+      ],
+      "paper": "topic-17-past-papers/unit-2022/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2022/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2022/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 7
+    },
+    {
+      "year": 2022,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 8,
+      "pdf_page_start": 8,
+      "skills": "Evaluate the cost and environmental trade-offs of cloud computing.",
+      "course_topics": [
+        4,
+        14
+      ],
+      "paper": "topic-17-past-papers/unit-2022/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2022/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2022/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 7
+    },
+    {
+      "year": 2022,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 9,
+      "pdf_page_start": 9,
+      "skills": "Describe machine-learning applications and explain biased training data.",
+      "course_topics": [
+        14,
+        10
+      ],
+      "paper": "topic-17-past-papers/unit-2022/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2022/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2022/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 8
+    },
+    {
+      "year": 2022,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 10,
+      "pdf_page_start": 9,
+      "skills": "Solve a constrained weighing problem and explain the abstraction used.",
+      "course_topics": [
+        5
+      ],
+      "paper": "topic-17-past-papers/unit-2022/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2022/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2022/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 8
+    },
+    {
+      "year": 2022,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 11,
+      "pdf_page_start": 10,
+      "skills": "Extend a generational pattern and relate it to a Fibonacci-style model.",
+      "course_topics": [
+        5,
+        11
+      ],
+      "paper": "topic-17-past-papers/unit-2022/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2022/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2022/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 9
+    },
+    {
+      "year": 2022,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 12,
+      "pdf_page_start": 11,
+      "skills": "Trace Turing-machine tape changes and state transitions.",
+      "course_topics": [
+        5,
+        14
+      ],
+      "paper": "topic-17-past-papers/unit-2022/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2022/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2022/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 10
+    },
+    {
+      "year": 2022,
+      "level": "Higher",
+      "language": "English",
+      "section": "B",
+      "question": 13,
+      "pdf_page_start": 12,
+      "skills": "Elicit information-system requirements, identify stakeholders, compare app options and design accessible wireframes.",
+      "course_topics": [
+        9,
+        13
+      ],
+      "paper": "topic-17-past-papers/unit-2022/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2022/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2022/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 11
+    },
+    {
+      "year": 2022,
+      "level": "Higher",
+      "language": "English",
+      "section": "B",
+      "question": 14,
+      "pdf_page_start": 16,
+      "skills": "Trace selection and insertion sorts, distinguish moving from copying, compare in-place sorting and select edge-case tests.",
+      "course_topics": [
+        8,
+        9
+      ],
+      "paper": "topic-17-past-papers/unit-2022/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2022/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2022/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 14
+    },
+    {
+      "year": 2022,
+      "level": "Higher",
+      "language": "English",
+      "section": "B",
+      "question": 15,
+      "pdf_page_start": 21,
+      "skills": "Compute a check digit and trace alternative implementations using string indices, range, remainder and integer division.",
+      "course_topics": [
+        6,
+        7,
+        9
+      ],
+      "paper": "topic-17-past-papers/unit-2022/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2022/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2022/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 17
+    },
+    {
+      "year": 2022,
+      "level": "Higher",
+      "language": "English",
+      "section": "C",
+      "question": 16,
+      "pdf_page_start": 4,
+      "skills": "Extend dice simulation to collect frequencies, find a mode and print a horizontal chart.",
+      "course_topics": [
+        6,
+        7,
+        10,
+        11
+      ],
+      "paper": "topic-17-past-papers/unit-2022/tutorial-exam-paper-section-c-higher-level-ev/exam-paper-section-c-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2022/exam-papers/section-c-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2022/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 20
+    },
+    {
+      "year": 2022,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 1,
+      "pdf_page_start": 3,
+      "skills": "Evaluate arithmetic and equality expressions in Python.",
+      "course_topics": [
+        6
+      ],
+      "paper": "topic-17-past-papers/unit-2022/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2022/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2022/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 4
+    },
+    {
+      "year": 2022,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 2,
+      "pdf_page_start": 3,
+      "skills": "Explain why modelling a traffic system is useful.",
+      "course_topics": [
+        11
+      ],
+      "paper": "topic-17-past-papers/unit-2022/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2022/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2022/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 4
+    },
+    {
+      "year": 2022,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 3,
+      "pdf_page_start": 4,
+      "skills": "Trace an embedded LED sequence and explain timing delays.",
+      "course_topics": [
+        12,
+        5
+      ],
+      "paper": "topic-17-past-papers/unit-2022/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2022/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2022/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 5
+    },
+    {
+      "year": 2022,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 4,
+      "pdf_page_start": 5,
+      "skills": "Identify computer hardware components and explain their purposes.",
+      "course_topics": [
+        2
+      ],
+      "paper": "topic-17-past-papers/unit-2022/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2022/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2022/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 5
+    },
+    {
+      "year": 2022,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 5,
+      "pdf_page_start": 5,
+      "skills": "Use zero-based indices in linear search and explain its limitations.",
+      "course_topics": [
+        8
+      ],
+      "paper": "topic-17-past-papers/unit-2022/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2022/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2022/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 6
+    },
+    {
+      "year": 2022,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 6,
+      "pdf_page_start": 6,
+      "skills": "Complete a guessing-game flowchart and improve repeated attempts.",
+      "course_topics": [
+        5,
+        6
+      ],
+      "paper": "topic-17-past-papers/unit-2022/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2022/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2022/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 6
+    },
+    {
+      "year": 2022,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 7,
+      "pdf_page_start": 7,
+      "skills": "Describe a woman's contribution to computing history.",
+      "course_topics": [
+        14
+      ],
+      "paper": "topic-17-past-papers/unit-2022/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2022/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2022/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 6
+    },
+    {
+      "year": 2022,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 8,
+      "pdf_page_start": 7,
+      "skills": "Explain technology's social benefits and the digital divide.",
+      "course_topics": [
+        14,
+        4
+      ],
+      "paper": "topic-17-past-papers/unit-2022/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2022/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2022/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 7
+    },
+    {
+      "year": 2022,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 9,
+      "pdf_page_start": 8,
+      "skills": "Identify dirty data and improve input validation.",
+      "course_topics": [
+        10,
+        9
+      ],
+      "paper": "topic-17-past-papers/unit-2022/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2022/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2022/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 7
+    },
+    {
+      "year": 2022,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 10,
+      "pdf_page_start": 9,
+      "skills": "Identify transistor, capacitor and resistor components and their functions.",
+      "course_topics": [
+        2,
+        12
+      ],
+      "paper": "topic-17-past-papers/unit-2022/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2022/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2022/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 8
+    },
+    {
+      "year": 2022,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 11,
+      "pdf_page_start": 9,
+      "skills": "Complete an AND-gate truth table.",
+      "course_topics": [
+        3
+      ],
+      "paper": "topic-17-past-papers/unit-2022/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2022/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2022/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 9
+    },
+    {
+      "year": 2022,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 12,
+      "pdf_page_start": 10,
+      "skills": "Trace movement and rotation instructions including repeated sequences.",
+      "course_topics": [
+        5
+      ],
+      "paper": "topic-17-past-papers/unit-2022/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2022/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2022/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 9
+    },
+    {
+      "year": 2022,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "B",
+      "question": 13,
+      "pdf_page_start": 11,
+      "skills": "Interpret binary-coded digits, storage units and encoding capacity; compare primary and secondary storage.",
+      "course_topics": [
+        3,
+        2
+      ],
+      "paper": "topic-17-past-papers/unit-2022/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2022/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2022/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 10
+    },
+    {
+      "year": 2022,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "B",
+      "question": 14,
+      "pdf_page_start": 14,
+      "skills": "Abstract admission rules, select variable types, design a decision algorithm and test pass/fail cases.",
+      "course_topics": [
+        5,
+        6,
+        9
+      ],
+      "paper": "topic-17-past-papers/unit-2022/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2022/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2022/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 12
+    },
+    {
+      "year": 2022,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "B",
+      "question": 15,
+      "pdf_page_start": 17,
+      "skills": "Explain computing milestones, distinguish web and Internet, and evaluate interface accessibility.",
+      "course_topics": [
+        14,
+        4,
+        13
+      ],
+      "paper": "topic-17-past-papers/unit-2022/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2022/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2022/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 15
+    },
+    {
+      "year": 2022,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "C",
+      "question": 16,
+      "pdf_page_start": 4,
+      "skills": "Extend an automated shop with input, formatted output, branches and invalid-choice handling.",
+      "course_topics": [
+        6
+      ],
+      "paper": "topic-17-past-papers/unit-2022/tutorial-exam-paper-section-c-ordinary-level-ev/exam-paper-section-c-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2022/exam-papers/section-c-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2022/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 17
+    },
+    {
+      "year": 2023,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 1,
+      "pdf_page_start": 3,
+      "skills": "Select data types that preserve meaning, including identifiers and collections.",
+      "course_topics": [
+        6,
+        10
+      ],
+      "paper": "topic-17-past-papers/unit-2023/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2023/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2023/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 4
+    },
+    {
+      "year": 2023,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 2,
+      "pdf_page_start": 3,
+      "skills": "Explain hexadecimal compactness and convert a hexadecimal value.",
+      "course_topics": [
+        3
+      ],
+      "paper": "topic-17-past-papers/unit-2023/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2023/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2023/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 4
+    },
+    {
+      "year": 2023,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 3,
+      "pdf_page_start": 4,
+      "skills": "Evaluate compound Boolean expressions using coordinate conditions.",
+      "course_topics": [
+        3
+      ],
+      "paper": "topic-17-past-papers/unit-2023/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2023/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2023/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 5
+    },
+    {
+      "year": 2023,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 4,
+      "pdf_page_start": 5,
+      "skills": "Define a user interface and describe an interface type.",
+      "course_topics": [
+        13
+      ],
+      "paper": "topic-17-past-papers/unit-2023/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2023/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2023/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 5
+    },
+    {
+      "year": 2023,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 5,
+      "pdf_page_start": 5,
+      "skills": "Name and explain a TCP/IP layer.",
+      "course_topics": [
+        4
+      ],
+      "paper": "topic-17-past-papers/unit-2023/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2023/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2023/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 6
+    },
+    {
+      "year": 2023,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 6,
+      "pdf_page_start": 6,
+      "skills": "Recognise embedded systems and distinguish them from general-purpose computers.",
+      "course_topics": [
+        12
+      ],
+      "paper": "topic-17-past-papers/unit-2023/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2023/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2023/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 7
+    },
+    {
+      "year": 2023,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 7,
+      "pdf_page_start": 6,
+      "skills": "Trace two variables through a terminating while loop.",
+      "course_topics": [
+        6
+      ],
+      "paper": "topic-17-past-papers/unit-2023/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2023/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2023/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 8
+    },
+    {
+      "year": 2023,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 8,
+      "pdf_page_start": 7,
+      "skills": "Construct a valid sequence for a constrained river-crossing problem.",
+      "course_topics": [
+        5
+      ],
+      "paper": "topic-17-past-papers/unit-2023/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2023/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2023/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 8
+    },
+    {
+      "year": 2023,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 9,
+      "pdf_page_start": 8,
+      "skills": "Trace state permutations and construct a sequence that restores a starting state.",
+      "course_topics": [
+        5
+      ],
+      "paper": "topic-17-past-papers/unit-2023/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2023/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2023/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 9
+    },
+    {
+      "year": 2023,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 10,
+      "pdf_page_start": 9,
+      "skills": "Partition a quicksort list and explain the effect of an extreme pivot.",
+      "course_topics": [
+        8
+      ],
+      "paper": "topic-17-past-papers/unit-2023/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2023/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2023/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 9
+    },
+    {
+      "year": 2023,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 11,
+      "pdf_page_start": 10,
+      "skills": "Trace username generation using string slicing and concatenation.",
+      "course_topics": [
+        7,
+        5
+      ],
+      "paper": "topic-17-past-papers/unit-2023/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2023/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2023/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 10
+    },
+    {
+      "year": 2023,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 12,
+      "pdf_page_start": 11,
+      "skills": "Explain the development lifecycle and distinguish functional from non-functional testing.",
+      "course_topics": [
+        9
+      ],
+      "paper": "topic-17-past-papers/unit-2023/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2023/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2023/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 10
+    },
+    {
+      "year": 2023,
+      "level": "Higher",
+      "language": "English",
+      "section": "B",
+      "question": 13,
+      "pdf_page_start": 12,
+      "skills": "Evaluate digital hubs, select model data, apply universal design, optimise routes and debate facial recognition.",
+      "course_topics": [
+        14,
+        11,
+        5,
+        13
+      ],
+      "paper": "topic-17-past-papers/unit-2023/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2023/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2023/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 12
+    },
+    {
+      "year": 2023,
+      "level": "Higher",
+      "language": "English",
+      "section": "B",
+      "question": 14,
+      "pdf_page_start": 15,
+      "skills": "Explain stored-program architecture, fetch-decode-execute, registers, virtual memory, storage and project roles.",
+      "course_topics": [
+        2,
+        9
+      ],
+      "paper": "topic-17-past-papers/unit-2023/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2023/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2023/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 15
+    },
+    {
+      "year": 2023,
+      "level": "Higher",
+      "language": "English",
+      "section": "B",
+      "question": 15,
+      "pdf_page_start": 18,
+      "skills": "Compare search traces and complexity; explain iterative and recursive binary-search functions and base cases.",
+      "course_topics": [
+        8,
+        7
+      ],
+      "paper": "topic-17-past-papers/unit-2023/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2023/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2023/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 18
+    },
+    {
+      "year": 2023,
+      "level": "Higher",
+      "language": "English",
+      "section": "C",
+      "question": 16,
+      "pdf_page_start": 4,
+      "skills": "Extend a guessing game with limits, feedback, previous guesses and score rules; test boundary cases.",
+      "course_topics": [
+        6,
+        7,
+        9
+      ],
+      "paper": "topic-17-past-papers/unit-2023/tutorial-exam-paper-section-c-higher-level-ev/exam-paper-section-c-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2023/exam-papers/section-c-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2023/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 22
+    },
+    {
+      "year": 2023,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 1,
+      "pdf_page_start": 3,
+      "skills": "Evaluate relational comparisons as Boolean values.",
+      "course_topics": [
+        6,
+        3
+      ],
+      "paper": "topic-17-past-papers/unit-2023/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2023/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2023/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 4
+    },
+    {
+      "year": 2023,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 2,
+      "pdf_page_start": 3,
+      "skills": "Distinguish embedded and general-purpose systems with examples.",
+      "course_topics": [
+        12
+      ],
+      "paper": "topic-17-past-papers/unit-2023/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2023/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2023/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 4
+    },
+    {
+      "year": 2023,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 3,
+      "pdf_page_start": 4,
+      "skills": "Design a sequence that reads values and outputs their arithmetic mean.",
+      "course_topics": [
+        5,
+        6
+      ],
+      "paper": "topic-17-past-papers/unit-2023/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2023/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2023/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 5
+    },
+    {
+      "year": 2023,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 4,
+      "pdf_page_start": 4,
+      "skills": "Convert decimal into binary.",
+      "course_topics": [
+        3
+      ],
+      "paper": "topic-17-past-papers/unit-2023/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2023/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2023/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 5
+    },
+    {
+      "year": 2023,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 5,
+      "pdf_page_start": 5,
+      "skills": "Explain pattern recognition in image-classification systems.",
+      "course_topics": [
+        5,
+        14
+      ],
+      "paper": "topic-17-past-papers/unit-2023/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2023/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2023/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 6
+    },
+    {
+      "year": 2023,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 6,
+      "pdf_page_start": 5,
+      "skills": "Select appropriate data types for stored member information.",
+      "course_topics": [
+        6,
+        10
+      ],
+      "paper": "topic-17-past-papers/unit-2023/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2023/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2023/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 6
+    },
+    {
+      "year": 2023,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 7,
+      "pdf_page_start": 6,
+      "skills": "Explain the CPU's purpose.",
+      "course_topics": [
+        2
+      ],
+      "paper": "topic-17-past-papers/unit-2023/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2023/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2023/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 6
+    },
+    {
+      "year": 2023,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 8,
+      "pdf_page_start": 6,
+      "skills": "Choose a binary-search midpoint and explain divide and conquer.",
+      "course_topics": [
+        8
+      ],
+      "paper": "topic-17-past-papers/unit-2023/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2023/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2023/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 7
+    },
+    {
+      "year": 2023,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 9,
+      "pdf_page_start": 7,
+      "skills": "Distinguish discrete and continuous measurements.",
+      "course_topics": [
+        10
+      ],
+      "paper": "topic-17-past-papers/unit-2023/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2023/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2023/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 7
+    },
+    {
+      "year": 2023,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 10,
+      "pdf_page_start": 7,
+      "skills": "Complete an OR-gate truth table.",
+      "course_topics": [
+        3
+      ],
+      "paper": "topic-17-past-papers/unit-2023/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2023/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2023/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 8
+    },
+    {
+      "year": 2023,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 11,
+      "pdf_page_start": 8,
+      "skills": "Trace grading branches, identify missing range validation and explain integer conversion.",
+      "course_topics": [
+        6,
+        9
+      ],
+      "paper": "topic-17-past-papers/unit-2023/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2023/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2023/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 8
+    },
+    {
+      "year": 2023,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 12,
+      "pdf_page_start": 9,
+      "skills": "Match assistive technologies to user access needs.",
+      "course_topics": [
+        13
+      ],
+      "paper": "topic-17-past-papers/unit-2023/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2023/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2023/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 9
+    },
+    {
+      "year": 2023,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "B",
+      "question": 13,
+      "pdf_page_start": 10,
+      "skills": "Explain programming terms, trace loops and charging costs, and solve a scheduling problem.",
+      "course_topics": [
+        6,
+        5
+      ],
+      "paper": "topic-17-past-papers/unit-2023/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2023/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2023/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 10
+    },
+    {
+      "year": 2023,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "B",
+      "question": 14,
+      "pdf_page_start": 13,
+      "skills": "Identify users and stakeholders, assign roles, explain lifecycle stages and compare unit and beta testing.",
+      "course_topics": [
+        9
+      ],
+      "paper": "topic-17-past-papers/unit-2023/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2023/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2023/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 12
+    },
+    {
+      "year": 2023,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "B",
+      "question": 15,
+      "pdf_page_start": 16,
+      "skills": "Design network security, explain client-server architecture and evaluate e-government and equitable access.",
+      "course_topics": [
+        4,
+        14
+      ],
+      "paper": "topic-17-past-papers/unit-2023/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2023/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2023/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 15
+    },
+    {
+      "year": 2023,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "C",
+      "question": 16,
+      "pdf_page_start": 4,
+      "skills": "Modify a times-table loop and implement a temperature-alert classifier with boundary checks.",
+      "course_topics": [
+        6,
+        9
+      ],
+      "paper": "topic-17-past-papers/unit-2023/tutorial-exam-paper-section-c-ordinary-level-ev/exam-paper-section-c-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2023/exam-papers/section-c-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2023/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 17
+    },
+    {
+      "year": 2024,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 1,
+      "pdf_page_start": 3,
+      "skills": "Evaluate outputs of common logic gates.",
+      "course_topics": [
+        3
+      ],
+      "paper": "topic-17-past-papers/unit-2024/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2024/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2024/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 4
+    },
+    {
+      "year": 2024,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 2,
+      "pdf_page_start": 3,
+      "skills": "Trace a loop's value progression and exact output layout.",
+      "course_topics": [
+        6
+      ],
+      "paper": "topic-17-past-papers/unit-2024/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2024/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2024/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 4
+    },
+    {
+      "year": 2024,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 3,
+      "pdf_page_start": 4,
+      "skills": "Represent a decimal number as eight binary bits.",
+      "course_topics": [
+        3
+      ],
+      "paper": "topic-17-past-papers/unit-2024/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2024/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2024/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 4
+    },
+    {
+      "year": 2024,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 4,
+      "pdf_page_start": 4,
+      "skills": "Design a legal move sequence to transform a constrained arrangement.",
+      "course_topics": [
+        5
+      ],
+      "paper": "topic-17-past-papers/unit-2024/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2024/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2024/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 5
+    },
+    {
+      "year": 2024,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 5,
+      "pdf_page_start": 5,
+      "skills": "Explain the significance of a computer-hardware milestone.",
+      "course_topics": [
+        14,
+        2
+      ],
+      "paper": "topic-17-past-papers/unit-2024/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2024/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2024/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 5
+    },
+    {
+      "year": 2024,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 6,
+      "pdf_page_start": 5,
+      "skills": "Write concrete unit and system test cases for an app.",
+      "course_topics": [
+        9
+      ],
+      "paper": "topic-17-past-papers/unit-2024/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2024/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2024/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 6
+    },
+    {
+      "year": 2024,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 7,
+      "pdf_page_start": 6,
+      "skills": "Evaluate a societal benefit and risk of an emerging technology.",
+      "course_topics": [
+        14
+      ],
+      "paper": "topic-17-past-papers/unit-2024/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2024/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2024/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 6
+    },
+    {
+      "year": 2024,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 8,
+      "pdf_page_start": 6,
+      "skills": "Give appropriate examples of data held in RAM and ROM.",
+      "course_topics": [
+        2
+      ],
+      "paper": "topic-17-past-papers/unit-2024/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2024/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2024/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 8
+    },
+    {
+      "year": 2024,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 9,
+      "pdf_page_start": 7,
+      "skills": "Explain compound Boolean leap-year rules and divisibility checks.",
+      "course_topics": [
+        6,
+        3
+      ],
+      "paper": "topic-17-past-papers/unit-2024/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2024/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2024/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 9
+    },
+    {
+      "year": 2024,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 10,
+      "pdf_page_start": 7,
+      "skills": "Apply named universal-design principles to a kiosk.",
+      "course_topics": [
+        13
+      ],
+      "paper": "topic-17-past-papers/unit-2024/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2024/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2024/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 9
+    },
+    {
+      "year": 2024,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 11,
+      "pdf_page_start": 8,
+      "skills": "Trace an abstract swapping algorithm and explain a general solution.",
+      "course_topics": [
+        5,
+        8
+      ],
+      "paper": "topic-17-past-papers/unit-2024/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2024/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2024/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 10
+    },
+    {
+      "year": 2024,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 12,
+      "pdf_page_start": 9,
+      "skills": "Explain personal-data monetisation and implications for online privacy.",
+      "course_topics": [
+        14
+      ],
+      "paper": "topic-17-past-papers/unit-2024/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2024/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2024/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 10
+    },
+    {
+      "year": 2024,
+      "level": "Higher",
+      "language": "English",
+      "section": "B",
+      "question": 13,
+      "pdf_page_start": 11,
+      "skills": "Distinguish AI categories, interpret vision-model confidence, compare learning approaches and discuss bias and governance.",
+      "course_topics": [
+        14,
+        10
+      ],
+      "paper": "topic-17-past-papers/unit-2024/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2024/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2024/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 12
+    },
+    {
+      "year": 2024,
+      "level": "Higher",
+      "language": "English",
+      "section": "B",
+      "question": 14,
+      "pdf_page_start": 15,
+      "skills": "Trace swapping and bubble sort, use indices and slices, diagnose bounds errors and explain fixed-pass quadratic complexity.",
+      "course_topics": [
+        6,
+        7,
+        8
+      ],
+      "paper": "topic-17-past-papers/unit-2024/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2024/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2024/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 17
+    },
+    {
+      "year": 2024,
+      "level": "Higher",
+      "language": "English",
+      "section": "B",
+      "question": 15,
+      "pdf_page_start": 18,
+      "skills": "Design relational tables and keys, reduce redundancy, identify dirty data and frame testable analytics hypotheses.",
+      "course_topics": [
+        10
+      ],
+      "paper": "topic-17-past-papers/unit-2024/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2024/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2024/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 21
+    },
+    {
+      "year": 2024,
+      "level": "Higher",
+      "language": "English",
+      "section": "C",
+      "question": 16,
+      "pdf_page_start": 4,
+      "skills": "Extend random fruit selection with comparisons, scores and frequency counts; validate a winning choice and count trials.",
+      "course_topics": [
+        6,
+        7,
+        11
+      ],
+      "paper": "topic-17-past-papers/unit-2024/tutorial-exam-paper-section-c-higher-level-ev/exam-paper-section-c-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2024/exam-papers/section-c-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2024/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 25
+    },
+    {
+      "year": 2024,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 1,
+      "pdf_page_start": 3,
+      "skills": "Evaluate Python arithmetic and preserve print-line formatting.",
+      "course_topics": [
+        6
+      ],
+      "paper": "topic-17-past-papers/unit-2024/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2024/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2024/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 4
+    },
+    {
+      "year": 2024,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 2,
+      "pdf_page_start": 3,
+      "skills": "Find a nibble's maximum value and convert it to decimal.",
+      "course_topics": [
+        3
+      ],
+      "paper": "topic-17-past-papers/unit-2024/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2024/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2024/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 4
+    },
+    {
+      "year": 2024,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 3,
+      "pdf_page_start": 4,
+      "skills": "Recognise basic electronic components and describe a component's purpose.",
+      "course_topics": [
+        2,
+        12
+      ],
+      "paper": "topic-17-past-papers/unit-2024/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2024/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2024/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 4
+    },
+    {
+      "year": 2024,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 4,
+      "pdf_page_start": 4,
+      "skills": "Explain HTTP's role in web communication.",
+      "course_topics": [
+        4
+      ],
+      "paper": "topic-17-past-papers/unit-2024/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2024/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2024/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 5
+    },
+    {
+      "year": 2024,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 5,
+      "pdf_page_start": 5,
+      "skills": "Complete a flowchart with discounts and compound conditions.",
+      "course_topics": [
+        5,
+        6
+      ],
+      "paper": "topic-17-past-papers/unit-2024/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2024/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2024/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 5
+    },
+    {
+      "year": 2024,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 6,
+      "pdf_page_start": 6,
+      "skills": "Determine logic-gate outputs.",
+      "course_topics": [
+        3
+      ],
+      "paper": "topic-17-past-papers/unit-2024/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2024/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2024/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 6
+    },
+    {
+      "year": 2024,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 7,
+      "pdf_page_start": 6,
+      "skills": "Identify project-management duties in a team app project.",
+      "course_topics": [
+        9
+      ],
+      "paper": "topic-17-past-papers/unit-2024/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2024/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2024/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 6
+    },
+    {
+      "year": 2024,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 8,
+      "pdf_page_start": 7,
+      "skills": "Explain input conversion and complete a three-way comparison.",
+      "course_topics": [
+        6
+      ],
+      "paper": "topic-17-past-papers/unit-2024/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2024/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2024/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 6
+    },
+    {
+      "year": 2024,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 9,
+      "pdf_page_start": 7,
+      "skills": "Evaluate positive and negative effects of drones.",
+      "course_topics": [
+        14,
+        12
+      ],
+      "paper": "topic-17-past-papers/unit-2024/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2024/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2024/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 7
+    },
+    {
+      "year": 2024,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 10,
+      "pdf_page_start": 8,
+      "skills": "Identify inconsistent, missing, implausible and duplicate survey records.",
+      "course_topics": [
+        10
+      ],
+      "paper": "topic-17-past-papers/unit-2024/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2024/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2024/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 7
+    },
+    {
+      "year": 2024,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 11,
+      "pdf_page_start": 8,
+      "skills": "Identify analogue and digital sensor inputs in an embedded system.",
+      "course_topics": [
+        12
+      ],
+      "paper": "topic-17-past-papers/unit-2024/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2024/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2024/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 8
+    },
+    {
+      "year": 2024,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 12,
+      "pdf_page_start": 9,
+      "skills": "Design validation rules for a data-capture form.",
+      "course_topics": [
+        9,
+        13
+      ],
+      "paper": "topic-17-past-papers/unit-2024/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2024/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2024/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 8
+    },
+    {
+      "year": 2024,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "B",
+      "question": 13,
+      "pdf_page_start": 11,
+      "skills": "Explain variables and initialisation, diagnose an infinite loop and trace linear search.",
+      "course_topics": [
+        6,
+        8,
+        9
+      ],
+      "paper": "topic-17-past-papers/unit-2024/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2024/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2024/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 9
+    },
+    {
+      "year": 2024,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "B",
+      "question": 14,
+      "pdf_page_start": 14,
+      "skills": "Explain AI training, assess chatbot risks, apply universal design and explain user acceptance testing.",
+      "course_topics": [
+        14,
+        13,
+        9
+      ],
+      "paper": "topic-17-past-papers/unit-2024/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2024/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2024/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 11
+    },
+    {
+      "year": 2024,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "B",
+      "question": 15,
+      "pdf_page_start": 17,
+      "skills": "Evaluate weather simulation, computing developments, types and accessibility; design and boundary-test alert logic.",
+      "course_topics": [
+        11,
+        14,
+        6,
+        13,
+        9
+      ],
+      "paper": "topic-17-past-papers/unit-2024/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2024/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2024/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 14
+    },
+    {
+      "year": 2024,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "C",
+      "question": 16,
+      "pdf_page_start": 4,
+      "skills": "Extend an age-classification program and write a bill-splitting calculator with discount, tip and division logic.",
+      "course_topics": [
+        6,
+        9
+      ],
+      "paper": "topic-17-past-papers/unit-2024/tutorial-exam-paper-section-c-ordinary-level-ev/exam-paper-section-c-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2024/exam-papers/section-c-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2024/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 17
+    },
+    {
+      "year": 2025,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 1,
+      "pdf_page_start": 3,
+      "skills": "Trace assignment, floor division, modulo and comparisons in exact output order.",
+      "course_topics": [
+        6
+      ],
+      "paper": "topic-17-past-papers/unit-2025/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2025/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2025/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 4
+    },
+    {
+      "year": 2025,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 2,
+      "pdf_page_start": 3,
+      "skills": "Compare ASCII and Unicode representation and compatibility.",
+      "course_topics": [
+        3
+      ],
+      "paper": "topic-17-past-papers/unit-2025/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2025/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2025/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 4
+    },
+    {
+      "year": 2025,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 3,
+      "pdf_page_start": 4,
+      "skills": "Use logical constraints to assign unique people, projects and ranks.",
+      "course_topics": [
+        5
+      ],
+      "paper": "topic-17-past-papers/unit-2025/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2025/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2025/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 5
+    },
+    {
+      "year": 2025,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 4,
+      "pdf_page_start": 4,
+      "skills": "Explain operating-system resource management and file management.",
+      "course_topics": [
+        2
+      ],
+      "paper": "topic-17-past-papers/unit-2025/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2025/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2025/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 5
+    },
+    {
+      "year": 2025,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 5,
+      "pdf_page_start": 5,
+      "skills": "Convert hexadecimal RGB channels into decimal values.",
+      "course_topics": [
+        3
+      ],
+      "paper": "topic-17-past-papers/unit-2025/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2025/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2025/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 5
+    },
+    {
+      "year": 2025,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 6,
+      "pdf_page_start": 5,
+      "skills": "Evaluate a specific benefit and limitation of AI-assisted diagnosis.",
+      "course_topics": [
+        14
+      ],
+      "paper": "topic-17-past-papers/unit-2025/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2025/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2025/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 6
+    },
+    {
+      "year": 2025,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 7,
+      "pdf_page_start": 6,
+      "skills": "Identify linear and binary search from decision trees and compare depth.",
+      "course_topics": [
+        8
+      ],
+      "paper": "topic-17-past-papers/unit-2025/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2025/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2025/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 7
+    },
+    {
+      "year": 2025,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 8,
+      "pdf_page_start": 6,
+      "skills": "Distinguish packet addressing/routing from voice communication over IP.",
+      "course_topics": [
+        4
+      ],
+      "paper": "topic-17-past-papers/unit-2025/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2025/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2025/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 7
+    },
+    {
+      "year": 2025,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 9,
+      "pdf_page_start": 7,
+      "skills": "Identify syntax errors and repair overlapping FizzBuzz conditions.",
+      "course_topics": [
+        6,
+        9
+      ],
+      "paper": "topic-17-past-papers/unit-2025/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2025/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2025/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 8
+    },
+    {
+      "year": 2025,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 10,
+      "pdf_page_start": 7,
+      "skills": "Give process-automation examples and explain a limitation.",
+      "course_topics": [
+        12,
+        14
+      ],
+      "paper": "topic-17-past-papers/unit-2025/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2025/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2025/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 8
+    },
+    {
+      "year": 2025,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 11,
+      "pdf_page_start": 8,
+      "skills": "Evaluate personalised political content and privacy/manipulation risks.",
+      "course_topics": [
+        14,
+        10
+      ],
+      "paper": "topic-17-past-papers/unit-2025/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2025/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2025/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 9
+    },
+    {
+      "year": 2025,
+      "level": "Higher",
+      "language": "English",
+      "section": "A",
+      "question": 12,
+      "pdf_page_start": 8,
+      "skills": "Identify CPU components and explain their functions.",
+      "course_topics": [
+        2
+      ],
+      "paper": "topic-17-past-papers/unit-2025/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2025/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2025/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 9
+    },
+    {
+      "year": 2025,
+      "level": "Higher",
+      "language": "English",
+      "section": "B",
+      "question": 13,
+      "pdf_page_start": 9,
+      "skills": "Plan a deposit-return system with roles, lifecycle, stakeholder goals, database uses, AI, accessibility and testing.",
+      "course_topics": [
+        9,
+        10,
+        13,
+        14
+      ],
+      "paper": "topic-17-past-papers/unit-2025/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2025/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2025/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 10
+    },
+    {
+      "year": 2025,
+      "level": "Higher",
+      "language": "English",
+      "section": "B",
+      "question": 14,
+      "pdf_page_start": 13,
+      "skills": "Trace iterative GCD, explain recursive base cases and stack memory, partition quicksort and compare complexity cases.",
+      "course_topics": [
+        7,
+        8
+      ],
+      "paper": "topic-17-past-papers/unit-2025/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2025/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2025/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 14
+    },
+    {
+      "year": 2025,
+      "level": "Higher",
+      "language": "English",
+      "section": "B",
+      "question": 15,
+      "pdf_page_start": 17,
+      "skills": "Select model inputs and outputs, identify patterns and limitations, and design agent-based intervention experiments.",
+      "course_topics": [
+        11,
+        10
+      ],
+      "paper": "topic-17-past-papers/unit-2025/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2025/exam-papers/section-aandb-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2025/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 18
+    },
+    {
+      "year": 2025,
+      "level": "Higher",
+      "language": "English",
+      "section": "C",
+      "question": 16,
+      "pdf_page_start": 4,
+      "skills": "Extend grade statistics with counts, extrema and longest increasing runs; implement median for empty, odd and even lists.",
+      "course_topics": [
+        6,
+        7,
+        8,
+        10,
+        9
+      ],
+      "paper": "topic-17-past-papers/unit-2025/tutorial-exam-paper-section-c-higher-level-ev/exam-paper-section-c-higher-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2025/exam-papers/section-c-higher-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2025/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 22
+    },
+    {
+      "year": 2025,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 1,
+      "pdf_page_start": 3,
+      "skills": "Trace conditional outputs including boundary and unusual ages.",
+      "course_topics": [
+        6
+      ],
+      "paper": "topic-17-past-papers/unit-2025/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2025/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2025/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 4
+    },
+    {
+      "year": 2025,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 2,
+      "pdf_page_start": 3,
+      "skills": "Explain practical reasons for cloud storage.",
+      "course_topics": [
+        4
+      ],
+      "paper": "topic-17-past-papers/unit-2025/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2025/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2025/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 4
+    },
+    {
+      "year": 2025,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 3,
+      "pdf_page_start": 4,
+      "skills": "Match number bases and explain binary electronic representation.",
+      "course_topics": [
+        3
+      ],
+      "paper": "topic-17-past-papers/unit-2025/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2025/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2025/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 5
+    },
+    {
+      "year": 2025,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 4,
+      "pdf_page_start": 4,
+      "skills": "Explain Unicode's broader character repertoire.",
+      "course_topics": [
+        3
+      ],
+      "paper": "topic-17-past-papers/unit-2025/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2025/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2025/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 5
+    },
+    {
+      "year": 2025,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 5,
+      "pdf_page_start": 5,
+      "skills": "Match Python variables to their data types.",
+      "course_topics": [
+        6
+      ],
+      "paper": "topic-17-past-papers/unit-2025/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2025/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2025/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 6
+    },
+    {
+      "year": 2025,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 6,
+      "pdf_page_start": 5,
+      "skills": "Evaluate social and ethical concerns raised by augmented reality.",
+      "course_topics": [
+        14
+      ],
+      "paper": "topic-17-past-papers/unit-2025/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2025/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2025/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 6
+    },
+    {
+      "year": 2025,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 7,
+      "pdf_page_start": 6,
+      "skills": "Explain abstraction and identify details omitted by a map.",
+      "course_topics": [
+        5
+      ],
+      "paper": "topic-17-past-papers/unit-2025/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2025/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2025/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 7
+    },
+    {
+      "year": 2025,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 8,
+      "pdf_page_start": 7,
+      "skills": "Explain CPU and input-device purposes.",
+      "course_topics": [
+        2
+      ],
+      "paper": "topic-17-past-papers/unit-2025/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2025/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2025/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 7
+    },
+    {
+      "year": 2025,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 9,
+      "pdf_page_start": 7,
+      "skills": "Distinguish web/Internet terms, URL, HTTP/HTTPS and client-server initiation.",
+      "course_topics": [
+        4
+      ],
+      "paper": "topic-17-past-papers/unit-2025/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2025/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2025/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 7
+    },
+    {
+      "year": 2025,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 10,
+      "pdf_page_start": 8,
+      "skills": "Trace a flowchart to calculate its output.",
+      "course_topics": [
+        5,
+        6
+      ],
+      "paper": "topic-17-past-papers/unit-2025/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2025/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2025/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 8
+    },
+    {
+      "year": 2025,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 11,
+      "pdf_page_start": 9,
+      "skills": "Show selection-sort list states after each swap.",
+      "course_topics": [
+        8
+      ],
+      "paper": "topic-17-past-papers/unit-2025/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2025/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2025/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 8
+    },
+    {
+      "year": 2025,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "A",
+      "question": 12,
+      "pdf_page_start": 9,
+      "skills": "Diagnose a string/integer type mismatch and choose a conversion.",
+      "course_topics": [
+        6,
+        9
+      ],
+      "paper": "topic-17-past-papers/unit-2025/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2025/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2025/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 8
+    },
+    {
+      "year": 2025,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "B",
+      "question": 13,
+      "pdf_page_start": 10,
+      "skills": "Explain computing milestones and emerging trends, system layers, OS duties, embedded systems and computing careers.",
+      "course_topics": [
+        14,
+        2,
+        12,
+        9
+      ],
+      "paper": "topic-17-past-papers/unit-2025/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2025/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2025/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 9
+    },
+    {
+      "year": 2025,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "B",
+      "question": 14,
+      "pdf_page_start": 13,
+      "skills": "Explain vending-machine conditions, complete a test plan, improve accessibility and design stock-check logic.",
+      "course_topics": [
+        6,
+        9,
+        13,
+        5
+      ],
+      "paper": "topic-17-past-papers/unit-2025/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2025/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2025/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 13
+    },
+    {
+      "year": 2025,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "B",
+      "question": 15,
+      "pdf_page_start": 16,
+      "skills": "Identify museum-app stakeholders and needs, add assistive features, compare lifecycles and evaluate location privacy.",
+      "course_topics": [
+        9,
+        13,
+        14
+      ],
+      "paper": "topic-17-past-papers/unit-2025/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2025/exam-papers/section-aandb-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2025/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 16
+    },
+    {
+      "year": 2025,
+      "level": "Ordinary",
+      "language": "English",
+      "section": "C",
+      "question": 16,
+      "pdf_page_start": 4,
+      "skills": "Modify area and cost calculations, enforce minimum-charge rules and accumulate tiling totals for multiple rooms.",
+      "course_topics": [
+        6,
+        9
+      ],
+      "paper": "topic-17-past-papers/unit-2025/tutorial-exam-paper-section-c-ordinary-level-ev/exam-paper-section-c-ordinary-level-ev.pdf",
+      "source_url": "https://www.betterexams.ie/pdf/leaving-cert/computer-science/2025/exam-papers/section-c-ordinary-level-ev.pdf",
+      "marking_scheme": "topic-17-past-papers/unit-2025/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf",
+      "marking_scheme_pdf_page_start": 20
+    }
+  ],
+  "marking_guidance": [
+    {
+      "principle": "Use the scheme for the same year, level and question. Its examples are not exhaustive, and official examiners apply trained judgement. Course scores are formative; past rubrics do not predict future allocations.",
+      "evidence": "All English marking schemes, PDF page 2."
+    },
+    {
+      "principle": "Write each requested output in execution order with the same line breaks as the program. Correct values alone can lose credit if layout changes meaning.",
+      "evidence": "2025 Higher Q1, scheme PDF page 4; 2024 Ordinary Q1, scheme PDF page 4."
+    },
+    {
+      "principle": "Show intermediate trace rows and sorting passes, not only the final answer. Schemes often recognise individual correct rows or steps.",
+      "evidence": "2021 Higher Q5 and Q14; 2025 Higher Q14(a)(ii); 2025 Ordinary Q11."
+    },
+    {
+      "principle": "When asked to name and explain, give a specific component, principle, role or risk and then connect it to the supplied scenario. Naming alone may satisfy only part of the rubric.",
+      "evidence": "2025 Higher Q12 and Q13; 2024 Ordinary Q14."
+    },
+    {
+      "principle": "Balanced discussion needs relevant benefits and drawbacks, with reasons and affected stakeholders. It is more than a list of fashionable technologies.",
+      "evidence": "2020 Higher Q14(c); 2021 Higher Q15(c); 2023 Higher Q13(c); 2024 Higher Q13(c)."
+    },
+    {
+      "principle": "Section C uses graded response scales in which partial progress can receive credit; save an executable attempt and complete independently achievable requirements. Scale labels and thresholds vary by year.",
+      "evidence": "English marking schemes, Section C scale tables on PDF page 3 and question-specific descriptors."
+    },
+    {
+      "principle": "Keep whole-string score adjustments outside a character loop when they should apply only once.",
+      "evidence": "2020 Higher Q16(a)(vi): scheme explicitly withholds full credit for placing the solution inside the character loop."
+    },
+    {
+      "principle": "Analyse the algorithm actually supplied. The fixed-pass bubble sort in 2024 is quadratic in both best and worst cases; early termination is an improvement, not an assumption about that code.",
+      "evidence": "2024 Higher Q14(c)."
+    },
+    {
+      "principle": "For median code, sort first and handle empty, odd-length and even-length lists separately; the 2025 task prohibits a library median function.",
+      "evidence": "2025 Higher Q16(b), paper PDF pages 8–9 and corresponding scheme."
+    }
+  ],
+  "source_notes": [
+    "The 2020 listing contains Higher Level material only. No Ordinary Level files or Irish Higher marking scheme are listed for that year.",
+    "Irish Ordinary Level marking schemes are absent from the 2024 and 2025 listings. No missing variant has been fabricated.",
+    "English and Irish paper files are retained exactly as downloaded; language variants have not been exhaustively compared.",
+    "Year-specific instructions differ: Section C carries 50 marks in 2021\u20132022 and 80 marks in 2020 and 2023\u20132025. Follow the printed instructions for each practice paper.",
+    "2024 Ordinary marking scheme Q10 describes a missing transport entry using a different person name than the visible source table. Use the source table and teacher judgement rather than memorising the label.",
+    "Some PDF text extraction loses diagram labels or scrambles headings; the original PDFs remain the reference for diagrams and exact wording."
+  ]
+}

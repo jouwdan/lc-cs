@@ -1,0 +1,51 @@
+---
+marp: true
+theme: default
+paginate: true
+---
+# Four practical contexts
+Information systems · Analytics
+Models and simulation · Embedded systems
+
+---
+
+# Learn through iteration
+Investigate → plan → design → create
+→ evaluate → document → revisit
+
+---
+
+# Make requirements testable
+Condition + observable behaviour
+
+Map each requirement to evidence.
+
+---
+
+# Team learning
+Rotate roles · Explain your contribution
+Pair, review and communicate
+
+Keep individual understanding visible.
+
+---
+
+# Tests tell the story
+Expected → actual → diagnosis → change → retest
+
+A failure can be valuable evidence.
+
+---
+
+# Coursework is separate
+Individual work under the current SEC brief
+Authentic code and explanation
+Artefact + report + required demonstration
+
+---
+
+# Formative rubric
+Needs · Implementation · Testing
+Communication · Responsible decisions
+
+Our rubric is not an SEC scheme.

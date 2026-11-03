@@ -1,0 +1,54 @@
+---
+marp: true
+theme: default
+paginate: true
+---
+# Technology and consequences
+Feature → mechanism → stakeholder effect
+
+Give a benefit, risk, mitigation and justified conclusion.
+
+---
+
+# History explains capability
+Abstract computation · Stored programs
+Smaller electronics · Networks · Web
+
+Web ≠ Internet
+
+---
+
+# Turing-machine extension
+scan + 1 → write 1, move right, scan
+scan + blank → write 1, move left, halt
+
+111_ → 1111
+
+---
+
+# AI and ML
+Rules ≠ learned patterns
+Training ≠ inference
+Classification ≠ regression
+
+---
+
+# Challenge performance claims
+Representative tests? Separate training data?
+False positives and negatives?
+A useful baseline?
+
+---
+
+# Responsible design
+Privacy · Access · Human review
+Ownership · Energy · Inclusion
+
+Who can challenge an error?
+
+---
+
+# Emerging technologies
+Quantum · Edge · IoT · Biometrics · Blockchain
+
+Describe the mechanism and one limitation.

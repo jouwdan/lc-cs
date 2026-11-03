@@ -1,0 +1,71 @@
+---
+marp: true
+theme: default
+paginate: true
+---
+# Collections: preserve meaning and order
+
+Pause at each prompt. Explain before revealing a model answer.
+
+---
+
+## Index and slice
+
+`"COMPUTER"[1:4]` → `"OMP"`.
+
+First index: `0`. Last index: `len(value) - 1`.
+
+Strings are immutable; lists are mutable.
+
+---
+
+## Alias or copy?
+
+```python
+a = [4, 7]
+b = a
+b.append(9)
+```
+
+Both names now see `[4, 7, 9]`. Use a copy when independence is required.
+
+---
+
+## Return a result
+
+- Parameters name the inputs.
+- Arguments supply actual values.
+- `return` sends a value to the caller.
+- `print` displays; it does not replace return.
+
+---
+
+## Median
+
+1. Handle empty input.
+2. Sort a copy.
+3. Odd: one middle item.
+4. Even: average the middle pair.
+
+**Predict:** `[9, 2, 7, 4]` → `5.5`.
+
+---
+
+## Preserve sequence
+
+Longest consecutive run in `[3, 5, 2, 4, 7, 7, 9]`:
+
+`[2, 4, 7]`
+
+Sorting destroys adjacency. Equal neighbours break a strictly increasing run.
+
+---
+
+## Validate at entry
+
+- State text normalisation rules.
+- Parse CSV with the CSV module.
+- Check headers, types, and ranges.
+- Report the row that fails.
+
+**Exit ticket:** explain why a check digit is not encryption.

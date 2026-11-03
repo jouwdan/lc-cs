@@ -1,0 +1,66 @@
+---
+marp: true
+theme: default
+paginate: true
+---
+# Algorithms: design before code
+
+Pause at each prompt. Explain before revealing a model answer.
+
+---
+
+## Specify the contract
+
+- Input: non-negative whole passenger count.
+- Output: whole buses needed.
+- Capacity: 12. Zero passengers need zero buses.
+
+**Predict:** 24 passengers? 25 passengers?
+
+---
+
+## Four thinking tools
+
+- Decompose into validation, calculation, reporting.
+- Abstract: keep seats; omit paint colour.
+- Recognise the repeating capacity pattern.
+- Generalise using count and capacity.
+
+---
+
+## Three control structures
+
+- Sequence: calculate the quotient first.
+- Selection: add a bus if the remainder is positive.
+- Iteration: repeat when processing a list.
+
+**Explain:** Why does always adding one fail?
+
+---
+
+## Trace the state
+
+Threshold 50; values `[48, 72, 50, 31]`.
+
+Counts after each value: `0, 1, 2, 2`.
+
+A counter adds **one**; an accumulator adds a **quantity**.
+
+---
+
+## Defend the boundary
+
+- Test 11, 12, 13 passengers.
+- Include zero and invalid negatives.
+- Label decision exits in a flowchart.
+- Show how a loop makes progress.
+
+---
+
+## Extension: a useful approximation
+
+A nearest-next-stop heuristic may find a quick usable route.
+
+It does not guarantee the shortest complete route.
+
+**Exit ticket:** connect one computational-thinking technique to a concrete design choice.

@@ -1,0 +1,70 @@
+---
+marp: true
+theme: default
+paginate: true
+---
+# Algorithms: correctness before speed
+
+Pause at each prompt. Explain before revealing a model answer.
+
+---
+
+## Search contracts
+
+Return an index, or `-1` for absent.
+
+Linear search works on unsorted data.
+Binary search needs sorted data.
+
+**Question:** What does Python mean by `values[-1]`?
+
+---
+
+## Binary search
+
+- Keep inclusive `low` and `high`.
+- Probe `(low + high) // 2`.
+- Exclude the middle with `- 1` or `+ 1`.
+- Stop when the interval is empty.
+
+---
+
+## Three sort ideas
+
+- Bubble: exchange neighbours; grow a sorted suffix.
+- Selection: place the smallest remaining item.
+- Insertion: insert into a sorted prefix.
+
+Show passes, not only the final result.
+
+---
+
+## Quicksort
+
+Partition around a pivot; sort the subproblems.
+
+Balanced: `O(n log n)` time.
+Repeated extreme splits: `O(n²)` time.
+
+Preserve duplicates. A partition is not a fully sorted side.
+
+---
+
+## Recursion
+
+Base case + progress + return path.
+
+GCD: `(48,18) → (18,12) → (12,6) → (6,0)`.
+
+Answer: **6**. Each call keeps state on the stack.
+
+---
+
+## Compare a defined cost
+
+Missing target; list sizes `8, 16, 32`:
+
+- Linear probes: `8, 16, 32`.
+- Binary probes: `4, 5, 6`.
+
+**Exit ticket:** state one precondition, one invariant, and one edge case.

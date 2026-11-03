@@ -1,0 +1,10 @@
+credits: Leaving Certificate Computer Science • jouwdan
+icon:
+  type: fluent-color:code-24
+  color: "2563eb"
+auth: 0
+github: https://github.com/jouwdan/lc-cs/tree/main
+labStepsAutoNumber: true
+defaultPdfReader: mozilla
+pdfOrientation: portrait
+llm: 0

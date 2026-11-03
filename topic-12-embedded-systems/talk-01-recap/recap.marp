@@ -1,0 +1,55 @@
+---
+marp: true
+theme: default
+paginate: true
+---
+# A computer in a product
+Inputs → processing → outputs
+
+Embedded does not necessarily mean Internet-connected.
+
+---
+
+# Analogue and digital
+ADC converts a voltage to a code.
+10 bits → 1024 codes, numbered 0–1023
+
+A code is not automatically a percentage.
+
+---
+
+# Calibration
+100 × (raw − dry) / (wet − dry)
+
+Dry 800 · Wet 300 · Raw 550 → 50
+Equal references are invalid.
+
+---
+
+# Hysteresis
+Below 30: on
+Above 40: off
+Between: preserve state
+
+Why does history matter?
+
+---
+
+# Test the whole path
+Component tests → integration → physical measurements
+
+Simulation cannot verify wiring or calibration.
+
+---
+
+# Design responsibly
+Safe low voltage · Appropriate pin limits
+Understandable outputs · Error indication
+Sampling interval · Data minimisation
+
+---
+
+# Exit ticket
+Trace levels 45, 29, 32, 39, 41.
+
+Explain one limit of your evidence.

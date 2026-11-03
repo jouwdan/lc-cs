@@ -1,0 +1,49 @@
+---
+marp: true
+theme: default
+paginate: true
+---
+# Model ≠ reality
+Choose a purpose.
+State what is included and excluded.
+
+---
+
+# Define the experiment
+Initial state · Parameters · Rules · Outputs
+
+Arrival → service → record
+
+---
+
+# Randomness
+Probability is between 0 and 1.
+Seed for reproducibility; repeat for variability.
+Do not reseed every iteration.
+
+---
+
+# Trace before running
+Arrivals: 1, 1, 1
+Service: 0, 1, 0
+Remaining queue: 1, 1, 2
+
+---
+
+# Two questions
+Verification: does the code implement the rules?
+Validation: are the rules suitable for the purpose?
+
+---
+
+# Agent-based extension
+Individual state + local rules + interactions
+→ possible collective patterns
+
+Explain update order.
+
+---
+
+# Report responsibly
+Prediction · Measurements · Mechanism
+Assumptions · Limitation · Next observation
