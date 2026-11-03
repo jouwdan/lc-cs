@@ -17,3 +17,9 @@ Validated on 3 November 2026 before the initial repository publication.
 This is educational review and automated checking, not official SEC endorsement or a classroom trial. Irish PDFs were archived intact; their equivalence to the English versions was not independently certified. Every PDF page was not visually inspected. The 176 entries are numbered question groups, not separate records for every subpart.
 
 Physical wiring, sensor calibration and device timing require checks on actual classroom hardware. External video/podcast availability and playback can vary; written alternatives are included. The notebook and quiz source contains answers and is suitable for self-study, not secure assessment. A hosted Netlify deployment has not been created by this repository publication; configuration and instructions are supplied.
+
+## Lab navigation correction — 3 November 2026
+
+The original generator-only checks missed a reader naming constraint: a `lab-*` root is mistaken for a chapter URL, while `book-*` opens correctly. Renamed all 16 topic lab folders to `book-01-practice`; their contents and runtime `lab` type are unchanged. The reference study journal already used `book-*`.
+
+A regression check using the actual course service, Markdown conversion, LiveLab and lab page loader reproduced the failure against the original deployed JSON. Against the corrected build, all **17 lab roots and 67 step URLs** pass, including first-step activation, cached reopening, step indexes and previous/next boundaries (2 Vitest tests passed). The repository validator now enforces the compatible `book-*` source and generated IDs. Existing bookmarks containing `lab-01-practice` should be replaced by the updated links from the course topic page.

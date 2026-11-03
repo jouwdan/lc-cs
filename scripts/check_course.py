@@ -33,7 +33,7 @@ def main():
     for topic in topics[:16]:
         assert (topic / 'topic.md').is_file(), topic
         assert list(topic.glob('note-01-*/*.md')), topic
-        assert list(topic.glob('lab-*/*.md')), topic
+        assert list(topic.glob('book-*/*.md')), f'{topic}: use book-* folders for reader-compatible labs'
         assert list(topic.glob('talk-*/*.marp')), topic
         for p in topic.glob('quiz-*/*.md'):
             text = p.read_text()
@@ -76,6 +76,9 @@ def main():
         types = {lo['type'] for lo in nodes}
         assert SIMPLE_TYPES <= types, SIMPLE_TYPES - types
         assert all(lo.get('title', '').strip() for lo in nodes)
+        for lo in nodes:
+            if lo['type'] == 'lab':
+                assert lo['id'].startswith('book-'), f"Reader requires a book-* lab root: {lo['route']}"
         internal = [lo['route'] for lo in nodes if lo['type'] not in {'unit', 'side', 'web', 'github'}]
         assert len(internal) == len(set(internal)), 'Duplicate navigable routes'
         assert sum(lo['type'] == 'quiz' for lo in nodes) == quiz_count

@@ -66,7 +66,9 @@ Install [Deno](https://deno.com), then run from this repository:
 deno run -A jsr:@tutors/tutors@5.3.0
 ```
 
-This produces `json/tutors.json` and the PDF/ZIP/whiteboard assets. Generated files are ignored by Git. Use the full Tutors generator: `tutors-lite` does not provide all the interactive object types used here.
+This produces `json/tutors.json` and the PDF/ZIP/whiteboard assets. Generated files are ignored by Git. Author lab folders as `book-*`; they still generate Tutors learning objects of type `lab`. The current reader relies on that folder prefix when opening the first step, and the validation script checks it.
+
+Use the full Tutors generator: `tutors-lite` does not provide all the interactive object types used here.
 
 To publish, connect this repository to a Netlify site. `netlify.toml` already supplies the build command, publish directory and CORS headers. Then open `https://tutors.dev/course/YOUR-NETLIFY-SITE-NAME`. The repository is ready to build; a hosted course URL is not assumed to exist.
 
