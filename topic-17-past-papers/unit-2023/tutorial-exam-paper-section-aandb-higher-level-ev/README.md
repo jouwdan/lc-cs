@@ -1,3 +1,7 @@
-# 2023 Higher Level English | A and B | exam paper
+# HL English · A & B
 
-State Examinations Commission document, archived from [Better Exams](https://www.betterexams.ie/leaving-cert/computer-science/2023). Use the paper with its matching year, level and marking scheme. PDF: 24 pages.
+Written paper · 24 pages.
+
+Try a question before opening its matching scheme.
+
+<a href="https://tutors.dev/topic/lc-cs/topic-17-past-papers#unit-2023">Choose another 2023 paper or its scheme</a>. Archived intact from [Better Exams](https://www.betterexams.ie/leaving-cert/computer-science/2023).

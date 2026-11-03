@@ -1,70 +1,136 @@
-# Computing, society, AI and history
+# 1. Learn: Society
 
-Concepts, worked examples and practical reasoning for computing, society, ai and history.
+Explain how computing affects people.
 
-## Explain a consequence, not a slogan
+Practise explaining how technology affects people. Start with the worked answer, then learn the terms for your own judgement. Allow two 40-minute study sessions. The Turing-machine section is a **Higher Level extension**.
 
-Computing changes who can do a task, how quickly it can be done, what information is available and who controls it. A strong answer connects a technical feature to a specific consequence for a stakeholder. “Automation is good” is too vague. “An automated stock alert can reduce missed orders, but incorrect sensor readings may trigger unnecessary purchases” identifies a mechanism, benefit and limitation. Consider users, workers, maintainers, excluded groups and the wider environment.
+## Build an answer in four steps
 
-Use a balanced structure: describe the system, identify a benefit, explain a risk, propose a proportionate mitigation and justify your conclusion. Balance does not mean claiming every option is equally good. Evidence may support one choice strongly. Separate what the scenario tells you from assumptions you introduce. Discuss a concrete case rather than listing unrelated advantages and disadvantages learned by heart.
+A **stakeholder** is anyone affected: a user, worker, owner or someone excluded from a system. A **mitigation** is an action that reduces a risk.
 
-## Milestones and their significance
+Suppose a library app recommends books using borrowing history:
 
-History is more useful when it explains changes in capability. Turing's 1936 work formalised a model of computation. Early electronic computers in the 1940s demonstrated large-scale automated calculation. The Manchester experimental computer ran a stored program in 1948: instructions could be held in memory, a central idea in modern architectures. Transistors and integrated circuits enabled smaller, more reliable electronics; microprocessors concentrated CPU functions on chips, supporting personal and embedded computing.
+| Step | Worked answer |
+|---|---|
+| Feature | The app finds patterns in books previously borrowed. |
+| Benefit and person | A reader may discover a suitable book more quickly. |
+| Risk and reason | A new reader has little history, so suggestions may be poor. |
+| Mitigation and judgement | Let readers choose interests and ignore suggestions. Trial the app before relying on it. |
 
-Packet networks and common protocols enabled machines to communicate across different networks. The Web made linked documents accessible through browsers: Tim Berners-Lee proposed it at CERN in 1989. The Web is a service using the Internet, not another name for the Internet. Mobile devices, cloud services and data-driven AI later changed access and scale. Explain both opportunities and new dependencies rather than treating newer technology as automatically better.
+“AI is good” gives no reason. “The app may save searching time because it narrows a large catalogue” explains a benefit. Separate details supplied in the question from your assumptions.
 
-Sources: [Computer History Museum's 1948 timeline](https://www.computerhistory.org/timeline/1948/) and [CERN's account of the Web](https://home.cern/science/computing/the-birth-of-the-web/where-web-was-born/). For an exam milestone, connect a named development to a meaningful effect; avoid unsupported “first ever” claims.
+**Try:** an automated stock alert orders replacements when a shelf sensor reports low stock. Give one benefit for a worker and one risk from a faulty sensor. <a href="https://tutors.dev/note/lc-cs/topic-14-society-ethics/note-02-feedback">Check the short-task answers</a>.
 
-Grace Hopper is one named computing pioneer whose contribution can be explained precisely: she developed the early A-0 programming tool and promoted higher-level languages, including work around COBOL. Her work helped move programming towards more accessible symbolic and English-like instructions. See the [Computer History Museum account](https://www.computerhistory.org/revolution/story/117). Explain the contribution rather than attributing every development in a collaborative field to one person.
+## History: learn a change and its effect
 
-## Higher Level: a Turing-machine trace
+| Development | What changed? |
+|---|---|
+| Turing's 1936 model | Gave a precise mathematical description of computation. |
+| Electronic computers, 1940s | Automated large calculations. |
+| Manchester stored-program computer, 1948 | Held instructions in memory, so a stored program could direct the machine. |
+| Transistors and integrated circuits | Made electronics smaller and more reliable. |
+| Microprocessors | Put CPU functions on a chip, supporting personal and embedded computers. |
+| Packet networks and common protocols | Allowed different networks to exchange data. |
+| Web, proposed at CERN in 1989 | Made linked documents accessible through browsers. The Web uses the Internet. |
+| Mobile devices, cloud services and data-driven AI | Widened access and increased scale, with new dependencies on devices, networks and data. |
 
-A Turing machine is an abstract computational model with a tape of cells, a read/write head, a finite set of states and rules. A rule depends on current state and scanned symbol, then specifies what to write, how to move and the next state. The tape is conceptually unbounded; a classroom diagram shows only the relevant portion. This is not a modern computer's physical design and not a test of intelligence.
+**Named pioneer:** Grace Hopper developed the early A-0 programming tool and promoted higher-level languages, including work around COBOL. This helped programming move towards symbolic and English-like instructions. Explain her contribution without crediting one person with every part of a shared development.
 
-Our original machine increments a non-negative unary number. Three consecutive `1` symbols represent three; `_` denotes blank. Start in `scan` at the leftmost `1`, or at a blank for zero.
+Sources: [1948 timeline](https://www.computerhistory.org/timeline/1948/), [CERN on the Web](https://home.cern/science/computing/the-birth-of-the-web/where-web-was-born/), [Grace Hopper](https://www.computerhistory.org/revolution/story/117).
 
-| State | Read | Write | Move | Next state |
+**Checkpoint:** cover the table. Name one development and finish “This mattered because …”.
+
+Optional: the early-computing video is in the <a href="https://tutors.dev/course/lc-cs#side-reference">reference area</a>. The history table above is the written alternative.
+
+## AI vocabulary with examples
+
+**Artificial intelligence (AI)** covers systems doing tasks associated with intelligence, such as pattern recognition or planning. **Machine learning (ML)** learns patterns from examples. A fixed rule such as “warn below 30” automates work without ML.
+
+| Term | Meaning | Example |
+|---|---|---|
+| Training | Adjust a model using examples | Learn from labelled bottle images |
+| Inference | Use the trained model | Predict the category of a new image |
+| Supervised learning | Learn from examples with target labels | Images labelled glass or plastic |
+| Unsupervised learning | Find structure without target labels | Group similar borrowing patterns |
+| Reinforcement learning | Learn actions through rewards from interaction | A game agent earns rewards for useful moves |
+| Classification | Predict a category | Glass or plastic |
+| Regression | Predict a numerical quantity | Predict tomorrow's demand |
+
+**Narrow AI** handles a bounded task or range of tasks. **AGI**, artificial general intelligence, describes a proposed ability to learn and perform broadly across domains. Fluent conversation alone does not demonstrate AGI. **Generative AI** creates content such as text, images, audio, video or code from learned patterns. A plausible answer may still be wrong: check important claims against reliable sources. [ML background](https://www.ibm.com/think/topics/machine-learning).
+
+## Test an AI claim
+
+A classifier predicts “normal” for all 100 cases. There are 95 normal cases and 5 unusual cases. It gets **95/100 = 95% accuracy**, yet misses every unusual case.
+
+Ask: What was tested? Were examples representative? How did it perform on rare cases? What happens when it is wrong?
+
+- A **false positive** flags a case that should not be flagged: an ordinary bottle is rejected.
+- A **false negative** misses a case that should be flagged: a damaged bottle is accepted.
+- **Overfitting** means learning the training examples too closely and performing poorly on unfamiliar examples. Keep evaluation data separate from training data.
+- **Confidence** is a score for one prediction. **Accuracy** is the fraction correct across a test set. A confidence of 0.9 does not prove correctness. To check **calibration**, see whether roughly 90% of many comparable 0.9 predictions are correct.
+
+**Try:** explain why “95% accurate” alone is not enough to approve a diagnosis tool. Who is affected by missed cases and false alarms?
+
+## Bias, privacy and responsibility
+
+**Bias** is a systematic skew in data or decisions. It can arise from the sample, labels, features chosen as stand-ins for other facts, design choices or use conditions. Daytime-only training images may produce poor night-time recognition. More of the same data may leave the problem unchanged.
+
+Test relevant groups and conditions. Let people challenge mistakes. Human review helps only if the reviewer can understand and override the result.
+
+**Personal data** can identify someone directly or indirectly. Replacing a name with an ID is not necessarily anonymity: an ID-to-name table can reconnect it. For the library app, collect only what is needed, restrict access, allow corrections and decide when to delete old records. Use fictional data in these activities.
+
+The [Irish Data Protection Commission](https://www.dataprotection.ie/en/individuals/data-protection-basics/principles-data-protection) explains principles including lawful, fair and transparent use; clear purposes; minimum necessary data; accuracy; storage limits; security; and accountability. Follow school policy for classroom work.
+
+A service may earn money by using behaviour data to target advertisements; this is one form of **data monetisation**. Personalised political messages may reach interested voters, but hidden targeting can limit the views people see or make manipulation harder to notice. Explain the data used, who benefits and how transparency or user controls could reduce the risk.
+
+## Access, ownership and environmental cost
+
+The **digital divide** is unequal access because of connectivity, devices, skills, language or accessibility barriers. Screen readers, captions and alternative input devices can help. Universal design aims to make the main service usable by more people. An essential service may also need an offline alternative.
+
+**Intellectual property** concerns rights in creations. A **licence** says how a resource may be reused. Credit code, images and data; explain your contribution. Downloading a file does not make you its author.
+
+Computing uses materials and energy during manufacture, use and disposal. Consider device life, repair, data centres and electronic waste. Video meetings can reduce travel while still consuming electricity. Explain both effects before judging the overall benefit.
+
+## Emerging technologies
+
+| Technology | What it does | Benefit and limit |
+|---|---|---|
+| Quantum computing | Uses quantum states and suitable algorithms | May help particular problems; not faster at every task |
+| Edge computing | Processes data near its source | Can reduce delay and traffic; local devices still need maintenance and security |
+| Internet of Things (IoT) | Connects devices that sense or act | Supports remote monitoring; adds devices needing protection |
+| Biometrics | Recognises physical or behavioural characteristics | Convenient identification; false matches and hard-to-replace compromised traits are risks |
+| Blockchain | Links records using cryptography and distributed agreement | Can make changes evident; cannot prove an original claim was true |
+
+Blockchain designs have different energy and governance costs. Sources: [quantum computing](https://www.ibm.com/think/topics/quantum-computing), [edge computing](https://www.ibm.com/think/topics/edge-computing).
+
+**Checkpoint:** a sensor processes readings locally and sends only a summary to the cloud. Which technology is this? What work still needs doing on the sensor device?
+
+## Higher Level extension: trace a Turing machine
+
+A **Turing machine** is a mathematical model with a tape, a head that reads/writes one cell, states and rules. The tape is conceptually unbounded. Each rule says what to write, where to move and which state comes next.
+
+Our machine adds one to a **unary** number: `111` means three and `_` is blank. Number cells from 0. Start in `scan` at the first symbol.
+
+| Current state | Read | Write | Move | Next state |
 |---|---|---|---|---|
 | scan | 1 | 1 | Right | scan |
 | scan | _ | 1 | Left | halt |
 
-With tape `111_`, after step 1 the head is at cell 1; after step 2 at cell 2; after step 3 at blank cell 3. Step 4 writes `1`, moves left to cell 2 and halts. The tape now contains `1111`: three became four. A trace table should show step, state, head position, read symbol, action and tape. The machine halts because a finite run of ones is followed by a blank. Its input contract excludes other symbols; do not invent transitions for them.
+Look up one rule each step for `11_`:
 
-The [1936 paper](https://theory.stanford.edu/~trevisan/cs172-07/turing36.pdf) introduced the foundational model. Turing's later [1950 paper](https://doi.org/10.1093/mind/LIX.236.433) discusses an imitation-game approach to machine intelligence. A Turing test concerns whether an evaluator can distinguish conversational behaviour; it is not the tape machine. Conversational imitation alone does not establish correctness, consciousness or reliability.
+| Step | Head before | Read | Action | Head after | Tape after |
+|---|---:|---|---|---:|---|
+| 1 | 0 | 1 | Keep 1; move right; stay in scan | 1 | `11_` |
+| 2 | 1 | 1 | Keep 1; move right; stay in scan | 2 | `11_` |
+| 3 | 2 | _ | Write 1; move left; halt | 1 | `111` |
 
-## Artificial intelligence and machine learning
+The blank ends the finite run of ones, so the machine halts. There is no rule for other input symbols; do not invent one. **Try:** trace `111_` and `_`. Expected final nonblank tapes: `1111` and `1`.
 
-AI is a broad area concerned with systems performing tasks associated with intelligence, such as recognising patterns or planning. A rule-based system follows explicitly written rules. Machine learning fits patterns from training examples and applies them to new inputs. Training changes model parameters; inference uses the trained model. A system can be automated without using machine learning, such as a fixed temperature threshold controller.
+A **Turing test** concerns whether an evaluator can distinguish conversational behaviour. It is different from the tape machine. Conversational imitation does not establish correctness, consciousness or reliability. Sources: [1936 computation paper](https://theory.stanford.edu/~trevisan/cs172-07/turing36.pdf), [1950 imitation-game paper](https://doi.org/10.1093/mind/LIX.236.433).
 
-Supervised learning uses examples with target labels, such as images labelled by category. Unsupervised learning explores structure without those target labels, such as clustering similar observations. Reinforcement learning uses feedback in the form of rewards to learn behaviour through interaction. Classification predicts a category; regression predicts a numerical quantity. These descriptions explain the learning setup; they do not guarantee a model is suitable or fair. See [IBM's machine-learning overview](https://www.ibm.com/think/topics/machine-learning).
+## Careers checkpoint
 
-Keep training and evaluation examples separate. A model may memorise training patterns and perform poorly on unfamiliar data: this is overfitting. Evaluate on representative data and inspect different types of mistakes. If 95 of 100 examples are “normal”, always predicting normal achieves 95% accuracy while missing every unusual case. The cost of false positives and false negatives depends on the application. A convincing generated explanation may still contain factual errors, so verify important claims against suitable sources.
+A developer writes software; a data analyst investigates data; a security specialist protects systems; a hardware engineer works with physical components. Testers, accessibility specialists and user researchers check whether systems work for people. Choose one role and explain how it could improve the library app. Communication and knowledge of users matter alongside coding.
 
-**Narrow AI** is designed for a bounded task or range of tasks. **Artificial general intelligence (AGI)** describes a proposed broad capability to learn and perform across many domains; do not assume a fluent conversational system meets that definition. **Generative AI** produces new content such as text, images, audio, video or code from learned patterns. Generating a plausible output is different from retrieving a verified fact.
 
-A model's confidence score concerns an individual prediction; accuracy summarises the fraction of correct predictions over an evaluated set. A prediction assigned 0.9 confidence is not itself proof of correctness. A well-calibrated model would be correct about 90% of the time among many comparable predictions assigned 0.9, but calibration must be tested. Do not confuse a high score on one case with high overall accuracy or fairness across groups.
-
-## Bias, privacy and human responsibility
-
-Bias can enter through sampling, labels, proxy features, design choices and deployment conditions. More data does not automatically remove it. A system trained only on daytime images may fail at night. Test relevant groups and conditions, document limitations and allow meaningful human review when consequences matter. Explain who can challenge an incorrect decision and how it can be corrected. A “human in the loop” is ineffective if the person cannot understand or override the output.
-
-Personal data can identify a person directly or indirectly. Replacing a name with an identifier does not necessarily make a dataset anonymous if the person can still be reidentified. Collect less, limit access, protect storage and decide when information is no longer needed. The [Irish Data Protection Commission](https://www.dataprotection.ie/en/individuals/data-protection-basics/principles-data-protection) describes GDPR principles including fair and transparent lawful processing, purpose limits, minimisation, accuracy, retention limits, security and accountability. Apply classroom examples through school policy and synthetic data rather than collecting classmates' sensitive information.
-
-## Inclusion, ownership and environmental cost
-
-Adaptive technologies include screen readers, alternative input devices and captions. Universal design aims to make mainstream systems usable by a wider range of people. A digital service may exclude someone without reliable connectivity, an appropriate device, language support or accessible controls: this is a digital-divide issue, not simply reluctance to use technology. Offer a practical alternative where access is essential.
-
-Intellectual property and licences determine permitted reuse. Being able to download a file does not mean you created it or can remove attribution. Credit code, media and data sources and distinguish your contribution. In assessment, learning from an example differs from presenting another person's work as your own. Maintain an honest development record.
-
-Computing also consumes materials and energy. Consider manufacture, device lifetime, repair, electricity use, data-centre operation and electronic waste. A remote service may save travel while increasing computing demand. Evaluate the whole relevant lifecycle and avoid claiming that cloud or paperless services have zero environmental impact. Appropriate hardware and restrained data collection can reduce unnecessary resource use.
-
-## Emerging technologies: describe mechanisms and trade-offs
-
-The 2024 Higher Level paper names quantum computing, edge computing, IoT, biometrics and blockchain. Quantum computers use quantum states and algorithms that may offer advantages for particular problems; they are not universally faster replacements for ordinary computers. [IBM's introduction](https://www.ibm.com/think/topics/quantum-computing) gives context. Edge computing processes data nearer its source, potentially reducing latency and network traffic, while distributing maintenance responsibilities; see [IBM's edge overview](https://www.ibm.com/think/topics/edge-computing).
-
-IoT connects devices that sense or act, supporting remote monitoring but increasing the number of devices requiring protection. Biometrics use physical or behavioural characteristics for recognition; convenience must be weighed against false matches and the difficulty of replacing a compromised characteristic. Blockchain links records using cryptographic techniques and distributed agreement; it does not prove that information entered into the system was true, and different designs have different energy and governance costs.
-
-## Careers and a reasoned decision
-
-Computing work includes software development, data analysis, cybersecurity, hardware engineering, accessibility, testing and user research. These roles combine communication and domain knowledge with technical skills. For a final practice task, evaluate a fictional automated library recommendation system. State what it uses, what it can help with, who might be disadvantaged, what data it truly needs, how errors are challenged and which evidence would justify adoption. A defensible answer explains both the technology and the people affected.
+**Next:** <a href="https://tutors.dev/lab/lc-cs/topic-14-society-ethics/book-01-practice">2. Practise</a>.

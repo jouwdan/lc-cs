@@ -1,9 +1,9 @@
-# From this topic to the exam
+# 5. Exam: Start here
 
-Apply the taught ideas to original papers, then use the matching marking scheme to diagnose your answer.
+Try a past question, then use its scheme.
 
-Choose one Ordinary Level question to secure a core skill and one Higher Level question for extension where available. Work before opening the scheme. Read the exact part and its marks; a multi-part question may span several topics. Page numbers below are PDF pages. These links open repository copies; the same documents are also in Topic 17.
+You do not need to attempt a past paper yet. Finish the first lab and quiz, then start Topic 02.
 
-After marking, record the missing concept or communication step, repair it with the relevant lesson or lab, and attempt a different year. Marking schemes provide illustrative, non-exhaustive answers and formative guidance; they do not predict future marking.
+Later, each topic will link you to a suitable question and its marking scheme. Try the question first, check the scheme, then write one correction.
 
-Use the diagnostic in this topic, then choose a question from Topics 02–16. This orientation topic teaches a study process rather than claiming a separate examination question category.
+<a href="https://tutors.dev/topic/lc-cs/topic-02-computer-systems">Start Topic 02: Computer systems →</a>

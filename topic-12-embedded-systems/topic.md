@@ -5,8 +5,10 @@ icon:
 ---
 # 12 · Embedded systems
 
-Combine digital controls, analogue measurements, calibration and tested feedback in a small embedded system.
+Connect sensor inputs to useful outputs.
 
-**Outcomes:** 2.11–2.14, 2.19–2.22, 3.11–3.14.
+**Suggested time:** Two 35–40 minute sessions; physical hardware only as a supervised extension.
 
-Work through the teaching note, recap, practical lab and quiz. Read the feedback after attempting every question. The shared core supports both levels; sections marked **Higher Level extension** add depth. All practice material is original teaching material, not an SEC paper.
+Start with <a href="https://tutors.dev/note/lc-cs/topic-12-embedded-systems/note-01-learn">1. Learn</a>, then follow the Next links. Each activity includes a small task and a result you can check. Core tasks are for both levels; labelled extensions add depth.
+
+<a href="https://tutors.dev/lab/lc-cs/topic-12-embedded-systems/book-01-practice">Open 2. Practise</a> · <a href="https://tutors.dev/quiz/lc-cs/topic-12-embedded-systems/quiz-01-check">3. Quiz</a> · <a href="https://tutors.dev/note/lc-cs/topic-12-embedded-systems/note-02-feedback">4. Answers</a> · <a href="https://tutors.dev/note/lc-cs/topic-12-embedded-systems/note-03-exam-practice">5. Exam practice</a> · <a href="https://tutors.dev/talk/lc-cs/topic-12-embedded-systems/talk-01-recap">6. Recap</a>

@@ -1,6 +1,10 @@
-# Computer systems: retrieval check
+# 3. Quiz: Systems
 
-Attempt all ten questions before opening Feedback. This is formative practice; Tutors does not record these scores as assessed grades.
+Test yourself, then check the answers.
+
+Try the questions with your notes closed. This is practice, not a grade.
+
+Write down any question you guessed. After the quiz, <a href="https://tutors.dev/note/lc-cs/topic-02-computer-systems/note-02-feedback">open 4. Answers</a> for an explanation and a next task.
 
 ```quiz
 question: Which is normally lost when power is removed?
@@ -55,11 +59,11 @@ question: What does successful translation establish?
 type: multiple-choice
 options:
   - The program meets every user need
-  - The source can be translated under the translator rules
+  - The translator accepted the source; its results may still be wrong
   - All outputs are correct
 correct: 1
 ---
-question: Which statement about multiple cores is strongest?
+question: When can extra processor cores help?
 type: multiple-choice
 options:
   - Every program speeds up by the core count

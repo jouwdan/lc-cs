@@ -3,24 +3,20 @@ icon:
   type: mdi:format-list-numbered
   color: "#15803d"
 ---
-# 07 · Strings, lists, functions, and files
+# 07 · Lists and files
 
-Build reusable programs that transform text, analyse lists, and read structured data.
+Use text, lists, functions and files.
 
-## Study route
+**Before you start:** Complete Topic 06, including functions and loops. Use Python 3; no extra packages are needed.
 
-Read the concepts, predict the worked examples, complete the lab, take the quiz, then use the feedback to correct your reasoning. Finish with the recap slides.
+**Suggested pace:** Three sessions of 25–30 min: collections and median; text and CSV; one chosen extension. Read the other extension examples before the quiz.
 
-## Prerequisites
+## Your route
 
-Topics 05–06: variables, decisions, loops, and basic validation.
+<a href="https://tutors.dev/note/lc-cs/topic-07-data-structures/note-01-concepts">1. Learn</a> → <a href="https://tutors.dev/lab/lc-cs/topic-07-data-structures/book-01-practice">2. Practise</a> → <a href="https://tutors.dev/quiz/lc-cs/topic-07-data-structures/quiz-01-check">3. Quiz</a> → <a href="https://tutors.dev/note/lc-cs/topic-07-data-structures/note-02-feedback">4. Answers</a> → <a href="https://tutors.dev/note/lc-cs/topic-07-data-structures/note-03-exam-practice">5. Exam practice</a> → <a href="https://tutors.dev/talk/lc-cs/topic-07-data-structures/talk-01-recap">6. Recap</a>
 
-## Success criteria
+Start with the worked examples, attempt the small task, then check the answer. Keep a note of one mistake and your correction. The exam bank is for choosing a question, not completing every row in one sitting.
 
-- Index and slice strings and lists without off-by-one errors.
-- Use functions with parameters, return values, and clear contracts.
-- Implement counting, searching, aggregation, and validation patterns.
-- Handle empty data and distinguish consecutive runs from reordered data.
-- Read CSV files safely with the Python standard library and test the resulting functions.
+**Ready to move on when you can:** Use indices and slices; preserve an input list; return results; handle empty data; validate CSV fields.
 
-Core tasks support both levels. Extension tasks add depth for Higher Level; they do not replace the core. Work at the level specified by your teacher and the current syllabus.
+<a href="https://tutors.dev/topic/lc-cs/topic-08-search-sort">Continue to Topic 08</a>.

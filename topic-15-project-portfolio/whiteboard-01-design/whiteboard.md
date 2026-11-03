@@ -1,7 +1,14 @@
-# Project evidence canvas
+# Project canvas
 
-Use the canvas to plan a practice artefact before coding. Keep evidence tied to measurable requirements.
+Plan one feature in four simple boxes.
 
-Text alternative: NEED AND USERS; Who needs what?; How will success be measured? DATA AND PROCESS; Input → transform → output; State assumptions and permissions. TEST AND ITERATE; Normal, boundary, invalid inputs; Record expected vs actual results. EVALUATE; Evidence against each requirement; Limitations and next improvement
+Use four boxes to plan the **single improvement** in your portfolio workshop. Paper works just as well as the drawing tool. Allow five minutes.
 
-Complete the diagram on paper if the drawing tool is unavailable. Explain each arrow and check the design against the written rule.
+1. **Need:** who needs what? Example: a reader needs a clear no-match message.
+2. **Process:** input → rule → output. Example: absent title → query returns no rows → show a message.
+3. **Test:** predict one result, then record what happens.
+4. **Review:** does it meet the need? Name one limit and one next change.
+
+Write one or two lines per box. This text is also the complete alternative to the canvas.
+
+**Next:** <a href="https://tutors.dev/lab/lc-cs/topic-15-project-portfolio/book-01-practice">2. Practise: portfolio workshop</a>.

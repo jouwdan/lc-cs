@@ -3,49 +3,73 @@ marp: true
 theme: default
 paginate: true
 ---
-# Four practical contexts
-Information systems · Analytics
-Models and simulation · Embedded systems
+
+# 6. Recap: your practice portfolio
+
+Choose one artefact you have already tried.
+
+What does it help a person do?
+What result would show it works?
 
 ---
 
-# Learn through iteration
-Investigate → plan → design → create
-→ evaluate → document → revisit
+# ALTs and assessed coursework
+
+Four ALTs are collaborative learning contexts:
+information systems, analytics, models and embedded systems.
+
+Individual coursework follows the relevant SEC brief.
+Practice folders and shared solutions are not finished submissions.
 
 ---
 
-# Make requirements testable
-Condition + observable behaviour
+# Turn a goal into a requirement
 
-Map each requirement to evidence.
+“Make search useful” is hard to test.
 
----
+“Show a no-match message when no record matches” is testable.
 
-# Team learning
-Rotate roles · Explain your contribution
-Pair, review and communicate
-
-Keep individual understanding visible.
+Name the input and expected output before running the test.
 
 ---
 
-# Tests tell the story
-Expected → actual → diagnosis → change → retest
+# Keep five small pieces of evidence
 
-A failure can be valuable evidence.
+Start here: need and run instructions.
+Design: sketch and two requirements.
+Code/data: working files and source credits.
+Tests: expected, actual, change and retest.
+Reflection: contribution, limit and next step.
 
----
-
-# Coursework is separate
-Individual work under the current SEC brief
-Authentic code and explanation
-Artefact + report + required demonstration
+These are practice headings, not SEC submission rules.
 
 ---
 
-# Formative rubric
-Needs · Implementation · Testing
-Communication · Responsible decisions
+# One useful improvement
 
-Our rubric is not an SEC scheme.
+Before: an absent-title search leaves old results.
+Change: clear old results before displaying the response.
+Retest: no-match message appears; a normal search still works.
+
+Keep the earlier failure: it explains the change.
+
+---
+
+# Teamwork and explanation
+
+Rotate developer, tester and other roles.
+Driver enters code; navigator checks reasoning.
+
+Explain input → process → output without reading every line.
+Name what you contributed and what came from an example.
+
+---
+
+# Practice self-check
+
+0–4 each: needs, implementation, testing,
+communication, responsible choices. Total 20.
+
+This is our classroom rubric, not an SEC scheme.
+Choose one small next improvement.
+[Next: exam preparation](https://tutors.dev/topic/lc-cs/topic-16-exam-preparation)

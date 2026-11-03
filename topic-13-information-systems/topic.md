@@ -3,10 +3,12 @@ icon:
   type: mdi:web
   color: "#db2777"
 ---
-# 13 · Interactive information systems
+# 13 · Web and databases
 
-Design an accessible website that queries a real relational database and explains the complete data path.
+Connect a web page to a database.
 
-**Outcomes:** 1.15–1.17, 1.19–1.23, 3.1–3.3.
+**Suggested time:** Three 35–40 minute sessions; Python 3 and a browser, with no extra packages.
 
-Work through the teaching note, recap, practical lab and quiz. Read the feedback after attempting every question. The shared core supports both levels; sections marked **Higher Level extension** add depth. All practice material is original teaching material, not an SEC paper.
+Start with <a href="https://tutors.dev/note/lc-cs/topic-13-information-systems/note-01-learn">1. Learn</a>, then follow the Next links. Each activity includes a small task and a result you can check. Core tasks are for both levels; labelled extensions add depth.
+
+<a href="https://tutors.dev/lab/lc-cs/topic-13-information-systems/book-01-practice">Open 2. Practise</a> · <a href="https://tutors.dev/quiz/lc-cs/topic-13-information-systems/quiz-01-check">3. Quiz</a> · <a href="https://tutors.dev/note/lc-cs/topic-13-information-systems/note-02-feedback">4. Answers</a> · <a href="https://tutors.dev/note/lc-cs/topic-13-information-systems/note-03-exam-practice">5. Exam practice</a> · <a href="https://tutors.dev/talk/lc-cs/topic-13-information-systems/talk-01-recap">6. Recap</a>

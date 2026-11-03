@@ -1,6 +1,13 @@
-# Original mock: worked marking guide
+# Mock answers
 
-This is an educator's formative guide, **not an SEC marking scheme**. Accept equivalent correct reasoning. Award only the marks supported by the response and keep the original attempt. The total is A 20 + B 30 + C 50 = 100. Discuss genuinely ambiguous alternatives with a teacher.
+Mark your attempt and choose three repairs.
+
+Use this guide **after** the <a href="https://tutors.dev/note/lc-cs/topic-16-exam-preparation/note-03-original-mock">100-mark mock</a>. It is our practice guide, not an SEC marking scheme.
+
+1. Keep your first attempt beside you.
+2. Work through one subpart at a time. Underline the evidence that earns each point below.
+3. Record earned/available marks and one reason for each gap. Equivalent correct methods can earn credit; ask a teacher about uncertain answers.
+4. Total A 20 + B 30 + C 50 = **100**, then choose three repairs.
 
 ## Section A — 20 marks
 
@@ -43,7 +50,7 @@ This is an educator's formative guide, **not an SEC marking scheme**. Accept equ
 
 ## Section C — 50 marks
 
-A complete reference is `code/exam-practice/practice_readings.py`. Run `python3 code/exam-practice/practice_readings.py`; it includes assert-based checks and prints the sample summary. Read it after attempting the task.
+Read the [reference program](https://github.com/jouwdan/lc-cs/blob/main/code/exam-practice/practice_readings.py) after your attempt. If you downloaded the repository, run `python3 code/exam-practice/practice_readings.py` from its root folder. It runs checks and prints the sample summary. Compare one function at a time with your own code.
 
 ### (a) Structure — 5 marks
 
@@ -95,3 +102,6 @@ Additional checks for an unchanged input list, odd/even medians and non-finite v
 ## Turn the score into action
 
 Choose a repair at the smallest useful level. If the run ended incorrectly, trace the final loop iteration. If the median used the original order, contrast adjacency with numerical ordering. If a societal answer was vague, rewrite one feature-to-consequence explanation. Retry a new question later without looking at the repair. The evidence of transfer matters more than repeatedly marking the same corrected answer.
+
+
+**Next:** use <a href="https://tutors.dev/lab/lc-cs/topic-16-exam-preparation/book-01-practice">the repair steps</a> and <a href="https://tutors.dev/lab/lc-cs/side-reference/book-01-study-journal">study journal</a> to plan a fresh attempt.

@@ -1,6 +1,10 @@
-# Start here: learn, practise, reflect: retrieval check
+# 3. Quiz: Start here
 
-Attempt all ten questions before opening Feedback. This is formative practice; Tutors does not record these scores as assessed grades.
+Test yourself, then check the answers.
+
+Try the questions with your notes closed. This is practice, not a grade.
+
+Write down any question you guessed. After the quiz, <a href="https://tutors.dev/note/lc-cs/topic-01-start-here/note-02-feedback">open 4. Answers</a> for an explanation and a next task.
 
 ```quiz
 question: Which study action best reveals what you can recall independently?
@@ -15,7 +19,7 @@ question: An error log is most useful when it records what?
 type: multiple-choice
 options:
   - Only the final score
-  - The specific misconception and a next practice task
+  - What you misunderstood and what to practise next
   - Only correct answers
 correct: 1
 ---
@@ -71,7 +75,7 @@ question: What is the purpose of the quizzes in this course?
 type: multiple-choice
 options:
   - Official SEC grading
-  - Formative retrieval and diagnosis
+  - Practising recall and finding gaps
   - Replacing practical work
 correct: 1
 ---

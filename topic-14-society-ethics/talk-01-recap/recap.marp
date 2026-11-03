@@ -3,52 +3,97 @@ marp: true
 theme: default
 paginate: true
 ---
-# Technology and consequences
-Feature → mechanism → stakeholder effect
 
-Give a benefit, risk, mitigation and justified conclusion.
+# 6. Recap: computing and society
 
----
+Try each prompt before the next slide.
 
-# History explains capability
-Abstract computation · Stored programs
-Smaller electronics · Networks · Web
-
-Web ≠ Internet
+An app recommends books using borrowing history.
+Name one benefit, one risk and one mitigation.
 
 ---
 
-# Turing-machine extension
-scan + 1 → write 1, move right, scan
+# A connected answer
+
+Readers may find books faster.
+New readers have little history, so suggestions may be poor.
+Let readers choose interests and keep ordinary search.
+
+A stakeholder is someone affected.
+A mitigation reduces a risk.
+
+---
+
+# History check
+
+Explain one development's effect.
+
+Stored programs: instructions held in memory.
+Microprocessors: CPU functions on a chip.
+Grace Hopper: early programming tools and higher-level languages.
+Web: linked documents through browsers, using the Internet.
+
+---
+
+# AI: name the difference
+
+Training learns patterns; inference uses the model.
+Classification predicts a category; regression predicts a number.
+Supervised uses labels; unsupervised finds unlabelled structure.
+Reinforcement learning uses rewards from interaction.
+
+Fixed-rule automation need not use machine learning.
+
+---
+
+# Does 95% accuracy tell the whole story?
+
+100 cases: 95 normal, 5 unusual.
+A model always predicts normal.
+
+How many unusual cases does it find?
+What would you ask before using it?
+
+---
+
+# Check the errors and the data
+
+It finds **zero** unusual cases.
+Ask about representative, separate test data and error costs.
+
+Confidence scores one prediction; accuracy summarises a test set.
+Bias can persist when more data repeats the same omissions.
+Give people a meaningful way to challenge errors.
+
+---
+
+# Higher Level: one rule at a time
+
+scan + 1 → keep 1, move right, scan
 scan + blank → write 1, move left, halt
 
-111_ → 1111
+`11_` becomes `111` in three transitions.
+
+The Turing machine models computation.
+The Turing test concerns conversational imitation.
 
 ---
 
-# AI and ML
-Rules ≠ learned patterns
-Training ≠ inference
-Classification ≠ regression
+# Match technology to a limit
+
+Edge: local processing still needs maintenance.
+IoT: connected devices still need protection.
+Biometrics: false matches and hard-to-replace traits.
+Blockchain: a record can preserve a false claim.
+Quantum: potential advantages for particular problems.
 
 ---
 
-# Challenge performance claims
-Representative tests? Separate training data?
-False positives and negatives?
-A useful baseline?
+# Final check
 
----
+Can people access the service and challenge mistakes?
+What data is needed, who can use it, and when is it deleted?
+Are sources credited? What energy and materials are used?
 
-# Responsible design
-Privacy · Access · Human review
-Ownership · Energy · Inclusion
-
-Who can challenge an error?
-
----
-
-# Emerging technologies
-Quantum · Edge · IoT · Biometrics · Blockchain
-
-Describe the mechanism and one limitation.
+Explain a feature → a person → a consequence.
+[Next: project portfolios](https://tutors.dev/topic/lc-cs/topic-15-project-portfolio)

@@ -1,8 +1,12 @@
-# Search, sort, and recursion check
+# 3. Quiz: Search & sort
 
-A formative self-check: answers and scores are not recorded.
+Test yourself, then check the answers.
 
-Answer without running code first. After submitting, explain each answer in your own words and use the separate feedback note. The answer key is visible in the source; this is practice, not a secure assessment.
+Allow 10 minutes. Answer all 10 questions without notes or running code. Submit, then write down the numbers you want to revisit. Scores are not saved.
+
+Some questions use the extension examples. Read their worked lesson sections first; you do not need to have implemented every extension.
+
+After your attempt, use **4. Answers** to explain each correction, then retry the missed questions.
 
 ````quiz
 question: Which precondition is essential for binary search?
@@ -80,3 +84,5 @@ options:
   - 4
 correct: 3
 ````
+
+**Next:** <a href="https://tutors.dev/note/lc-cs/topic-08-search-sort/note-02-feedback">4. Answers: check your reasoning</a>. <a href="https://tutors.dev/note/lc-cs/topic-08-search-sort/note-02-feedback">Open the answers</a>.

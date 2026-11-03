@@ -1,9 +1,11 @@
-# 14 · Computing, society, AI and history: retrieval check
+# 3. Quiz: Society
 
-Attempt without notes, then explain your choices using the feedback note.
+Test yourself, then check the answers.
+
+Try these nine questions without notes. Then open <a href="https://tutors.dev/note/lc-cs/topic-14-society-ethics/note-02-feedback">4. Answers</a> to check the reasoning. If you miss one, repair that idea and retry later.
 
 ````quiz
-title: 14 · Computing, society, AI and history
+title: 3. Check — computing, AI and society
 ---
 question: Which distinction is correct?
 type: multiple-choice

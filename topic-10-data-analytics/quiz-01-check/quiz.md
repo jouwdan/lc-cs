@@ -1,6 +1,10 @@
-# 10 · Data, databases and analytics: retrieval check
+# 3. Quiz: Data
 
-Attempt without notes, then explain your choices using the feedback note.
+Test yourself, then check the answers.
+
+Nine quick questions to find the idea you should practise next.
+
+Try without notes. This is a formative self-check: answers and scores are not recorded. For each mistake, read its explanation, retry the small worked example, then try again.
 
 ````quiz
 title: 10 · Data, databases and analytics
@@ -77,3 +81,8 @@ options:
   - They remove the need to validate domain values
 correct: 0
 ````
+
+
+---
+
+**Next:** <a href="https://tutors.dev/note/lc-cs/topic-10-data-analytics/note-02-feedback">4. Read the answers and explanations</a>. <a href="https://tutors.dev/topic/lc-cs/topic-10-data-analytics">Back to the topic</a>.

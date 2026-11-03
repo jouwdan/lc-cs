@@ -1,6 +1,8 @@
-# Testing: feedback and model evidence
+# 4. Answers: Testing
 
-Make every conclusion traceable to a requirement and a particular check.
+Check your reasoning and repair one gap.
+
+Use this after an attempt. Find the question or lab step you missed, explain the correction in one sentence, then rerun that case yourself.
 
 ## Quiz explanations
 
@@ -15,9 +17,14 @@ Make every conclusion traceable to a requirement and a particular check.
 9. **Reduce and test a hypothesis.** This focuses the diagnosis and keeps cause and effect observable.
 10. **False.** Coverage measures execution, not the correctness of requirements or every asserted result.
 
-## Booking model
 
-| Quantity | Expected cents | Faulty version cents | Corrected cents |
+## The reproduced fault
+
+The original function uses `quantity > 5`. Quantity 5 therefore gets price 1200 instead of 1000, so the total is 6000 instead of 5000. This is a logical boundary error; the code runs normally until the assertion reports the wrong result.
+
+The repair is `quantity >= 5`. Validation is a separate addition needed to reject invalid types and quantities before choosing a price.
+
+| Quantity | Expected cents | Faulty cents | Corrected cents |
 |---:|---:|---:|---:|
 | 1 | 1200 | 1200 | 1200 |
 | 2 | 2400 | 2400 | 2400 |
@@ -28,26 +35,36 @@ Make every conclusion traceable to a requirement and a particular check.
 | 7 | 7000 | 7000 | 7000 |
 | 8 | 8000 | 8000 | 8000 |
 
-Quantity 5 is the smallest valid value exposing the comparison defect. The valid-input repair is changing `> 5` to `>= 5`. The complete function also validates type and range before choosing a rate; this addresses separate missing requirements in the deliberately limited specimen.
+Quantity 0 must be rejected. So must 9, -1, 2.5 and text passed directly to the function. The text interface converts `"5"` to integer 5, then correctly displays `Total: EUR 50.00`.
 
-The function rejects numeric text because its contract requires an integer. The interface accepts that text, converts it, calls the function, and displays `Total: EUR 50.00` for five tickets. This division of responsibility makes both layers testable.
+## Check the right layer
 
-A unit check calls `booking_total_cents(5)` and expects 5000. An integration check calls `total_from_text("5")` and expects the formatted message. A hypothetical system check would complete a booking through all screens and verify the final stored record; that larger system does not exist in this exercise, so it has not been tested. An accessibility check could verify that an error is announced and associated with the input field during keyboard-only use.
+- **Unit:** `booking_total_cents(5)` returns 5000.
+- **Integration:** enter text 5 and obtain the formatted total, exercising conversion, calculation and display.
+- **Regression:** after repairing 5, confirm 1 still returns 1200.
+- **Proposed system test:** complete a future booking flow and inspect the saved record. No storage exists in this exercise, so this remains a proposal.
+- **Proposed accessibility check:** use only a keyboard to reach the field, submit invalid input and locate an understandable error without relying on colour.
 
-## JavaScript trace
+The invalid-input tests expect `ValueError`. They must fail if no error is raised. Do not round a fractional quantity or silently substitute zero.
+
+## JavaScript answer trace
 
 | After statement | x | before | after |
 |---|---:|---:|---:|
-| `let x = 4` | 4 | Not declared yet | Not declared yet |
-| `let before = x++` | 5 | 4 | Not declared yet |
+| `let x = 4` | 4 | Not declared | Not declared |
+| `let before = x++` | 5 | 4 | Not declared |
 | `let after = ++x` | 6 | 4 | 6 |
 
-JavaScript `3 === "3"` is false; loose `3 == "3"` is true. Python `3 == "3"` is false. JavaScript `"3" + 4` yields `"34"`; Python raises `TypeError` for that mixed-type addition. These results are checked in the corresponding runtime files.
+JavaScript `3 === "3"` is false; `3 == "3"` is true through coercion; `"3" + 4` produces string `"34"`. Python `3 == "3"` is False and `"3" + 4` raises TypeError. Use the language printed in the question.
 
-Run the [`Python model`](https://github.com/jouwdan/lc-cs/blob/main/code/topic-09-testing/solutions.py) with `python3 code/topic-09-testing/solutions.py`, and the [`JavaScript checks`](https://github.com/jouwdan/lc-cs/blob/main/code/topic-09-testing/operator-checks.js) with `node code/topic-09-testing/operator-checks.js`. Expect `Topic 09 checks passed` and `JavaScript operator checks passed`.
+## A model evaluation
 
-## A defensible evaluation
+“The corrected function passed all eight allowed integer quantities and rejected my selected invalid ranges and types. The quantity-5 assertion failed before the repair and passed afterwards. I also checked valid and invalid text through the input program. This calculator contains no booking store, payment flow or web interface, so I have not tested those.”
 
-“The corrected function passes all eight valid integer quantities and rejects the selected invalid ranges and types. The quantity-5 test reproduced the original bug and now passes. The text-conversion integration checks pass. No real booking store, payment flow, load test, or accessibility-tested interface is included, so no claim is made about those systems.”
+This records evidence without claiming that no bugs remain.
 
-That statement is more informative than “fully tested”. Add a new test when a new requirement or failure appears, then keep the useful regression cases.
+[Completed guided files](https://github.com/jouwdan/lc-cs/tree/main/code/topic-09-testing) match the lab names. `booking_lab.py` prints `Booking checks passed`. `faulty_booking.py` intentionally prints 6000 and raises AssertionError. The separate full `solutions.py` prints `Topic 09 checks passed`; `node operator-checks.js` prints `JavaScript operator checks passed`.
+
+**Repair one gap:** write the expected answer by hand, then trace the exact branch taken by the smallest failing input. Keep the failed case as a future regression test.
+
+**Next:** <a href="https://tutors.dev/note/lc-cs/topic-09-testing/note-03-exam-practice">5. Exam practice: apply one skill</a>. <a href="https://tutors.dev/note/lc-cs/topic-09-testing/note-02-feedback">Open the answers</a>.

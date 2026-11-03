@@ -1,10 +1,20 @@
-# From this topic to the exam
+# 5. Exam: Data
 
-Apply the taught ideas to original papers, then use the matching marking scheme to diagnose your answer.
+Try a past question, then use its scheme.
 
-Choose one Ordinary Level question to secure a core skill and one Higher Level question for extension where available. Work before opening the scheme. Read the exact part and its marks; a multi-part question may span several topics. Page numbers below are PDF pages. These links open repository copies; the same documents are also in Topic 17.
+Apply one skill from this lesson to a past-paper question.
 
-After marking, record the missing concept or communication step, repair it with the relevant lesson or lab, and attempt a different year. Marking schemes provide illustrative, non-exhaustive answers and formative guidance; they do not predict future marking.
+## Your first attempt
+
+1. Start with **2022 Ordinary A Q9** in the table below. Allow about 10 minutes; read the marks and exact instructions on the paper.
+2. Write an answer before opening its scheme. Name a problem in the data, give its effect, and suggest a specific check. For the extension, label each key before describing the relationship.
+3. Open the matching scheme. Mark the point you missed; do not just copy the whole answer.
+4. Add a corrected sentence in a different colour, then close the scheme and explain the idea aloud.
+5. For Higher Level depth, try **2021 Higher A Q12** next. Use the remaining rows when revising; you do not need to complete the whole list in one sitting.
+
+Some listed questions span other topics: answer the parts relevant to the skill column. Page numbers below are PDF pages. These links open the original documents; they are also in Topic 17. A historical scheme helps you understand that paper's marking, not predict a future paper.
+
+## Choose more practice when ready
 
 | Paper and question | Practise this skill | Matching scheme |
 |---|---|---|
@@ -23,3 +33,10 @@ After marking, record the missing concept or communication step, repair it with 
 | [2025 Higher B Q13 (p. 9)](https://raw.githubusercontent.com/jouwdan/lc-cs/main/topic-17-past-papers/unit-2025/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf#page=9) | Plan a deposit-return system with roles, lifecycle, stakeholder goals, database uses, AI, accessibility and testing. | [Scheme p. 10](https://raw.githubusercontent.com/jouwdan/lc-cs/main/topic-17-past-papers/unit-2025/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf#page=10) |
 | [2025 Higher B Q15 (p. 17)](https://raw.githubusercontent.com/jouwdan/lc-cs/main/topic-17-past-papers/unit-2025/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf#page=17) | Select model inputs and outputs, identify patterns and limitations, and design agent-based intervention experiments. | [Scheme p. 18](https://raw.githubusercontent.com/jouwdan/lc-cs/main/topic-17-past-papers/unit-2025/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf#page=18) |
 | [2025 Higher C Q16 (p. 4)](https://raw.githubusercontent.com/jouwdan/lc-cs/main/topic-17-past-papers/unit-2025/tutorial-exam-paper-section-c-higher-level-ev/exam-paper-section-c-higher-level-ev.pdf#page=4) | Extend grade statistics with counts, extrema and longest increasing runs; implement median for empty, odd and even lists. | [Scheme p. 22](https://raw.githubusercontent.com/jouwdan/lc-cs/main/topic-17-past-papers/unit-2025/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf#page=22) |
+
+
+---
+
+**Next:** <a href="https://tutors.dev/talk/lc-cs/topic-10-data-analytics/talk-01-recap">6. Finish with the recap</a>. <a href="https://tutors.dev/topic/lc-cs/topic-10-data-analytics">Back to the topic</a>.
+
+<a href="https://tutors.dev/note/lc-cs/topic-10-data-analytics/note-02-feedback">Return to the worked answers</a>.

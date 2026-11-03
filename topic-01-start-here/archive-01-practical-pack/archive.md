@@ -1,7 +1,11 @@
-# Practical code and notebooks
+# Practice files
 
-Download the original worked programs, synthetic datasets and executable notebooks as one ZIP.
+Download example code, data and notebooks.
 
-The pack contains Python standard-library examples, one JavaScript operator exercise, the local HTML/database demonstration, portfolio templates and two notebooks with saved outputs. Read the matching lab before opening a solution. Run programs locally using Python 3; the web example's README instructions are in the course Topic 13 lab. These files are original learning examples, not the separate SEC starter programs mentioned in past papers.
+One ZIP of example programs, fictional datasets, portfolio templates and two notebooks. You do not need this for your first lesson.
 
-The embedded example is a simulation. Hardware wiring and calibration must be checked on your actual device. All datasets are synthetic. Solutions are public for self-study, so use a different task for graded assessment.
+1. Download and unzip the pack into a folder you can find.
+2. Open `README.txt` for the folder guide.
+3. Open the matching lab in Tutors before running a file. Some files contain model answers: try the lab first.
+
+Use Python 3 and your school's editor. Individual data-file links are provided in the labs too. The pack contains original teaching examples, not the separate SEC programming starter files.

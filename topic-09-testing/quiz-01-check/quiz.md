@@ -1,8 +1,10 @@
-# Design and testing check
+# 3. Quiz: Testing
 
-A formative self-check: answers and scores are not recorded.
+Test yourself, then check the answers.
 
-Answer without running code first. After submitting, explain each answer in your own words and use the separate feedback note. The answer key is visible in the source; this is practice, not a secure assessment.
+Allow 10 minutes. Answer all 10 questions without notes or running code. Submit, then write down the numbers you want to revisit. Scores are not saved.
+
+After your attempt, use **4. Answers** to explain each correction, then retry the missed questions.
 
 ````quiz
 question: Which requirement is most directly testable?
@@ -62,12 +64,12 @@ options:
   - x = 4, y = 4
 correct: 1
 ---
-question: What does JavaScript 3 === "3" evaluate to?
+question: What does JavaScript `3 === "3"` evaluate to?
 type: multiple-choice
 options:
   - true
   - false
-  - "33"
+  - `"33"`
   - 7
 correct: 1
 ---
@@ -84,3 +86,5 @@ question: Complete branch coverage guarantees that the software has no faults.
 type: true-false
 correct: false
 ````
+
+**Next:** <a href="https://tutors.dev/note/lc-cs/topic-09-testing/note-02-feedback">4. Answers: check your reasoning</a>. <a href="https://tutors.dev/note/lc-cs/topic-09-testing/note-02-feedback">Open the answers</a>.

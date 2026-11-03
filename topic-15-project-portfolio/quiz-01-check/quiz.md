@@ -1,9 +1,11 @@
-# 15 · Applied tasks and project portfolio: retrieval check
+# 3. Quiz: Projects
 
-Attempt without notes, then explain your choices using the feedback note.
+Test yourself, then check the answers.
+
+Try these nine questions without notes. Then open <a href="https://tutors.dev/note/lc-cs/topic-15-project-portfolio/note-02-feedback">4. Answers</a> to check the reasoning. If you miss one, repair that idea and retry later.
 
 ````quiz
-title: 15 · Applied tasks and project portfolio
+title: 3. Check — applied tasks and portfolios
 ---
 question: How do the four ALTs relate to individual SEC coursework?
 type: multiple-choice

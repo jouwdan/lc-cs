@@ -1,6 +1,8 @@
-# Computer systems: feedback
+# 4. Answers: Systems
 
-Use explanations to repair misconceptions, then redo one similar question without notes.
+Check your reasoning and repair one gap.
+
+Check the questions you missed or guessed. Explain one correction, then try a fresh example. A score alone does not tell you what to study next.
 
 ## Question 1
 
@@ -28,7 +30,7 @@ Use explanations to repair misconceptions, then redo one similar question withou
 
 ## Question 7
 
-**Answer: The source can be translated under the translator rules.** Logic faults can remain after syntax checks and translation succeed.
+**Answer: The translator accepted the source; its results may still be wrong.** A program can follow language rules but calculate the wrong answer. Test its output too.
 
 ## Question 8
 
@@ -41,3 +43,13 @@ Use explanations to repair misconceptions, then redo one similar question withou
 ## Question 10
 
 **Answer: It placed many components on one chip.** Integration enabled compact, economical and complex electronic systems.
+
+## Check the lab
+
+Your diagram should label scanner=input, CPU=processing, screen/printer=output and saved loans=storage. Working values use RAM. The trace `LOAD 9; ADD 3; STORE count` writes **12** to the named main-memory location. It does not save a disk file.
+
+For a mobile laptop, an SSD has no moving read head and usually gives faster access; an HDD may offer cheaper capacity. File management saves records; a driver controls the printer.
+
+If you confused RAM and storage, explain what happens to an unsaved report after power loss. If you confused CPU parts, trace `LOAD 4; ADD 5; STORE count` and name who adds (**ALU**) and who coordinates (**control unit**).
+
+**Next:** <a href="https://tutors.dev/note/lc-cs/topic-02-computer-systems/note-03-exam-practice">5. Exam practice</a>. Choose one question; you do not need to complete the whole list.

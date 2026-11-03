@@ -4,50 +4,60 @@ theme: default
 paginate: true
 ---
 
-# A request crosses systems
+## Follow a page request
 
-Client → local network → router → server
+What does DNS do?
 
----
-
-## Different roles
-
-Switch • router • access point • DNS • server
+Does it send the page?
 
 ---
 
-## Higher Level: protocols
+## Check
 
-IP: route packets
+DNS finds records such as an IP address.
 
-TCP: reliable ordered stream
-
-HTTPS: protected web communication
+The web server responds to the page request.
 
 ---
 
-## Voice depends on timing
+## Device or protocol?
 
-Bandwidth, latency and jitter are different.
-
----
-
-## Start with the threat
-
-Confidentiality • integrity • availability
+What do a router and TCP each do?
 
 ---
 
-## Match control to failure
+## Check
 
-Backups restore
+Router: forwards packets between networks.
 
-Permissions restrict
-
-Encryption protects data in transit
+TCP: provides a reliable, ordered stream.
 
 ---
 
-## Exit task
+## Protect bookings
 
-Explain one control, its mechanism and its limitation.
+Someone accidentally deletes bookings.
+
+Choose a control and explain its limit.
+
+---
+
+## Check
+
+Tested backups allow recovery.
+
+They do not prevent the original deletion.
+
+---
+
+## Higher Level: a poor call
+
+Bandwidth, latency and jitter: what differs?
+
+---
+
+## Check
+
+Bandwidth = capacity. Latency = delay.
+
+Jitter = variation in delay.

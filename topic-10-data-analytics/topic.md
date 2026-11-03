@@ -3,10 +3,12 @@ icon:
   type: mdi:chart-bar
   color: "#0284c7"
 ---
-# 10 · Data, databases and analytics
+# 10 · Data
 
-Turn raw measurements into defensible conclusions, with statistics, CSV processing and database queries.
+Clean data and explain what it shows.
 
-**Outcomes:** 2.16–2.18, 3.2, 3.4–3.7.
+**Suggested time:** Two 40-minute sessions; optional 20-minute SQL extension.
 
-Work through the teaching note, recap, practical lab and quiz. Read the feedback after attempting every question. The shared core supports both levels; sections marked **Higher Level extension** add depth. All practice material is original teaching material, not an SEC paper.
+Start with <a href="https://tutors.dev/note/lc-cs/topic-10-data-analytics/note-01-learn">1. Learn</a>, then follow the Next links. Each activity includes a small task and a result you can check. Core tasks are for both levels; labelled extensions add depth.
+
+<a href="https://tutors.dev/lab/lc-cs/topic-10-data-analytics/book-01-practice">Open 2. Practise</a> · <a href="https://tutors.dev/quiz/lc-cs/topic-10-data-analytics/quiz-01-check">3. Quiz</a> · <a href="https://tutors.dev/note/lc-cs/topic-10-data-analytics/note-02-feedback">4. Answers</a> · <a href="https://tutors.dev/note/lc-cs/topic-10-data-analytics/note-03-exam-practice">5. Exam practice</a> · <a href="https://tutors.dev/talk/lc-cs/topic-10-data-analytics/talk-01-recap">6. Recap</a>

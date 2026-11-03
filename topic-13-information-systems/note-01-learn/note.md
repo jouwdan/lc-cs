@@ -1,49 +1,45 @@
-# Interactive information systems
+# 1. Learn: Web apps
 
-Concepts, worked examples and practical reasoning for interactive information systems.
+Connect a web page to a database.
 
-## Begin with people and requirements
+Use a small fictional library to follow the complete path from a user's question to a result.
 
-An information system combines people, procedures, data, hardware and software to support a purpose. A website is one possible interface to that system. Begin by identifying an actual user task: “A learner can find which fictional library books are available.” A vague goal such as “make a good website” cannot be tested. Write measurable acceptance criteria: searching for `river` finds matching titles; an empty search lists all books; unavailable books are identified in text; keyboard users can reach every control.
+**Study in two parts:** sections 1–4 explain the page. Sections 5–8 explain the database and testing. The practical supplies a working site, so you can run it before editing it.
 
-Gather several perspectives before choosing a design. A reader wants clear results; a librarian wants accurate stock; a learner using a screen reader needs meaningful labels. Use synthetic records during development. Requirements may conflict: collecting more personal data could aid recommendations but reduce privacy. Explain the choice and collect only what is needed. A classroom information system can be useful without account registration or any personal data.
+## 1. Begin with a person and a task
 
-## Sketch before styling
+An **information system** combines people, procedures, data, hardware, and software for a purpose. A website is one interface to it. Our task is: *find a book by title and see whether it is available*.
 
-A wireframe shows the arrangement of headings, controls and results without detailed decoration. Draw a search field, a clearly labelled button, a status message and a results list. Walk through the task with a partner. What happens on first load, after no match, while loading and after a server error? Error states belong in the design; a blank screen is not helpful feedback. Keep navigation predictable and distinguish a control's label from placeholder text that disappears while typing.
+A **requirement** says what the system must do. “Look nice” is hard to test. “Searching `river` returns two matching books, with availability written in words” is testable. A reader needs understandable results; a librarian needs accurate records; a keyboard user needs reachable controls. These people are **stakeholders** because the system affects them.
 
-Usability concerns how effectively and comfortably people achieve their tasks. Accessibility removes barriers for people with differing abilities and technologies. Use sufficient contrast, readable text, visible keyboard focus, semantic structure and alternatives for non-text content. Do not communicate “available” only through green colour. Test at increased zoom and with only the keyboard. **Higher Level extension:** compare two interfaces using the same task and evidence, rather than saying one “looks nicer”. Explain the benefit and cost of each design decision.
+**Try:** write one testable requirement for an empty search.
 
-## Seven universal-design principles in practice
+**Check:** “An empty search lists all four fictional books” is precise. No accounts or personal records are needed for this example.
 
-The [Centre for Excellence in Universal Design](https://universaldesign.ie/about-universal-design/the-7-principles) names seven principles. The examples here are original applications to our library task:
+## 2. Sketch the interaction before decorating it
 
-| Principle | Concrete application |
-|---|---|
-| Equitable use | Offer the same search information to keyboard and pointer users. |
-| Flexibility in use | Permit either typing a title or browsing all titles. |
-| Simple and intuitive use | Use a clear “Search books” action and predictable reading order. |
-| Perceptible information | Show availability in text, with sufficient contrast. |
-| Tolerance for error | Explain an invalid query and preserve the user's input for correction. |
-| Low physical effort | Avoid unnecessary repeated input and long sequences of clicks. |
-| Size and space for approach and use | Give controls adequate target size and spacing, including on small screens. |
+A **wireframe** is a simple layout sketch. Draw a heading, labelled search box, Search button, status message, and results. Then draw what happens when there are no matches or the server is unavailable. A blank area is not a useful error message.
 
-A principle should lead to an observable design decision. Merely listing seven names does not evaluate an interface. Test with users and acknowledge that preferences can differ.
+**Usability** concerns how easily people complete the task. **Accessibility** concerns removing barriers for people with different abilities and technologies. A green dot alone does not tell everyone a book is available; include the word “Available”. A placeholder disappears when someone types, so it should not replace a persistent label.
 
-## HTML describes meaning
+## 3. Give HTML, CSS, and JavaScript different jobs
 
-HTML supplies document structure. Use a single main heading, logical subheadings, paragraphs, lists and appropriate form elements. A label connected through `for` and `id` gives an input an accessible name. A `button` is already a keyboard-operable control; a clickable `div` is not an equivalent replacement. A table is appropriate for genuinely tabular data and needs column headings. Images require useful alternative text unless decorative.
+| Technology | Job | Example |
+|---|---|---|
+| HTML | Structure and meaning | Heading, label, input, list |
+| CSS | Presentation | Spacing, colour, layout, visible focus |
+| JavaScript | Behaviour | Submit search and display returned books |
 
 ```html
 <label for="search">Book title</label>
-<input id="search" name="q" type="search" maxlength="100">
+<input id="search" type="search">
 <button type="submit">Search books</button>
 <p id="status" role="status"></p>
 ```
 
-The status region can announce changed results to assistive technology without moving focus unexpectedly. Do not put the entire interface inside a live region. Set the page language and a descriptive browser title. These small structural choices improve meaning for people and software.
+The label's `for` matches the input's `id`. A real button already supports normal keyboard operation. The status region can announce new results to assistive technology without unexpectedly moving focus.
 
-A complete minimal page has a document declaration, a root `html` element, metadata in `head`, a browser-tab `title`, and visible content in `body`. An anchor's `href` identifies its destination; it is not the link's visible wording. A `ul` contains unordered-list items marked with `li`.
+A complete HTML file also needs a document declaration, a root element with a language, a `head` containing metadata and a browser title, and a `body` for visible content:
 
 ```html
 <!doctype html>
@@ -51,41 +47,58 @@ A complete minimal page has a document declaration, a root `html` element, metad
 <head><meta charset="utf-8"><title>Library guide</title></head>
 <body>
   <h1>Library guide</h1>
-  <ul><li>Search by title</li><li>Check availability</li></ul>
+  <ul><li>Search titles</li><li>Check availability</li></ul>
   <a href="https://www.curriculumonline.ie/">Curriculum resources</a>
 </body>
 </html>
 ```
 
-## CSS controls presentation
+**Try:** which part is the link destination, and which words appear on screen?
 
-CSS describes layout, colour, spacing and typography. Use classes for reusable styles and keep content understandable if styling is unavailable. Relative widths and a maximum content width help the layout fit narrow screens and large monitors. A visible focus outline tells a keyboard user where they are. Styling should reinforce hierarchy: a heading should be recognisable because it is a heading, not merely a large bold paragraph.
+**Check:** `href` gives the destination; “Curriculum resources” is the visible text. A `ul` holds an unordered list of `li` items.
 
-Separate presentation from data. A database field should store whether a book is available, not the colour of its label. If the colour palette changes, the data should remain meaningful. Avoid fixed heights that clip enlarged text. Test long titles and zero results, because layouts often appear correct only with ideal sample content.
+CSS should allow narrow screens and enlarged text. Avoid fixed heights that cut off text. Keep visible focus outlines so a keyboard user can see the selected control. Store availability as data, not as a colour name: a later design change should not alter its meaning.
 
-## JavaScript adds behaviour
+## 4. Make the behaviour understandable
 
-JavaScript can listen for a form submission, read a value, request data and update the Document Object Model (DOM). Prevent the form's default navigation when handling it asynchronously. Show a loading status, then either results or an understandable error. A failed request must not leave the user believing old results are current.
+The JavaScript listens for form submission, reads the search text, requests data, and updates the **DOM**: the browser's representation of page elements. It first shows a loading message, then results, no-match feedback, or an error.
 
-Use `textContent` when inserting a title obtained from data. Treat data as text instead of interpreting it as HTML. A string containing angle brackets should display as a title, not become executable markup. Client-side validation improves feedback, but the server must validate input too because callers can bypass the page. For a search field, a length limit and an explicit query contract keep the example understandable.
+Insert returned titles with `textContent`. A title containing angle brackets then stays text; it does not become HTML instructions. Client-side checks help the user, but a caller can bypass the page. The server must also enforce the 100-character query limit.
 
-## The browser does not directly own the database
+**Check yourself:** do a clear label and a safe data-insertion method solve the same problem?
 
-Our runnable example uses this path:
+**Answer:** no. The label makes the control understandable; `textContent` prevents a data string being interpreted as markup.
+
+## 5. Trace one search through the system
 
 ```text
-Browser form → HTTP GET /api/books?q=river
-→ Python request handler → parameterised SQLite query
-→ JSON response → JavaScript → visible results
+Type river → browser sends HTTP request
+→ Python server queries SQLite
+→ server returns JSON
+→ JavaScript displays two records
 ```
 
-The server mediates database access. It chooses permitted operations and returns only the required fields. A server-side database password must never be included in browser JavaScript. Our local demonstration needs no password because it uses only seeded synthetic data and binds to the loopback address `127.0.0.1`. It is a learning server, not a hosted school records system.
+**HTTP** is a request/response protocol. **JSON** is a format for data values; it is not the JavaScript program itself. The browser does not receive a database password. A server mediates the permitted database operations and returns only needed fields.
 
-HTML, CSS and JavaScript are distinct from the data representation JSON. JSON contains values; JavaScript is a programming language that can parse those values. HTTP is a request/response protocol. Explain which component performs each step rather than referring to everything as “the website”.
+Our server runs on `127.0.0.1`, meaning your own computer. It uses fictional records and Python's built-in SQLite library. No database app, hosting account, or package installation is required. It recreates its small in-memory database for each search; it is a learning example, not a school records service.
 
-## Relational design and queries
+## 6. Join two tables
 
-We store `Category(category_id, name)` and `Book(book_id, title, category_id, available)`. The category key links a book to its category. A join retrieves a book title and category name without repeating the name in every book record. Primary keys identify rows; foreign keys describe relationships and can enforce integrity when configured. A many-to-one relationship means several books may refer to the same category.
+`Category` contains:
+
+| category_id | name |
+|---:|---|
+| 1 | Science |
+| 2 | Stories |
+
+Two of the `Book` records are:
+
+| book_id | title | category_id | available |
+|---:|---|---:|---:|
+| 1 | River Patterns | 1 | 1 |
+| 2 | The River Journey | 2 | 0 |
+
+A **primary key** uniquely identifies a row. `Book.category_id` is a **foreign key** referring to a Category row. Several books can belong to one category: this is a many-to-one relationship from books to categories.
 
 ```sql
 SELECT book.title, category.name, book.available
@@ -95,16 +108,42 @@ WHERE book.title LIKE ?
 ORDER BY book.title;
 ```
 
-For a concrete trace, suppose Category contains `(1, Science)` and `(2, Stories)`. Book contains `(1, River Patterns, 1, 1)` and `(2, The River Journey, 2, 0)`. With the parameter `%River%`, the join returns `River Patterns | Science | 1` and `The River Journey | Stories | 0`, in title order. The foreign-key value 1 retrieves Science; it is not the book's availability value even though both happen to be 1. Changing category 1's name changes the joined label for every book in that category without changing each book record.
+The join matches the category keys. For a search pattern `%river%`, the results are:
 
-The placeholder receives a search pattern as a parameter. User text does not become SQL instructions. Decide whether wildcard characters are permitted and explain that contract; our small example follows SQLite's `LIKE` pattern semantics. The result order is explicit. For a larger system, constraints, indexing, authorisation and deployment security would require further design, but they are not reasons to hide the essential data path from beginners.
+```text
+River Patterns | Science | 1
+The River Journey | Stories | 0
+```
 
-## Test the experience and the implementation
+The page turns 1/0 into “Available”/“On loan”. Changing the category name once changes all joined labels for that category, without editing every book.
 
-Unit tests can check query results. Integration tests check that an HTTP request produces the expected JSON and status. System tests follow the whole user task in a browser. Include empty search, no match, long input, special characters, unavailable records and server failure. Check that all returned text is inserted safely, and that keyboard focus remains visible. A successful query does not prove the interface is usable; a polished interface does not prove its records are correct.
+The `?` receives a parameter rather than pasted SQL instructions. In this demo, SQLite's `LIKE` treats `%` as any sequence and `_` as any one character. Ordinary searches use title substrings; those wildcard characters deliberately keep their `LIKE` meaning. Parameters protect the SQL structure, but do not replace length or business-rule checks.
 
-The ALT1 brief asks learners to create an interactive information system. Copying a static list into HTML does not demonstrate database retrieval. Show the database structure, an actual query, the response and its visible result. In your reflection, explain a user need, one change after feedback, a testing result and a remaining limitation. Keep each student's contribution and learning clear even when the ALT is developed collaboratively.
+## 7. Apply universal design to a concrete change
 
-## Review before moving on
+The [seven universal-design principles](https://universaldesign.ie/about-universal-design/the-7-principles) are useful when each is tied to a real design decision:
 
-Trace a search from input to displayed result. Explain why HTML semantics, SQL parameters, server validation and error messages solve different problems. Compare an interface with clear text availability labels against one that uses colour alone. Then change the practice site's context and requirements to produce your own design, rather than merely changing the heading.
+| Principle | Library example |
+|---|---|
+| Equitable use | Keyboard and pointer users get the same information |
+| Flexibility in use | Search a title or browse with an empty query |
+| Simple and intuitive use | A clearly named “Search books” button |
+| Perceptible information | Availability written in words with sufficient contrast |
+| Tolerance for error | Explain a bad input and let the user correct it |
+| Low physical effort | Avoid repeated typing and unnecessary clicks |
+| Size and space for approach and use | Adequate target size and spacing |
+
+**Try:** choose one principle and propose one observable improvement. “Improve accessibility” is too broad; “keep a visible outline on keyboard focus” gives you something to check.
+
+## 8. Test the whole task
+
+A unit test can check a query function. An integration test checks the HTTP response. A **system test** follows the complete search task in a browser. Try empty search, mixed case, no match, punctuation, unavailable books, oversized input, and server failure. Then use Tab/Enter, zoom in, and narrow the window.
+
+For ALT1, show actual database retrieval: schema → query → response → displayed result. A static list pasted into HTML does not demonstrate that path. Work collaboratively where appropriate, but keep your own explanation of the user need, change made, test result, and limitation.
+
+**Higher Level extension:** compare two wireframes with the same task and test criteria. Explain the trade-off using evidence, rather than only saying which looks nicer.
+
+
+---
+
+**Next:** <a href="https://tutors.dev/lab/lc-cs/topic-13-information-systems/book-01-practice">2. Practise</a>. <a href="https://tutors.dev/note/lc-cs/topic-13-information-systems/note-02-feedback">Open the answers when you have tried it</a>.

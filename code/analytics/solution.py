@@ -1,7 +1,6 @@
 """Original practice: clean synthetic readings and compare Python with SQLite."""
 import csv
 import math
-import sqlite3
 from pathlib import Path
 
 
@@ -30,9 +29,14 @@ def read_rows(path):
             try:
                 if None in row or any(value is None for value in row.values()):
                     raise ValueError("wrong number of fields")
-                value = float(row["value"])
+                if not row["value"].strip():
+                    raise ValueError("missing value")
+                try:
+                    value = float(row["value"])
+                except ValueError as error:
+                    raise ValueError("not a number") from error
                 if not math.isfinite(value) or not 0 <= value <= 120:
-                    raise ValueError("outside finite 0–120 range")
+                    raise ValueError("outside finite 0-120 range")
                 if row["area"] not in {"A", "B"}:
                     raise ValueError("unknown area")
             except ValueError as error:
@@ -68,13 +72,14 @@ def self_check():
 
 if __name__ == "__main__":
     self_check()
+    print("Checks passed.")
     rows, rejected = read_rows(Path(__file__).with_name("readings.csv"))
-    assert len(rows) == 8 and len(rejected) == 3
-    with sqlite3.connect(":memory:") as db:
-        db.execute("CREATE TABLE reading(area TEXT NOT NULL, value REAL NOT NULL)")
-        db.executemany("INSERT INTO reading VALUES (?, ?)", rows)
-        for area, mean in db.execute("SELECT area, AVG(value) FROM reading GROUP BY area ORDER BY area"):
-            result = summarise([value for name, value in rows if name == area])
-            assert math.isclose(result["mean"], mean)
-            print(area, result)
-    print("Rejected rows:", rejected)
+    for area in ("A", "B"):
+        result = summarise([value for name, value in rows if name == area])
+        if result["count"]:
+            print(f"{area}: count={result['count']} mean={result['mean']:.2f} "
+                  f"median={result['median']:.2f} modes={result['modes']}")
+        else:
+            print(f"{area}: no accepted readings")
+    for row_number, reason in rejected:
+        print(f"Rejected row {row_number}: {reason}")

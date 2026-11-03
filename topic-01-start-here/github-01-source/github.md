@@ -1,3 +1,5 @@
-# Course source and code
+# Course source
 
-Browse the editable Tutors lessons, synthetic datasets and worked programs. Solutions are public for self-study.
+Browse the lessons and example code.
+
+Browse or download the lesson source and model code. You do not need a GitHub account or Git commands to study the course. Start with the numbered lesson links.

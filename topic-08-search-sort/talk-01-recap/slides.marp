@@ -3,68 +3,91 @@ marp: true
 theme: default
 paginate: true
 ---
-# Algorithms: correctness before speed
+# 6. Recap: search, sort and recursion
 
-Pause at each prompt. Explain before revealing a model answer.
+Spend 5–10 minutes retrieving from memory.
 
----
-
-## Search contracts
-
-Return an index, or `-1` for absent.
-
-Linear search works on unsorted data.
-Binary search needs sorted data.
-
-**Question:** What does Python mean by `values[-1]`?
+Answer each prompt before moving to its Check slide.
+Keep one correction for your revision notes.
 
 ---
 
-## Binary search
+## Trace binary search
 
-- Keep inclusive `low` and `high`.
-- Probe `(low + high) // 2`.
-- Exclude the middle with `- 1` or `+ 1`.
-- Stop when the interval is empty.
+Ascending values: `[3,7,11,18,23,31,42]`
+Target: **24**
 
----
-
-## Three sort ideas
-
-- Bubble: exchange neighbours; grow a sorted suffix.
-- Selection: place the smallest remaining item.
-- Insertion: insert into a sorted prefix.
-
-Show passes, not only the final result.
+Record low, high and middle. What makes it stop?
 
 ---
 
-## Quicksort
+## Check: empty interval
 
-Partition around a pivot; sort the subproblems.
+Triples: `(0,6,3) → (4,6,5) → (4,4,4)`.
 
-Balanced: `O(n log n)` time.
-Repeated extreme splits: `O(n²)` time.
+Then low = 5, high = 4. Return -1.
 
-Preserve duplicates. A partition is not a fully sorted side.
-
----
-
-## Recursion
-
-Base case + progress + return path.
-
-GCD: `(48,18) → (18,12) → (12,6) → (6,0)`.
-
-Answer: **6**. Each call keeps state on the stack.
+Sorted data makes discarding a half valid.
 
 ---
 
-## Compare a defined cost
+## Name the pass
 
-Missing target; list sizes `8, 16, 32`:
+One full left-to-right bubble pass on `[7,2,5,1]`?
 
-- Linear probes: `8, 16, 32`.
-- Binary probes: `4, 5, 6`.
+Which sort inserts the next item into a sorted prefix?
+Which selects the smallest remaining item?
 
-**Exit ticket:** state one precondition, one invariant, and one edge case.
+---
+
+## Check the three methods
+
+Bubble pass: `[2,5,1,7]`; largest reaches the right.
+
+Insertion grows a prefix by shifting and inserting.
+Selection finds and places the next minimum.
+
+---
+
+## Make recursion stop
+
+Trace GCD `(48,18)` using `(a,b) → (b,a MOD b)`.
+
+Name its base case. What must be kept for unfinished recursive calls?
+
+---
+
+## Check: 6
+
+`(48,18) → (18,12) → (12,6) → (6,0)`.
+
+Base case: b = 0, return a.
+The call stack retains unfinished calls and local state.
+
+---
+
+## Compare a stated cost
+
+Missing target above maximum; sizes **8,16,32**.
+
+Predict linear and binary item probes.
+Can extreme quicksort partitions be quadratic?
+
+---
+
+## Check the growth
+
+Linear: **8,16,32**. Binary: **4,5,6**.
+
+Count inspected items, not seconds.
+Quicksort can be O(n²); balanced distinct-key partitions give O(n log n).
+
+---
+
+## Your next step
+
+[Check the full answers](https://tutors.dev/note/lc-cs/topic-08-search-sort/note-02-feedback).
+
+[Try one exam question](https://tutors.dev/note/lc-cs/topic-08-search-sort/note-03-exam-practice).
+
+[Continue to Topic 09](https://tutors.dev/topic/lc-cs/topic-09-testing).

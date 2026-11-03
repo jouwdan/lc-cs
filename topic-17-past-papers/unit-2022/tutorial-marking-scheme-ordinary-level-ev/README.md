@@ -1,3 +1,7 @@
-# 2022 Ordinary Level English | All | marking scheme
+# OL English · Scheme
 
-State Examinations Commission document, archived from [Better Exams](https://www.betterexams.ie/leaving-cert/computer-science/2022). Use the paper with its matching year, level and marking scheme. PDF: 24 pages.
+Marking scheme · 24 pages.
+
+Use after attempting the matching paper.
+
+<a href="https://tutors.dev/topic/lc-cs/topic-17-past-papers#unit-2022">Choose another 2022 paper or its scheme</a>. Archived intact from [Better Exams](https://www.betterexams.ie/leaving-cert/computer-science/2022).

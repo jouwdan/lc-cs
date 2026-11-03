@@ -1,3 +1,7 @@
-# 2020 Higher Level Irish | C | exam paper
+# HL Irish · C
 
-State Examinations Commission document, archived from [Better Exams](https://www.betterexams.ie/leaving-cert/computer-science/2020). Use the paper with its matching year, level and marking scheme. PDF: 16 pages.
+Programming paper · 16 pages.
+
+Try a question before opening its matching scheme.
+
+<a href="https://tutors.dev/topic/lc-cs/topic-17-past-papers#unit-2020">Choose another 2020 paper or its scheme</a>. Archived intact from [Better Exams](https://www.betterexams.ie/leaving-cert/computer-science/2020).

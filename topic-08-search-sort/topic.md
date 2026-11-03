@@ -3,24 +3,20 @@ icon:
   type: mdi:sort
   color: "#9333ea"
 ---
-# 08 · Searching, sorting, recursion, and efficiency
+# 08 · Search and sort
 
-Trace standard algorithms and justify their behaviour, preconditions, and costs.
+Find, order and trace values.
 
-## Study route
+**Before you start:** Complete Topic 07 core work: functions, lists, indices, copying and empty inputs.
 
-Read the concepts, predict the worked examples, complete the lab, take the quiz, then use the feedback to correct your reasoning. Finish with the recap slides.
+**Suggested pace:** Session 1 (30 min): linear/binary search. Session 2 (30 min): sorting passes. Session 3 (30 min): recursion and cost examples; choose the coding extensions you need.
 
-## Prerequisites
+## Your route
 
-Topics 05–07: loops, functions, indexing, list copies, and boundary tests.
+<a href="https://tutors.dev/note/lc-cs/topic-08-search-sort/note-01-concepts">1. Learn</a> → <a href="https://tutors.dev/lab/lc-cs/topic-08-search-sort/book-01-practice">2. Practise</a> → <a href="https://tutors.dev/quiz/lc-cs/topic-08-search-sort/quiz-01-check">3. Quiz</a> → <a href="https://tutors.dev/note/lc-cs/topic-08-search-sort/note-02-feedback">4. Answers</a> → <a href="https://tutors.dev/note/lc-cs/topic-08-search-sort/note-03-exam-practice">5. Exam practice</a> → <a href="https://tutors.dev/talk/lc-cs/topic-08-search-sort/talk-01-recap">6. Recap</a>
 
-## Success criteria
+Start with the worked examples, attempt the small task, then check the answer. Keep a note of one mistake and your correction. The exam bank is for choosing a question, not completing every row in one sitting.
 
-- Trace linear and binary search and explain the sorted-data precondition.
-- Perform bubble, selection, and insertion sort passes.
-- Explain quicksort partitioning and identify a recursive base case.
-- Compare best and worst cases using input size and operation counts.
-- Implement and test iterative and recursive greatest-common-divisor algorithms.
+**Ready to move on when you can:** Trace search bounds and sort passes; explain preconditions; identify a base case; compare a defined operation count.
 
-Core tasks support both levels. Extension tasks add depth for Higher Level; they do not replace the core. Work at the level specified by your teacher and the current syllabus.
+<a href="https://tutors.dev/topic/lc-cs/topic-09-testing">Continue to Topic 09</a>.

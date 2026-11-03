@@ -1,6 +1,8 @@
-# Collections: feedback and worked answers
+# 4. Answers: Lists & files
 
-Use each explanation to connect a result to the data structure and contract.
+Check your reasoning and repair one gap.
+
+Use this after an attempt. Find the question or lab step you missed, explain the correction in one sentence, then rerun that case yourself.
 
 ## Quiz explanations
 
@@ -15,48 +17,67 @@ Use each explanation to connect a result to the data structure and contract.
 9. **Quoted fields and headers.** Parsing is only the first step; numeric conversions and range checks remain your responsibility.
 10. **False.** An `if`/`elif` chain stops after the first true branch. Independent criteria need independent checks.
 
-## Median model
 
-| Input | Sorted copy | Middle index/indices | Result |
+## Collection answers
+
+The indexing predictions are `OMP`, 3 and 2. A non-empty sequence of length `n` has non-negative indices 0 through `n-1`.
+
+Replace `count = count + 0` with `count = count + 1`. `[4,8,8,2]` above 5 gives 2; empty input and `[5,5]` give 0; `[8,8]` gives 2.
+
+Replace the median starter's final line with:
+
+```python
+return (ordered[middle - 1] + ordered[middle]) / 2
+```
+
+| Input | Ordered copy | Middle index/indices | Result |
 |---|---|---|---|
-| `[9, 2, 7]` | `[2, 7, 9]` | 1 | 7 |
-| `[9, 2, 7, 4]` | `[2, 4, 7, 9]` | 1 and 2 | 5.5 |
+| `[9,2,7]` | `[2,7,9]` | 1 | 7 |
+| `[9,2,7,4]` | `[2,4,7,9]` | 1, 2 | 5.5 |
 | `[6]` | `[6]` | 0 | 6 |
 | `[]` | Not needed | None | `None` |
 
-A compact correct approach checks empty input, sorts a copy, computes `middle = len(ordered) // 2`, and branches on odd/even length. The input order stays unchanged.
+The original list remains unchanged because `sorted` creates a new list. Do not replace it with `values = values.sort()`: `.sort()` returns `None`.
 
-## Run trace
+## Text and file answers
 
-| Value processed | Current run | Best run |
+Anagram results: Dormitory/Dirty room → True; abc/abd → False; aab/abb → False; empty/empty → True. Sorting preserves the number of repeated letters; a set would lose it.
+
+The valid CSV produces `[42,67,90,67]`. Its middle pair is 67 and 67, so the example displays `Median: 67.0`. Numerically this is 67. Ben is physical CSV row 3 because row 1 is the header. Score 101 must raise a range error before any median is displayed. The changed `mark` header raises the header error.
+
+The guided reader requires exactly `name,score` in that order. The fuller checked model requires both named columns and can accept additional named columns. Both contracts are stated explicitly; neither silently drops invalid score rows.
+
+## Extension: longest run
+
+Add:
+
+```python
+if len(current) > len(best):
+    best = current.copy()
+```
+
+| Value | Current run | Best run |
 |---:|---|---|
 | 3 | `[3]` | `[3]` |
-| 5 | `[3, 5]` | `[3, 5]` |
-| 2 | `[2]` | `[3, 5]` |
-| 4 | `[2, 4]` | `[3, 5]` |
-| 7 | `[2, 4, 7]` | `[2, 4, 7]` |
-| 7 | `[7]` | `[2, 4, 7]` |
-| 9 | `[7, 9]` | `[2, 4, 7]` |
+| 5 | `[3,5]` | `[3,5]` |
+| 2 | `[2]` | `[3,5]` |
+| 4 | `[2,4]` | `[3,5]` |
+| 7 | `[2,4,7]` | `[2,4,7]` |
+| 7 | `[7]` | `[2,4,7]` |
+| 9 | `[7,9]` | `[2,4,7]` |
 
-The equality at the second 7 breaks a strictly increasing run. Keeping the old best on equal lengths implements the earliest-tie rule. The model copies the current run when it becomes best, preventing later mutation from corrupting the saved result.
+Equality breaks a strictly increasing run. Replacing best only on a greater length preserves the earliest tie; copying protects the saved run from mutation. Sorting would destroy the original adjacency.
 
-## Text and file model
+## Other extension checks
 
-Anagram normalisation lowercases and removes spaces, then compares sorted characters. It preserves repeated-character counts. A set comparison would incorrectly treat `aab` and `abb` as equal.
+- Simple check digits: `472` → 3; `005` → 5; `742` → 3. The swap is missed because the sum is unchanged.
+- Weighted totals: 25, 31, 0 and 35 for `472`, `742`, `000`, `427`. Corresponding check digits: 5, 9, 0, 5. The second swap is still missed.
+- Die frequencies: 2, 0, 3, 0, 0, 1; their sum is 6. Adding a 6 gives its face two observations and total 7.
+- Practice password scores: `MapleTree7!` → 5; `abc` → 1. These independent criteria require independent checks, and do not prove security.
+- Local scope: `add_bonus(10)` returns 15 while the caller's original score stays 10.
 
-The check digits for `472` and `005` are `3` and `5`. The transposition `742` also produces `3`, demonstrating a limit. Validation is not authentication.
+[Completed guided files and checked models](https://github.com/jouwdan/lc-cs/tree/main/code/topic-07-data-structures) let you compare one function at a time. Running `solutions.py` prints `Topic 07 checks passed`.
 
-The CSV yields `[42, 67, 90, 67]` and median 67. The model uses `csv.DictReader`, requires the headers, validates names and integer ranges, and reports bad rows. It raises an error instead of quietly excluding an inconvenient result.
+**Repair one gap:** label indices from zero if slicing failed. Draw names pointing to list objects if mutation surprised you. For empty input, state the required result before any indexing.
 
-The complete [`solutions.py`](https://github.com/jouwdan/lc-cs/blob/main/code/topic-07-data-structures/solutions.py) includes median, runs, anagrams, frequencies, format checks, password practice, and CSV validation. Run `python3 code/topic-07-data-structures/solutions.py`; expect `Topic 07 checks passed`.
-
-## Improve your next attempt
-
-If indexing failed, label every position starting at zero. If a list unexpectedly changed, draw arrows from names to list objects. If aggregation failed only on empty input, state the empty-data contract before writing a loop. If a file error was unclear, include a row number and the violated rule rather than a generic “bad data” message.
-
-## Weighted-check answer
-
-`472` produces products 12, 7, 6, total 25, and complement digit 5. `742` produces 21, 4, 6, total 31, and complement digit 9. `000` produces total 0 and digit 0. `427` produces 12, 2, 21, total 35, and digit 5: the selected adjacent transposition is undetected. The checked `weighted_check_digit` function is included with the other models.
-
-
-For the scope drill, the outer score remains 10 and the returned result is 15. Rebinding a scalar parameter changes the local name; it does not rebind the caller's variable. For the frequency chart, the three non-empty bars contain 2, 3, and 1 stars, summing to six observations. A seeded random choice is repeatable, but repeatability does not imply that every short sequence is evenly distributed.
+**Next:** <a href="https://tutors.dev/note/lc-cs/topic-07-data-structures/note-03-exam-practice">5. Exam practice: apply one skill</a>. <a href="https://tutors.dev/note/lc-cs/topic-07-data-structures/note-02-feedback">Open the answers</a>.

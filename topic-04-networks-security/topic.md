@@ -3,8 +3,12 @@ icon:
   type: mdi:lan
   color: "#0369a1"
 ---
-# 04 · Networks and cybersecurity
+# 04 · Networks
 
-Communication, protocols, network design and justified protections.
+Follow web requests and protect data.
 
-Start with Concepts, work through the lab, attempt the quiz without notes, then use Feedback. Core tasks build confidence at both levels; labelled Higher Level extensions add depth. The exam-practice note links this learning to the archived papers.
+Use two or three short sessions. Read one section, try its example, then check.
+
+<a href="https://tutors.dev/note/lc-cs/topic-04-networks-security/note-01-concepts">1. Learn</a> → <a href="https://tutors.dev/lab/lc-cs/topic-04-networks-security/book-01-practice">2. Practise</a> → <a href="https://tutors.dev/quiz/lc-cs/topic-04-networks-security/quiz-01-check">3. Quiz</a> → <a href="https://tutors.dev/note/lc-cs/topic-04-networks-security/note-02-feedback">4. Answers</a>.
+
+Then try <a href="https://tutors.dev/note/lc-cs/topic-04-networks-security/note-03-exam-practice">5. Exam practice</a>. Use the recap slides for revision.

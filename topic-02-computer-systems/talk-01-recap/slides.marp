@@ -4,50 +4,64 @@ theme: default
 paginate: true
 ---
 
-# A computer is a system
+## RAM or storage?
 
-Input → processing → output, with storage
+Where is the unsaved part of a report?
 
----
-
-## Keep these distinct
-
-RAM: active work
-
-Storage: persistent files
-
-CPU: executes instructions
+Where is its saved file?
 
 ---
 
-## OS responsibilities
+## Check
 
-Scheduling • memory • files • devices • permissions
+Unsaved working data: RAM.
 
----
-
-## Higher Level: instruction cycle
-
-Fetch → decode → execute
-
-PC, control unit, ALU and registers
+Saved file: storage, such as an SSD.
 
 ---
 
-## Trace together
+## Which CPU part?
+
+Who adds? Who coordinates?
+
+Who holds the next instruction address?
+
+---
+
+## Check
+
+ALU adds. Control unit coordinates.
+
+Program counter holds the next address.
+
+---
+
+## Trace
 
 LOAD 9 → ADD 3 → STORE count
 
-When does count change?
+What is count? When does it change?
 
 ---
 
-## Translation is not proof
+## Check
 
-Syntax, runtime and logic errors differ.
+Count becomes 12 at STORE.
+
+The working register reached 12 at ADD.
 
 ---
 
-## Justify a choice
+## Explain one choice
 
-Which hardware serves a quiet, battery-powered logger?
+Choose storage for a laptop carried between rooms.
+
+Give a benefit and a limitation.
+
+---
+
+## Example answer
+
+An SSD has no moving read head and fast access.
+
+An HDD may offer cheaper capacity.

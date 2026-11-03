@@ -1,10 +1,20 @@
-# From this topic to the exam
+# 5. Exam: Web apps
 
-Apply the taught ideas to original papers, then use the matching marking scheme to diagnose your answer.
+Try a past question, then use its scheme.
 
-Choose one Ordinary Level question to secure a core skill and one Higher Level question for extension where available. Work before opening the scheme. Read the exact part and its marks; a multi-part question may span several topics. Page numbers below are PDF pages. These links open repository copies; the same documents are also in Topic 17.
+Apply one skill from this lesson to a past-paper question.
 
-After marking, record the missing concept or communication step, repair it with the relevant lesson or lab, and attempt a different year. Marking schemes provide illustrative, non-exhaustive answers and formative guidance; they do not predict future marking.
+## Your first attempt
+
+1. Start with **2021 Ordinary A Q11** in the table below. Allow about 10 minutes; read the marks and exact instructions on the paper.
+2. Write an answer before opening its scheme. Connect the person’s need to a concrete feature and explain how it helps. For a wireframe, label controls and include a no-result or error state.
+3. Open the matching scheme. Mark the point you missed; do not just copy the whole answer.
+4. Add a corrected sentence in a different colour, then close the scheme and explain the idea aloud.
+5. For Higher Level depth, try **2022 Higher B Q13** next. Use the remaining rows when revising; you do not need to complete the whole list in one sitting.
+
+Some listed questions span other topics: answer the parts relevant to the skill column. Page numbers below are PDF pages. These links open the original documents; they are also in Topic 17. A historical scheme helps you understand that paper's marking, not predict a future paper.
+
+## Choose more practice when ready
 
 | Paper and question | Practise this skill | Matching scheme |
 |---|---|---|
@@ -26,3 +36,10 @@ After marking, record the missing concept or communication step, repair it with 
 | [2025 Higher B Q13 (p. 9)](https://raw.githubusercontent.com/jouwdan/lc-cs/main/topic-17-past-papers/unit-2025/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf#page=9) | Plan a deposit-return system with roles, lifecycle, stakeholder goals, database uses, AI, accessibility and testing. | [Scheme p. 10](https://raw.githubusercontent.com/jouwdan/lc-cs/main/topic-17-past-papers/unit-2025/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf#page=10) |
 | [2025 Ordinary B Q14 (p. 13)](https://raw.githubusercontent.com/jouwdan/lc-cs/main/topic-17-past-papers/unit-2025/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf#page=13) | Explain vending-machine conditions, complete a test plan, improve accessibility and design stock-check logic. | [Scheme p. 13](https://raw.githubusercontent.com/jouwdan/lc-cs/main/topic-17-past-papers/unit-2025/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf#page=13) |
 | [2025 Ordinary B Q15 (p. 16)](https://raw.githubusercontent.com/jouwdan/lc-cs/main/topic-17-past-papers/unit-2025/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf#page=16) | Identify museum-app stakeholders and needs, add assistive features, compare lifecycles and evaluate location privacy. | [Scheme p. 16](https://raw.githubusercontent.com/jouwdan/lc-cs/main/topic-17-past-papers/unit-2025/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf#page=16) |
+
+
+---
+
+**Next:** <a href="https://tutors.dev/talk/lc-cs/topic-13-information-systems/talk-01-recap">6. Finish with the recap</a>. <a href="https://tutors.dev/topic/lc-cs/topic-13-information-systems">Back to the topic</a>.
+
+<a href="https://tutors.dev/note/lc-cs/topic-13-information-systems/note-02-feedback">Return to the worked answers</a>.

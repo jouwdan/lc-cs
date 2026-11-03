@@ -3,47 +3,70 @@ marp: true
 theme: default
 paginate: true
 ---
-# Model ≠ reality
-Choose a purpose.
-State what is included and excluded.
+# 6. Recap: Modelling and simulation
+
+Explain each example aloud before checking the answer.
 
 ---
 
-# Define the experiment
-Initial state · Parameters · Rules · Outputs
+## Follow the three rules
 
-Arrival → service → record
+Start at zero.
 
----
+1. Add an arrival.
+2. Serve if possible.
+3. Record remaining people.
 
-# Randomness
-Probability is between 0 and 1.
-Seed for reproducibility; repeat for variability.
-Do not reseed every iteration.
+Never serve someone who is not there.
 
 ---
 
-# Trace before running
-Arrivals: 1, 1, 1
-Service: 0, 1, 0
-Remaining queue: 1, 1, 2
+## Trace before running
+
+Arrivals: `1, 1, 1`
+Service: `0, 1, 0`
+Remaining: `1, 1, 2`
+
+3 arrivals − 1 served = 2 remaining.
 
 ---
 
-# Two questions
-Verification: does the code implement the rules?
-Validation: are the rules suitable for the purpose?
+## Name the quantity
+
+State: current queue.
+Parameter: service probability.
+Output: recorded queue history.
+
+People waiting is **not** minutes waited.
 
 ---
 
-# Agent-based extension
-Individual state + local rules + interactions
-→ possible collective patterns
+## Use randomness carefully
 
-Explain update order.
+Probability is 0–1.
+A seed repeats a sequence.
+Repeat runs to inspect variation.
+
+Same seed does not mean a realistic model.
 
 ---
 
-# Report responsibly
-Prediction · Measurements · Mechanism
-Assumptions · Limitation · Next observation
+## Check two different things
+
+Verification: code follows the rules.
+Validation: rules fit the real purpose.
+
+Agents have local state and rules.
+Their interactions may produce a collective pattern.
+
+---
+
+## Explain your experiment
+
+What changed? What stayed fixed?
+What did you measure?
+What real factor is missing?
+
+**Try:** name an observation that would improve the model.
+
+[Worked answers](https://tutors.dev/note/lc-cs/topic-11-modelling-simulation/note-02-feedback) · [Exam practice](https://tutors.dev/note/lc-cs/topic-11-modelling-simulation/note-03-exam-practice)

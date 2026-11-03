@@ -1,6 +1,8 @@
-# Networks and cybersecurity: feedback
+# 4. Answers: Networks
 
-Use explanations to repair misconceptions, then redo one similar question without notes.
+Check your reasoning and repair one gap.
+
+Check the questions you missed or guessed. Explain one correction, then try a fresh example. A score alone does not tell you what to study next.
 
 ## Question 1
 
@@ -41,3 +43,13 @@ Use explanations to repair misconceptions, then redo one similar question withou
 ## Question 10
 
 **Answer: The central switch.** The central component is a shared dependency in the topology shown.
+
+## Check the lab
+
+The request travels from client through the local network/router to the server. DNS finds address information; TCP provides ordered reliable delivery; HTTPS protects the web connection.
+
+A backup helps recover deleted bookings. Permissions restrict edits. Independently verifying a suspicious request helps detect phishing. A clear “not confirmed” message prevents a failed request being mistaken for a booking.
+
+If you confused a control with its effect, finish this sentence: “Restricting editing to the organiser protects ___ because ___.” Check: **integrity**, because ordinary members cannot change other people's records.
+
+**Next:** <a href="https://tutors.dev/note/lc-cs/topic-04-networks-security/note-03-exam-practice">5. Exam practice</a>. Choose one question; you do not need to complete the whole list.

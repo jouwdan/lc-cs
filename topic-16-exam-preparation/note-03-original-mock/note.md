@@ -1,6 +1,15 @@
-# Original mixed-topic mock: community technology
+# Mock paper
 
-This is a new educator-written practice assessment, **not an SEC examination or marking scheme**. Total: 100 marks. Suggested duration: 120 minutes, with 60 minutes for written sections A/B and 60 for practical section C. Answer all questions. Use Python 3 for the practical. Keep your first attempt before opening the worked guide. Ordinary Level learners may use the support prompts at the end and record that support; Higher Level learners should attempt the full task independently.
+Try the original 100-mark course mock.
+
+This is a course practice assessment, **not an SEC paper**. Its marks and timing are teaching choices.
+
+1. Prepare paper/a document and Python 3. Answer all questions.
+2. Allow **60 minutes for A/B** and **60 minutes for C**. You may use two sessions; record any help used.
+3. Keep the <a href="https://tutors.dev/note/lc-cs/topic-16-exam-preparation/note-04-mock-guide">worked guide</a> closed until you have tried.
+4. Save your first attempt before correcting it. Total: A 20 + B 30 + C 50 = **100 marks**.
+
+If you need support, use the prompts near the end. They are learning choices, not official level boundaries. Try independently again later.
 
 ## Section A — ten short questions, 20 marks
 
@@ -58,7 +67,7 @@ def analyse(readings, threshold):
     # Return the specified summary dictionary.
 ```
 
-`readings` is a list of finite real numbers; `threshold` is a finite real number. Booleans are not accepted as numbers for this task. Reject invalid values with a clear `ValueError`. Do not alter the caller's list. The returned dictionary must contain:
+`readings` is a list of finite real numbers; `threshold` is a finite real number. Here, finite means a number such as `4` or `2.5`, not infinity or a not-a-number (`NaN`) value. Booleans are not accepted as numbers for this task. Reject invalid values with a clear `ValueError`. Do not alter the caller's list. The returned dictionary must contain:
 
 - `count`: number of readings.
 - `mean`: arithmetic mean, or `None` when there are no readings.
@@ -92,4 +101,4 @@ For a supported attempt, start with only `count`, `mean` and `at_or_above`, then
 
 ## After the attempt
 
-Use the separate worked marking guide. Identify three specific repairs and choose a fresh archived question for each. Do not claim a grade conversion from this original assessment: its mark allocation was designed for feedback across skills.
+Open <a href="https://tutors.dev/note/lc-cs/topic-16-exam-preparation/note-04-mock-guide">4. Answers: the mock guide</a>. Mark one subpart at a time, then choose three small repairs. Use the <a href="https://tutors.dev/note/lc-cs/side-reference/note-03-exam-index">exam index</a> for later retries. There is no official grade conversion for this original mock.

@@ -1,3 +1,7 @@
-# 2025 Higher Level Irish | All | marking scheme
+# HL Irish · Scheme
 
-State Examinations Commission document, archived from [Better Exams](https://www.betterexams.ie/leaving-cert/computer-science/2025). Use the paper with its matching year, level and marking scheme. PDF: 32 pages.
+Marking scheme · 32 pages.
+
+Use after attempting the matching paper.
+
+<a href="https://tutors.dev/topic/lc-cs/topic-17-past-papers#unit-2025">Choose another 2025 paper or its scheme</a>. Archived intact from [Better Exams](https://www.betterexams.ie/leaving-cert/computer-science/2025).

@@ -1,6 +1,10 @@
-# Data representation and Boolean logic: retrieval check
+# 3. Quiz: Binary & logic
 
-Attempt all ten questions before opening Feedback. This is formative practice; Tutors does not record these scores as assessed grades.
+Test yourself, then check the answers.
+
+Try the questions with your notes closed. This is practice, not a grade.
+
+Write down any question you guessed. After the quiz, <a href="https://tutors.dev/note/lc-cs/topic-03-representation-logic/note-02-feedback">open 4. Answers</a> for an explanation and a next task.
 
 ```quiz
 question: What is binary 00101101 in decimal?

@@ -16,6 +16,14 @@ All teaching examples and quizzes are newly authored. This is an independent lea
 
 ## Study route
 
+**[Open the course in Tutors](https://tutors.dev/course/lc-cs)** · [Start here](https://tutors.dev/topic/lc-cs/topic-01-start-here)
+
+Every topic opens with a visible numbered route. Lessons use short sections, worked examples and check questions. Labs provide manageable steps, expected outputs and optional extensions. The original coverage and all 63 PDFs are retained.
+
+[Student walkthrough and changes](STUDENT-EXPERIENCE.md)
+
+### Topics
+
 | Topic | Study |
 |---|---|
 | 01 | [Study routine, setup and feedback](topic-01-start-here/topic.md) |
@@ -36,7 +44,7 @@ All teaching examples and quizzes are newly authored. This is an independent lea
 | 16 | [Exam preparation and original mock](topic-16-exam-preparation/topic.md) |
 | 17 | [2020–2025 paper library](topic-17-past-papers/topic.md) |
 
-For each topic: read the concept note → predict a worked example → complete the lab → attempt the quiz → read feedback → apply the skill to a linked past question. Shared core tasks support both levels; Higher Level extensions are labelled. The course is taught in English; archived Irish papers retain their original language.
+For each topic: **1. Learn → 2. Practise → 3. Quiz → 4. Answers → 5. Exam practice**. Use **6. Recap** for revision. Do one section and its task at a time; the suggested session lengths are guides, not deadlines. Shared core tasks support both levels; Higher Level extensions are labelled. The course is taught in English; archived Irish papers retain their original language.
 
 ## Exam archive and provenance
 
@@ -70,7 +78,11 @@ This produces `json/tutors.json` and the PDF/ZIP/whiteboard assets. Generated fi
 
 Use the full Tutors generator: `tutors-lite` does not provide all the interactive object types used here.
 
-To publish, connect this repository to a Netlify site. `netlify.toml` already supplies the build command, publish directory and CORS headers. Then open `https://tutors.dev/course/YOUR-NETLIFY-SITE-NAME`. The repository is ready to build; a hosted course URL is not assumed to exist.
+The course is published at [tutors.dev/course/lc-cs](https://tutors.dev/course/lc-cs), using assets at `https://lc-cs.netlify.app`. Netlify builds the `main` branch using `netlify.toml`.
+
+For your own copy, connect the repository to a Netlify site and use that site name in the Tutors course URL. Internal course links in the source currently point to `lc-cs`; update them when making a separately hosted copy.
+
+Internal links use plain HTML anchors because the current reader opens Markdown links in new tabs. This keeps the study route in one tab. After a published update, fully reload an already-open course tab to clear the reader’s in-memory course cache.
 
 ## Verify or maintain
 
@@ -81,9 +93,9 @@ python3 scripts/check_course.py
 python3 scripts/test_download_exams.py
 ```
 
-The first command verifies the 63 PDF checksums, 176 coverage references, quiz structure, executable notebooks and archive/diagram files. After a build, it also verifies all 14 learning-object types, unique navigable routes and byte-identical copied PDFs. The actual Tutors quiz parser and Marp renderer were additionally exercised during authoring; see [validation notes](VALIDATION.md).
+The first command verifies the 63 PDF checksums, 176 coverage references, quiz structure, executable notebooks, course-owned link destinations, visible study routes, answer links and download contents. After a build, it also verifies all 14 learning-object types, unique navigable routes and byte-identical copied PDFs. The actual Tutors quiz parser and Marp renderer were additionally exercised during authoring; see [validation notes](VALIDATION.md).
 
-Each Python program in `code/` includes assertions. Run `solution.py` or `solutions.py` for its checks; run `python3 code/information-system/server.py --check` for the local HTTP/database tests. `node code/topic-09-testing/operator-checks.js` verifies the historical JavaScript examples. The web application runs on loopback only and uses fictional data. Embedded examples are simulations; real devices require safe wiring checks and calibration.
+The reference `solution.py` and `solutions.py` programs include assertions. The guided lab files also include interactive examples and a deliberately faulty booking program, so do not expect every `.py` file to pass without input. Run the reference solutions for their checks; run `python3 code/information-system/server.py --check` for the local HTTP/database tests. `node code/topic-09-testing/operator-checks.js` verifies the historical JavaScript examples. The web application runs on loopback only and uses fictional data. Embedded examples are simulations; real devices require safe wiring checks and calibration.
 
 To refresh the source PDFs, run `python3 scripts/download_exams.py` from the repository. It downloads the listed collection and updates provenance. Review any changed source files and counts before committing.
 

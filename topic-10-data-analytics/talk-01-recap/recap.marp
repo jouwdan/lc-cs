@@ -3,51 +3,71 @@ marp: true
 theme: default
 paginate: true
 ---
-# Data → evidence
-A question determines the fields you need.
+# 6. Recap: Data and databases
 
-What does one row represent?
-
----
-
-# Quality before calculation
-Missing ≠ zero.
-Validation ≠ proof of truth.
-Keep the source and record rejected rows.
+Explain each example aloud before checking the answer.
 
 ---
 
-# Work the example
-2, 4, 6, 6, 12
+## First: interpret one row
 
-Mean 6 · Median 6 · Mode 6 · Range 10
+A row is one observation.
 
-What changes if 12 becomes 120?
+`area`: category A or B.
+`value`: fictional score from 0 to 120.
 
----
-
-# Database structure
-Records and fields
-Primary keys identify; foreign keys relate
-Parameterised queries separate data from instructions
+**Try:** why is a room number not a room-size measurement?
 
 ---
 
-# Interpret carefully
-Label units and sample size.
+## Do not invent missing data
+
+`B,` → missing.
+`B,unknown` → not numeric.
+`B,0` → valid zero.
+
+Keep the original file and record rejected rows.
+
+---
+
+## Work the middle
+
+Values: `4, 6, 6, 12`
+
+Mean = `28 / 4 = 7`
+Median = `(6 + 6) / 2 = 6`
+Mode = `6`
+
+**Try:** what changes if 12 becomes 120?
+
+---
+
+## Give a limited conclusion
+
+A: 4 readings, median 6.
+B: 4 readings, median 4.
+
+Say **in this sample**.
+Do not claim a universal difference.
 Correlation does not establish causation.
-State a limitation and a next measurement.
 
 ---
 
-# Practical transfer
-Read → validate → summarise → test → explain
+## Read a database query
 
-Test empty, odd, even, repeated and unsorted data.
+`GROUP BY area`: put each area’s rows together.
+`AVG(value)`: mean per group.
+`ORDER BY area`: explicit output order.
+
+Primary key: row identity.
+Foreign key: link to another table.
 
 ---
 
-# Exit ticket
-Why can a correct average support a misleading claim?
+## Explain before moving on
 
-Explain one database query in plain English.
+1. Why is blank different from zero?
+2. What happens to the median of an empty list?
+3. What evidence could improve this investigation?
+
+[Worked answers](https://tutors.dev/note/lc-cs/topic-10-data-analytics/note-02-feedback) · [Exam practice](https://tutors.dev/note/lc-cs/topic-10-data-analytics/note-03-exam-practice)

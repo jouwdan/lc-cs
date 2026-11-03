@@ -3,53 +3,67 @@ marp: true
 theme: default
 paginate: true
 ---
-# A computer in a product
-Inputs → processing → outputs
+# 6. Recap: Embedded systems
 
-Embedded does not necessarily mean Internet-connected.
-
----
-
-# Analogue and digital
-ADC converts a voltage to a code.
-10 bits → 1024 codes, numbered 0–1023
-
-A code is not automatically a percentage.
+Explain each example aloud before checking the answer.
 
 ---
 
-# Calibration
-100 × (raw − dry) / (wet − dry)
+## Follow one signal
 
-Dry 800 · Wet 300 · Raw 550 → 50
+Sensor → conversion → decision → display
+
+An enable button is another input.
+An actuator changes the environment.
+Embedded does not mean Internet-connected.
+
+---
+
+## Count codes correctly
+
+10 bits → 1024 codes: 0–1023.
+
+An ADC code is not automatically a percentage.
+PWM changes on-time fraction, not arbitrary smooth voltage.
+
+---
+
+## Calibrate with two references
+
+Dry 800; wet 300.
+
+Raw 550 → relative level 50.
+Raw 655 → relative level 29.
+
 Equal references are invalid.
 
 ---
 
-# Hysteresis
-Below 30: on
-Above 40: off
-Between: preserve state
+## Remember the previous state
 
-Why does history matter?
+Below 30: on. Above 40: off.
+30–40 inclusive: keep state. Disabled: off.
 
----
-
-# Test the whole path
-Component tests → integration → physical measurements
-
-Simulation cannot verify wiring or calibration.
+**Try:** level 35 from off, then from on.
 
 ---
 
-# Design responsibly
-Safe low voltage · Appropriate pin limits
-Understandable outputs · Error indication
-Sampling interval · Data minimisation
+## Timing and evidence matter
+
+A real-time system has a deadline.
+Blocking delays can delay input response.
+
+Simulation checks logic.
+Physical work must check wiring and calibration.
 
 ---
 
-# Exit ticket
-Trace levels 45, 29, 32, 39, 41.
+## Explain one sequence
 
-Explain one limit of your evidence.
+45, 29, 32, 39, 41
+→ off, on, on, on, off
+
+**Try:** why does the warning stay on at 39?
+Name one thing your simulator did not test.
+
+[Worked answers](https://tutors.dev/note/lc-cs/topic-12-embedded-systems/note-02-feedback) · [Exam practice](https://tutors.dev/note/lc-cs/topic-12-embedded-systems/note-03-exam-practice)

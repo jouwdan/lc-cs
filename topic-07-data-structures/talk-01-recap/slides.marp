@@ -3,69 +3,94 @@ marp: true
 theme: default
 paginate: true
 ---
-# Collections: preserve meaning and order
+# 6. Recap: collections and functions
 
-Pause at each prompt. Explain before revealing a model answer.
+Spend 5–10 minutes retrieving from memory.
 
----
-
-## Index and slice
-
-`"COMPUTER"[1:4]` → `"OMP"`.
-
-First index: `0`. Last index: `len(value) - 1`.
-
-Strings are immutable; lists are mutable.
+Answer each prompt before moving to its Check slide.
+Keep one correction for your revision notes.
 
 ---
 
-## Alias or copy?
+## Index and copy
+
+Predict `"COMPUTER"[1:4]`.
 
 ```python
 a = [4, 7]
 b = a
 b.append(9)
+print(a)
 ```
 
-Both names now see `[4, 7, 9]`. Use a copy when independence is required.
+---
+
+## Check: OMP and [4, 7, 9]
+
+Slice start included, stop excluded.
+
+`b = a` gives two names for the same list.
+
+Use `b = a.copy()` for an independent flat list.
 
 ---
 
-## Return a result
+## Find the median
 
-- Parameters name the inputs.
-- Arguments supply actual values.
-- `return` sends a value to the caller.
-- `print` displays; it does not replace return.
+Find medians for `[9,2,7]`, `[9,2,7,4]` and `[]`.
 
----
-
-## Median
-
-1. Handle empty input.
-2. Sort a copy.
-3. Odd: one middle item.
-4. Even: average the middle pair.
-
-**Predict:** `[9, 2, 7, 4]` → `5.5`.
+Which operation preserves the original: `sorted(values)` or `values.sort()`?
 
 ---
 
-## Preserve sequence
+## Check: 7, 5.5 and None
 
-Longest consecutive run in `[3, 5, 2, 4, 7, 7, 9]`:
+Sort a copy; odd length uses one middle item.
+Even length averages the middle pair.
 
-`[2, 4, 7]`
-
-Sorting destroys adjacency. Equal neighbours break a strictly increasing run.
+`sorted` returns a new list. `.sort()` changes its list and returns None.
 
 ---
 
-## Validate at entry
+## Check a file
 
-- State text normalisation rules.
-- Parse CSV with the CSV module.
-- Check headers, types, and ranges.
-- Report the row that fails.
+The CSV has header `name,score`. Ben’s row contains 101.
 
-**Exit ticket:** explain why a check digit is not encryption.
+Is parsing enough? What should happen before displaying a median?
+
+---
+
+## Check: reject the invalid score
+
+Convert each score, check 0–100, report its row.
+
+The contract rejects a bad file; do not silently omit the row.
+
+A quoted comma is why we use the CSV module.
+
+---
+
+## Preserve the right information
+
+Longest strictly increasing consecutive run in `[3,5,2,4,7,7,9]`?
+
+Will digit-sum MOD 10 detect `472` changing to `742`?
+
+---
+
+## Check: [2,4,7]; no
+
+Adjacency matters; sorting changes the run problem.
+Equal neighbours break strict increase.
+
+Both payloads sum to 13 and give check digit 3. A check digit is not encryption.
+
+---
+
+## Your next step
+
+[Check the full answers](https://tutors.dev/note/lc-cs/topic-07-data-structures/note-02-feedback).
+
+[Try one exam question](https://tutors.dev/note/lc-cs/topic-07-data-structures/note-03-exam-practice).
+
+[Continue to Topic 08](https://tutors.dev/topic/lc-cs/topic-08-search-sort).

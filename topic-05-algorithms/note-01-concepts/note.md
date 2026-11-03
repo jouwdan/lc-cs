@@ -1,32 +1,53 @@
-# From problems to algorithms
+# 1. Learn: Algorithms
 
-A good algorithm is precise enough for another person to execute and general enough to handle the intended inputs.
+Break a problem into clear steps.
 
-## The problem comes first
+You can do this lesson on paper. Python is introduced in Topic 06. Read sections 1–5 in one sitting; keep the puzzle workshops for a separate session.
 
-An algorithm is a finite, ordered set of unambiguous instructions for solving a problem. A computer program implements an algorithm in a programming language. An algorithm can be written on paper and executed by hand; it need not start with Python. “Choose the best route” is a goal, not yet an algorithm, because *best* and the method of choosing are unspecified.
+## 1. Say what a correct answer means
 
-Consider a school booking system. A minibus holds 12 passengers, and an outing has 29 passengers. The required output is 3 buses, not 2.4167 buses. State the input (a non-negative whole-number passenger count), output (a non-negative whole-number bus count), and rule (12 seats per bus). State that drivers are not included and that empty buses are not booked. These assumptions make the answer testable. A different seat count or a wheelchair space could change the problem, so assumptions belong in the specification.
+An **algorithm** is a finite, ordered set of clear instructions for solving a problem. A **program** expresses an algorithm in a programming language.
 
-A requirement says what must happen; an algorithm says how. Before coding, write one ordinary example, one boundary example, and one invalid example. For this problem they might be 29 → 3, 24 → 2, and -1 → an error. An error response is itself an output, rather than permission to invent a result for an invalid input.
+Our problem: book the fewest minibuses for a school outing. Each bus has **12 available passenger seats**.
 
-## Four computational-thinking techniques
+| Part of the specification | Our rule |
+|---|---|
+| Input: information supplied | A whole-number passenger count, zero or more |
+| Output: information produced | A whole-number bus count |
+| Assumptions: facts we rely on | Drivers do not use these 12 seats; all passengers need one seat |
+| Invalid input | Report an error for a negative or fractional count |
+| Special case | Zero passengers need zero buses |
 
-**Decomposition** divides the overall problem into manageable parts: obtain a passenger count, check it, calculate the number of buses, and report the result. Each part has a clear purpose. Dividing the code into arbitrary blocks of ten lines is not meaningful decomposition. The parts should correspond to tasks that can be understood and tested separately.
+A **specification** states what must happen. An algorithm gives the steps to make it happen.
 
-**Abstraction** keeps information needed for the model and leaves out irrelevant detail. Bus colour is irrelevant to seat capacity; available seats are essential. Abstraction does not mean removing every inconvenient detail. If a vehicle has different accessibility capacity, omitting that fact can make the model incorrect. Explain both the retained and omitted information when answering an abstraction question.
+**Worked example:** 29 passengers fill two buses (24 seats) and leave five passengers. They need one more bus: **3 buses altogether**.
 
-**Pattern recognition** notices similarities: 1–12 passengers need one bus, 13–24 need two, and 25–36 need three. Recognising a pattern suggests a solution, but testing only those examples does not prove it works for every input. Check zero and exact multiples, where a casual “always add one” approach fails.
+**Try:** predict the answers for 24 and 25 passengers before reading on.
 
-**Generalisation** expresses the pattern as a reusable rule. For capacity `c > 0` and passenger count `n >= 0`, use integer division to calculate full buses and add one only when a remainder exists. Replacing a hard-coded answer for 29 passengers with a rule using `n` is generalisation. Replacing the fixed capacity with a parameter makes the same algorithm useful for different vehicles, if that flexibility is required.
+**Check:** 2 and 3. An exact multiple of the capacity needs no extra bus.
 
-These techniques overlap. You may recognise a repeated calculation while decomposing a larger booking system. In an examination, name the technique and connect it to an actual feature of the scenario. A definition alone does not explain how it helps this particular problem.
+## 2. Use four thinking tools
 
-## Sequence, selection, and iteration
+| Technique | Meaning | Example in this problem |
+|---|---|---|
+| Decomposition | Split a problem into meaningful smaller tasks | Read the count → check it → calculate buses → display the result |
+| Abstraction | Keep relevant details and omit irrelevant ones | Keep available seats; omit paint colour |
+| Pattern recognition | Notice a repeated relationship | 1–12 need one bus; 13–24 need two |
+| Generalisation | Express a rule that works beyond one example | Use passenger count and capacity instead of memorising “29 needs 3” |
 
-**Sequence** means carrying out steps in order. Assigning a value before using it is essential. **Selection** chooses between paths according to a condition. **Iteration** repeats a block while a condition holds or for each item in a collection. Most introductory algorithms combine these three structures.
+**Try:** a bus loses two passenger seats to carry equipment. Can the algorithm still assume 12 seats?
 
-Here is language-independent pseudocode for bus allocation:
+**Check:** no. Available seats affect the result. Abstraction must not remove a detail that changes the answer.
+
+In an exam answer, connect the term to the scenario: “I omit bus colour because it does not affect available seats.”
+
+## 3. Write the steps in pseudocode
+
+**Pseudocode** describes an algorithm without requiring a particular programming language.
+
+- `DIV` gives the whole-number quotient: `29 DIV 12 = 2`.
+- `MOD` gives the remainder: `29 MOD 12 = 5`.
+- `←` stores a value in a named variable. `buses ← buses + 1` increases its stored value.
 
 ```text
 INPUT passengers
@@ -41,124 +62,156 @@ ELSE
 ENDIF
 ```
 
-`←` means assignment; it stores the right-hand result in the named variable. `DIV` means whole-number division and `MOD` means remainder. Pseudocode conventions differ, so consistency and clarity matter more than memorising punctuation. Do not mix “repeat until valid” and “repeat while invalid” without noticing that their conditions are opposites.
+This uses **sequence** (steps in order) and **selection** (choose a path using a condition). **Iteration** means repetition; we use it in the score counter below.
 
-For `passengers = 24`, division gives 2 and the remainder is 0, so no extra bus is added. For 29, division gives 2 and the remainder is 5, so the result becomes 3. For zero, the result stays zero. The invalid branch prevents a negative quantity reaching the calculation.
+**Try:** trace zero passengers and then 37 passengers.
 
-## Reading and drawing a flowchart
+**Check:** zero has quotient 0 and remainder 0, giving 0 buses. For 37, the quotient is 3 and remainder 1, giving 4 buses. Always adding one would fail at zero and every exact multiple of 12.
 
-Use a terminator for start/end, a parallelogram for input/output, a rectangle for processing, and a diamond for a decision. Label decision arrows with their meanings, commonly Yes/No. An arrow shows direction; its position on the page does not imply sequence. A loop needs a route back and a route out.
+## 4. Follow a flowchart
+
+A **flowchart** draws the same decisions and actions. Use arrows to determine the order.
+
+| Shape | Purpose |
+|---|---|
+| Rounded start/end | Begin or finish |
+| Parallelogram | Input or output |
+| Rectangle | Process or calculate |
+| Diamond | Decision with labelled exits |
 
 ```mermaid
 flowchart TD
-  accTitle: Bus allocation for a validated passenger count
-  A([Start]) --> B[/Read valid non-negative passengers/]
-  B --> C[buses = passengers DIV 12]
-  C --> D{passengers MOD 12 > 0?}
-  D -- Yes --> E[buses = buses + 1]
-  D -- No --> F[/Display buses/]
-  E --> F
-  F --> G([End])
+  A([Start]) --> B[/Read passengers/]
+  B --> C{Non-negative whole number?}
+  C -- No --> D[/Display invalid count/]
+  C -- Yes --> E[buses = passengers DIV 12]
+  E --> F{passengers MOD 12 > 0?}
+  F -- Yes --> G[buses = buses + 1]
+  F -- No --> H[/Display buses/]
+  G --> H
+  D --> I([End])
+  H --> I
 ```
 
-This diagram deliberately assumes input validation has already happened. In a full solution, include the invalid-input branch shown in the pseudocode. When converting a supplied flowchart to code, follow each arrow, identify the repeated region, and preserve its conditions. Do not “improve” a printed algorithm before answering what it actually does.
+**Try:** follow every arrow taken by 24. Which decision takes its No exit?
 
-## Trace tables make state visible
+**Check:** the remainder decision. The input is valid, but `24 MOD 12` is zero.
 
-A trace table records how variables change during execution. Suppose an algorithm counts scores of at least 50:
+A loop in a flowchart needs a path back and a path out. “Repeat until valid” stops when valid becomes true; “repeat while invalid” continues while invalid is true. Read the wording carefully.
 
-```python
-scores = [48, 72, 50, 31]
-count = 0
-for score in scores:
-    if score >= 50:
-        count = count + 1
-print(count)
+## 5. Trace changing values
+
+A **trace table** records variable values as instructions execute. Count how many scores are at least 50:
+
+```text
+count ← 0
+FOR EACH score IN [48, 72, 50, 31]
+    IF score >= 50 THEN
+        count ← count + 1
+    ENDIF
+ENDFOR
+OUTPUT count
 ```
 
-| Iteration | score | score >= 50 | count after iteration |
-|---|---:|---|---:|
-| Initial state | — | — | 0 |
-| 1 | 48 | False | 0 |
-| 2 | 72 | True | 1 |
-| 3 | 50 | True | 2 |
-| 4 | 31 | False | 2 |
+`>=` means “greater than or equal to”. Record a row **after** each score:
 
-The output is `2`. The value 50 is included because the operator is `>=`, not `>`. A counter increases by one per qualifying item; an accumulator adds quantities, such as the scores themselves. Confusing them changes the meaning of the result. If asked for output, do not report every internal variable unless the algorithm prints it.
+| Score | At least 50? | Count after this score |
+|---:|---|---:|
+| Start | — | 0 |
+| 48 | No | 0 |
+| 72 | Yes | 1 |
+| 50 | Yes | 2 |
+| 31 | No | 2 |
 
-Choose a consistent point at which to record each row, usually after an iteration. Track only variables relevant to the question, but include a loop condition when it explains termination. With nested loops, show the inner-loop changes before advancing the outer loop. An empty list executes the loop zero times and leaves `count` at zero.
+A **counter** adds one per matching item. An **accumulator** adds a quantity, such as the scores. The final output is 2; the intermediate counts are not outputs unless the algorithm displays them.
 
-## Correctness, termination, and boundaries
+**Try:** replace the scores with `[49, 50, 51]`. Then try an empty list.
 
-For the counting algorithm, the useful invariant is: after each iteration, `count` equals the number of processed scores meeting the threshold. It starts true because no scores have been processed. Each iteration either adds one for a qualifying score or leaves the total unchanged. When all scores have been processed, the result therefore covers the entire list. This is a more convincing explanation than “it worked when I ran it”.
+**Check:** the counts are 0, 1, 2; the final output is 2. Empty input repeats zero times and leaves the count at 0.
 
-Termination needs a reason. A `for` loop over a finite list terminates after all its items. A `while` loop that exits through its condition needs that condition eventually to become false; an explicit `break` or `return` can also terminate a loop. Failing to update controlling state can create an infinite loop. For a repeated-subtraction bus algorithm, subtracting 12 from a positive remaining count makes progress towards zero or below. Input validation is still needed to define acceptable starting values.
+### Explain why it works and stops
 
-Test immediately below, at, and above a decision boundary. For a threshold of 50 use 49, 50, and 51. For bus capacity use 11, 12, and 13. Also consider zero, one item, all qualifying items, and no qualifying items. A boundary test targets a likely mistake rather than merely providing another ordinary example.
+An **invariant** is a statement that remains true at a chosen point in each loop. Here: “after each score, count equals the number of qualifying scores processed so far.” It is true at the start and each update preserves it.
 
-## Higher Level extension: heuristics and scale
+**Termination** means the algorithm finishes. A loop over four scores stops after four items. A conditional loop needs progress towards a false condition, unless it uses an explicit exit. Repeatedly subtracting 12 from a positive remaining passenger count eventually reaches zero or below.
 
-An exact algorithm seeks the specified correct result. A heuristic uses a practical rule that often finds a useful solution quickly, without guaranteeing the best possible result. A route planner might repeatedly visit the nearest unvisited destination. This can be fast to apply, but a short next leg may force a very long final leg. Explain that trade-off rather than claiming a heuristic is simply a random guess.
+Test **boundaries**, where the rule changes: 49, 50, 51 for the score counter; 11, 12, 13 for buses. Also test zero, all matches and no matches. Passing examples supplies evidence; explaining the invariant supplies reasoning about the whole process.
 
-For route problems, compare approaches using a defined measure such as total distance, time, or cost. Trying every possible visit order can become impractical as the number of destinations grows. A heuristic may be justified when a timely good route is more useful than an optimal route produced too late. It is inappropriate when the task requires a guaranteed optimum and the method supplies no such guarantee.
+## 6. Extend: quick decisions and fair rules
 
-Do not assume an algorithm is fair because it is written in code. A booking priority rule based on earlier online registration can disadvantage people with limited internet access. Identify the affected users, the mechanism producing the effect, and a possible remedy. Correct implementation and appropriate requirements are separate questions.
+A **heuristic** is a practical rule that can find a useful answer quickly without guaranteeing the best answer. A route planner might visit the nearest unvisited stop next. A short next journey can leave a long final journey, so the rule does not guarantee the shortest complete route.
 
-## Exam practice and retrieval
+Trying every stop order becomes expensive as the number of stops grows. Compare methods using a stated measure, such as total kilometres. A fast useful route may suit a time-limited task; a task requiring a guaranteed optimum needs stronger justification.
 
-The archived 2022 Higher Level A&B paper asks students to use abstraction; the 2023 Ordinary Level A&B paper includes constructing an algorithm; the 2024 Higher Level A&B paper examines generalisation. Use the exact question wording and its own marking scheme after practicing the original examples here. See [the source year index](https://www.betterexams.ie/leaving-cert/computer-science).
+**Try:** a booking system gives seats to the first people to register online. Name one affected group and an improvement.
 
-Without notes: explain one retained and one omitted detail in the bus model; trace 37 passengers; draw the zero-passenger path; and describe a change that would make the model unsuitable. Success means you can justify each step, not just recall the final number.
+**Check:** people with limited internet access may get fewer opportunities. A telephone booking route or a registration window followed by allocation could address that problem. Correct code does not automatically make the chosen rule fair.
 
-## Extension workshop: states, constraints, and legal moves
+## 7. Puzzle workshop: represent a state
 
-A puzzle can be modelled as states connected by legal moves. Consider a robot transporting three labelled sample boxes A, B, and C across a corridor. It can carry at most one box per trip and can travel empty. A and B must not be left together without the robot; B and C must not be left together without it. All four start on the left; all must finish on the right. These are invented constraints for practising a familiar state-space method.
+A **state** records the information needed at one moment. A **constraint** is a rule that every allowed state or move must obey. A **state space** contains the possible states and moves between them.
 
-Encode a state as `(robot, A, B, C)`, using 0 for left and 1 for right. The initial state is `(0,0,0,0)` and the goal is `(1,1,1,1)`. A state is unsafe if `A == B != robot` or `B == C != robot`. A move flips the robot's side and, optionally, one box currently on the same side. It is legal only if the resulting state is safe. Abstraction keeps location and conflict rules; colour and travel speed are irrelevant to this version.
+A robot carries boxes A, B and C from left to right. It can carry at most one box per trip, or travel empty. A and B must not be left together without the robot. Neither may B and C. Start with everything on the left; finish with everything on the right.
 
-| Trip | Cargo | State after crossing |
+Record `(robot, A, B, C)`, where 0 means left and 1 means right. Start: `(0,0,0,0)`. Goal: `(1,1,1,1)`. Four two-way locations give `2⁴ = 16` possible encodings, including unsafe states.
+
+**Worked first move:** take B right → `(1,0,1,0)`. A and C can safely remain together. Taking A first would leave the forbidden B/C pair alone.
+
+| Trip | Cargo and direction | State after crossing |
 |---:|---|---|
-| 1 | B to right | `(1,0,1,0)` |
-| 2 | Empty to left | `(0,0,1,0)` |
-| 3 | A to right | `(1,1,1,0)` |
-| 4 | B to left | `(0,1,0,0)` |
-| 5 | C to right | `(1,1,0,1)` |
-| 6 | Empty to left | `(0,1,0,1)` |
-| 7 | B to right | `(1,1,1,1)` |
+| 1 | B right | `(1,0,1,0)` |
+| 2 | Empty left | `(0,0,1,0)` |
+| 3 | A right | `(1,1,1,0)` |
+| 4 | B left | `(0,1,0,0)` |
+| 5 | C right | `(1,1,0,1)` |
+| 6 | Empty left | `(0,1,0,1)` |
+| 7 | B right | `(1,1,1,1)` |
 
-The counter-intuitive fourth move brings B back. Rejecting every move that seems to undo progress would miss the solution. Verify both banks after every crossing, not only the bank with the robot. For example, taking A first gives `(1,1,0,0)`, leaving B and C together unsupervised, so that move is invalid.
+**Try:** replace trip 4 with an empty return. What becomes unsafe?
 
-Draw one node per state and arrows for legal moves. Mark visited states to avoid cycling. Breadth-first search explores all states one move away, then two moves away, and so on; with equal-cost moves it finds a path with the fewest trips. Depth-first exploration follows one branch further before backtracking and does not automatically find a shortest solution. Here the full encoding has only 16 possible bit combinations. The supplied checker confirms the seven-trip shortest path without requiring you to memorise a puzzle answer.
+**Check:** A and B are left together on the right without the robot. Some useful moves temporarily move away from the goal.
 
-For competitive games, a reachable state is not automatically a winning state: the opponent chooses the next move. In a game removing one or two counters with the last taker winning, 1 and 2 are winning positions; 3 is losing because both legal choices give the opponent a winning position. With 4, remove one and leave 3. A position is winning if **some** move gives the opponent a losing position; it is losing if **every** legal move gives the opponent a winning position. This is the small win/loss form of adversarial game-tree reasoning. Topic 08 develops the recurrence and checks the multiple-of-three pattern.
+Draw states as nodes and legal moves as arrows. Mark visited states to avoid repeating a cycle. **Breadth-first search** explores one-move paths, then two-move paths, and so on; equal-cost moves give a shortest path. **Depth-first search** follows one branch before returning to alternatives; it need not find the shortest path first.
 
-Apply the same method to a cup-swapping or coin-weighing question: define what a state records, list permitted actions, eliminate impossible states, and trace the effect of each action. For weighing puzzles, each weighing can branch into left-heavy, balance, or right-heavy; do not treat one observed branch as a complete strategy for all outcomes.
+## 8. Puzzle workshop: an opponent chooses too
 
-## Transfer: two-pile games and a mirror strategy
+A **game tree** includes the moves each player can choose. Label whose turn it is. “Winning” means winning for the player **about to move**, assuming both play as well as possible.
 
-Change the rules from the earlier one-pile game: on each turn, remove **one or more** counters from **exactly one** pile. Removing zero or changing both piles is illegal. The player taking the last remaining counter wins. A state records pile sizes and whose turn it is; classify a position as winning or losing **for the player about to move**, assuming best play on both sides.
+One pile: remove one or two counters; taking the last wins. With 1 or 2 you can win immediately. With 3, either move gives the opponent 1 or 2, so 3 is losing. With 4, remove one and give the opponent 3.
 
-For two equal piles `(n, n)` with `n > 0`, the current player must make them unequal. The opponent can remove the same number from the other pile, restoring equality. Repeating this mirror response leaves the opponent taking the final counters. Thus an equal pair is losing for the player to move. `(0, 0)` is the terminal losing position: there is no legal move.
+- Winning position: **some** legal move gives the opponent a losing position.
+- Losing position: **every** legal move gives the opponent a winning position.
 
-For unequal piles `(n, m)`, reduce the larger pile to equal the smaller. This hands the opponent a losing equal-pile position. If the smaller pile is zero, remove the entire remaining pile and win immediately. The argument depends on being permitted to remove any positive quantity from one pile; it does not apply unchanged to the earlier one-or-two-counter game.
+### Change the rules: two piles
 
-A complete first layer of the game tree for `(1, 3)` is:
+Now remove **any positive number from exactly one pile**. Taking the last counter still wins. Equal piles `(n,n)` are losing: after your move, your opponent can copy it in the other pile, restore equality, and eventually take the last counter. `(0,0)` is losing because no move remains.
 
-| Current player's action | State passed to opponent | Opponent's status |
+For unequal piles, reduce the larger to match the smaller. Here are **all** first moves from `(1,3)`:
+
+| Move | Position given to opponent | Opponent's status |
 |---|---|---|
-| Remove 1 from first pile | `(0, 3)` | Winning: take remaining pile |
-| Remove 1 from second pile | `(1, 2)` | Winning: reduce 2 to 1 |
-| Remove 2 from second pile | `(1, 1)` | Losing: equality |
-| Remove 3 from second pile | `(1, 0)` | Winning: take remaining pile |
+| Remove 1 from first pile | `(0,3)` | Winning: take the remaining pile |
+| Remove 1 from second pile | `(1,2)` | Winning: make `(1,1)` |
+| Remove 2 from second pile | `(1,1)` | Losing: equal piles |
+| Remove 3 from second pile | `(1,0)` | Winning: take the remaining pile |
 
-Choose the third move. From `(1,1)`, the opponent can remove either single counter; then take the other one and win. This traces both possible replies, rather than assuming the opponent makes a convenient choice. In another example, `(2,4) → (2,2)` is winning; if the opponent then makes `(0,2)`, take the final two.
+**Try:** choose a move from `(2,4)`, then from three equal piles `(2,2,2)`.
 
-With **three equal positive piles** `(n,n,n)`, remove one whole pile. Two equal piles remain for the opponent, a losing position under the same rules. This is a specific strategy for three equal piles, not a complete rule for arbitrary three-pile states. The checked recursive evaluator in `state_space.py` verifies the small examples independently of the mirror formula.
+**Check:** leave `(2,2)` in the first game. Remove one entire pile in the second, again leaving two equal piles. This second result is specific to three equal piles, not a rule for all three-pile positions.
 
-## An adaptive weighing tree
+## 9. Puzzle workshop: cover every weighing outcome
 
-Suppose nine identical-looking balls contain exactly one heavier ball, and all others have the same weight. A balance gives three outcomes: left heavier, right heavier or equal. Find the heavier ball using two weighings. The assumption that the odd ball is **known to be heavier** is essential; a problem where it might be lighter has different possibilities.
+Nine balls A–I include exactly one **known heavier** ball. All others weigh the same. A balance has three outcomes: left heavy, right heavy or balance.
 
-Label the balls A–I. First weigh A,B,C against D,E,F. If the left is heavier, the suspect set is A,B,C. If the right is heavier, it is D,E,F. If they balance, it is G,H,I. Every outcome leaves three suspects. From whichever set remains, weigh its first ball against its second. If the left is heavier choose the first, if the right is heavier choose the second, and if they balance choose the unweighed third. This describes all three branches at both levels, not just a favourable example.
+1. Weigh A,B,C against D,E,F.
+2. Left heavy leaves A,B,C; right heavy leaves D,E,F; balance leaves G,H,I.
+3. Weigh the first ball of the remaining group against its second.
+4. Left heavy identifies the first; right heavy the second; balance identifies the unweighed third.
 
-One weighing has only three outcomes and cannot distinguish nine equally possible identities. Two weighings have at most 3²=9 outcome paths, so at least two are needed and this construction meets that bound. The second action depends on the first result: this is an adaptive decision tree. Appearance, labels and material can be abstracted away because only identity and relative weight affect this problem. Draw the tree and trace the path for B (left, right), F (right, equal) and H (equal, right).
+This covers every branch. The second action depends on the first outcome: an **adaptive decision tree**.
+
+**Try:** trace B, F and H through the tree.
+
+**Check:** B: left, right. F: right, balance. H: balance, right. Two weighings have at most `3² = 9` outcome paths; one weighing has only three. This strategy therefore uses the minimum number under the stated rules. If the odd ball could be lighter, the problem would have different possibilities.
+
+**Next:** <a href="https://tutors.dev/lab/lc-cs/topic-05-algorithms/book-01-practice">2. Practise: design the bus algorithm</a>. <a href="https://tutors.dev/note/lc-cs/topic-05-algorithms/note-02-feedback">Open the answers</a>.

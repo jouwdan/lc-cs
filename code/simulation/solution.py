@@ -58,8 +58,9 @@ def self_check():
 
 if __name__ == "__main__":
     self_check()
-    for service in (.5, .8):
-        means = [summarise(simulate(120, .6, service, seed))["mean_queue"] for seed in range(20)]
-        print({"arrival_probability": .6, "service_probability": service, "minutes": 120,
-               "seeds": "0..19", "mean_of_run_means": mean(means),
-               "lowest_run_mean": min(means), "highest_run_mean": max(means)})
+    print("Checks passed.")
+    print("Remaining queue:", simulate(10, 0.6, 0.5, 7)["history"])
+    for service in (0.5, 0.8):
+        means = [summarise(simulate(120, 0.6, service, seed))["mean_queue"] for seed in range(20)]
+        print(f"Service {service:.1f}: mean of run means={mean(means):.3f} people; "
+              f"range={min(means):.3f} to {max(means):.3f}")

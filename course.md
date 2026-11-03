@@ -1,24 +1,23 @@
-# Leaving Certificate Computer Science
+# Leaving Cert CS
 
-A complete study course for Higher and Ordinary Level, grounded in the 2020–2025 examination papers and marking schemes.
+Study computer science at Ordinary or Higher.
 
-Learn the idea, explain a worked example, build something, test it, and practise an exam question. Sixteen teaching topics lead to a library of all 63 documents listed by Better Exams for 2020–2025, including English and Irish versions.
+Learn one idea, try it, then check your answer. For Ordinary and Higher Level.
 
-This course follows the Irish Computer Science specification used for these examinations, identified by Curriculum Online as the specification for examination through June 2028. It is not a course for the replacement specification introduced in September 2027. Teaching is in English; source papers preserve their original language.
+**New here?** Open <a href="https://tutors.dev/topic/lc-cs/topic-01-start-here">Topic 01: Start here</a>. You need no previous coding experience.
 
-## Your route
+**Already studying?** Choose a topic below. Start with **1. Learn**, then **2. Practise** and **3. Quiz**. Each topic has answers and links to exam questions.
 
-1. **Start here:** Topic 01 explains equipment, study habits, level choices and the two-year plan.
-2. **Understand systems:** Topics 02–04 connect hardware, representation, logic and networks.
-3. **Learn to program:** Topics 05–09 develop problem solving, Python, algorithms and testing.
-4. **Build applications:** Topics 10–13 investigate data, models, embedded devices and interactive information systems.
-5. **Explain and evaluate:** Topics 14–16 develop ethical reasoning, applied learning portfolios and exam technique.
-6. **Practise with evidence:** Topic 17 contains the original papers and marking schemes, arranged by year.
+## Choose your route
 
-Every topic has a concept note, worked practice, a lab, a recap deck and a quiz with a separate explanation note. Extra notebooks, whiteboards, downloads, video and podcast activities provide alternative ways to learn. Written alternatives accompany external media so access to a streaming service is not a prerequisite.
+- **Understand computers:** Topics 02–04 cover hardware, binary, logic and networks.
+- **Learn Python:** Topics 05–09 cover algorithms, programming and testing. Follow these in order if you are new to coding.
+- **Build projects:** Topics 10–13 cover data, simulations, embedded systems and websites.
+- **Prepare for assessment:** Topics 14–16 cover society, projects and exam practice.
+- **Find a paper:** <a href="https://tutors.dev/topic/lc-cs/topic-17-past-papers">Topic 17</a> has the 2020–2025 papers and marking schemes.
 
-## For educators
+Do the core activities first. Sections marked **Higher Level** add depth; **optional** activities provide extra practice. Your teacher can help you choose the right depth.
 
-Use the coverage map in the reference area to choose exam questions by concept. The 176 English-language question groups have been indexed by year, level, section and PDF page; this is a navigation aid rather than a prediction of future examinations. Start with core tasks for everyone and assign labelled Higher Level extensions according to your class. The four collaborative applied learning tasks and the individual assessed coursework project have different purposes; Topic 15 separates them.
+This course uses the specification examined through June 2028 and the 2020–2025 papers. It does not cover the replacement specification introduced in September 2027. Teaching is in English; the paper library includes English and Irish versions where available.
 
-Original quizzes, examples and mock tasks are learning materials, not SEC questions or official marking decisions. All solutions are public for self-study. For graded school assessments, prepare a separate unseen task. Follow the instructions on the actual exam paper and the SEC brief for your own cohort; historical paper structures differ.
+Quizzes are for practice, not official grades. Follow the instructions on your own exam paper and coursework brief. <a href="https://tutors.dev/note/lc-cs/side-reference/note-02-educator-guide">Teacher guide</a>.

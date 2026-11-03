@@ -1,8 +1,10 @@
-# Computational-thinking check
+# 3. Quiz: Algorithms
 
-A formative self-check: answers and scores are not recorded.
+Test yourself, then check the answers.
 
-Answer without running code first. After submitting, explain each answer in your own words and use the separate feedback note. The answer key is visible in the source; this is practice, not a secure assessment.
+Allow 10 minutes. Answer all 10 questions without notes or running code. Submit, then write down the numbers you want to revisit. Scores are not saved.
+
+After your attempt, use **4. Answers** to explain each correction, then retry the missed questions.
 
 ````quiz
 question: Which is the most useful decomposition of a bus-booking task?
@@ -33,12 +35,14 @@ options:
 correct: 2
 ---
 question: What is the output?
-```python
-count = 0
-for value in [50, 49, 80]:
-    if value >= 50:
-        count += 1
-print(count)
+```text
+count ← 0
+FOR EACH value IN [50, 49, 80]
+    IF value >= 50 THEN
+        count ← count + 1
+    ENDIF
+ENDFOR
+OUTPUT count
 ```
 type: multiple-choice
 options:
@@ -74,7 +78,7 @@ options:
   - Remove every boundary case
 correct: 2
 ---
-question: For a while loop that exits by its condition (without break or return), what must happen?
+question: For a loop that repeats while a condition is true and has no other exit, what must happen?
 type: multiple-choice
 options:
   - Its condition must eventually become false
@@ -83,7 +87,9 @@ options:
   - Its condition must always be true
 correct: 0
 ---
-question: Changing a counter update from count += 1 to count += value still counts the qualifying items.
+question: Changing a counter from adding 1 to adding the matching value still counts the number of matching items.
 type: true-false
 correct: false
 ````
+
+**Next:** <a href="https://tutors.dev/note/lc-cs/topic-05-algorithms/note-02-feedback">4. Answers: check your reasoning</a>. <a href="https://tutors.dev/note/lc-cs/topic-05-algorithms/note-02-feedback">Open the answers</a>.

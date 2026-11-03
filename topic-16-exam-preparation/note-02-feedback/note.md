@@ -1,26 +1,28 @@
-# 16 · Exam preparation and synthesis: quiz feedback
+# 4. Answers: Exam skills
 
-Use these explanations after your first attempt. Correct the reasoning, then retry after a delay.
+Check your reasoning and repair one gap.
+
+Check after your first attempt. For each missed answer, write one sentence explaining why the correct option works. Reopen <a href="https://tutors.dev/quiz/lc-cs/topic-16-exam-preparation/quiz-01-check">the quiz</a> when you are ready to retry.
 
 ## Question 1
 
-**Answer: Those printed on that year, level and section.** Question choices, marks, durations and materials can differ. Identify the exact paper first.
+**Answer: Those printed on that year, level and section.** Check the exact paper: choices, marks, time and materials can change between years.
 
 ## Question 2
 
-**Answer: To identify a specific gap and plan a repair and retry.** Useful entries connect an observed error with a targeted action and later independent evidence.
+**Answer: To identify a specific gap and plan a repair and retry.** Write what went wrong, one small action and when you will retry without help.
 
 ## Question 3
 
-**Answer: A reason or mechanism linked to the question.** Explanation shows why or how. Length alone does not establish understanding.
+**Answer: A reason or mechanism linked to the question.** Give a why or how linked to the question. Extra length alone does not help.
 
 ## Question 4
 
-**Answer: More relevant cases are needed, especially boundaries.** A sample exercises only particular paths. Select tests from the requirements and likely failure modes.
+**Answer: More relevant cases are needed, especially boundaries.** One sample may miss a branch or boundary. Choose more inputs from the program requirements.
 
 ## Question 5
 
-**Answer: Inspect requirements and save a working copy as instructed.** Understand the starting behaviour and preserve a correctly named copy before incremental changes.
+**Answer: Inspect requirements and save a working copy as instructed.** Know what the code already does. Save the requested copy, then make one change at a time.
 
 ## Question 6
 
@@ -28,7 +30,7 @@ Use these explanations after your first attempt. Correct the reasoning, then ret
 
 ## Question 7
 
-**Answer: Empty, odd, even and unsorted inputs.** These cases expose missing empty handling, middle-pair errors and failure to sort.
+**Answer: Empty, odd, even and unsorted inputs.** They check for an empty-list error, using the wrong middle pair and forgetting to sort.
 
 ## Question 8
 
@@ -36,4 +38,14 @@ Use these explanations after your first attempt. Correct the reasoning, then ret
 
 ## Question 9
 
-**Answer: Solve a different question on the repaired skill without notes.** Transfer to a fresh question provides better evidence that the underlying skill improved.
+**Answer: Solve a different question on the repaired skill without notes.** A fresh question checks whether you can use the idea yourself, rather than remember one answer.
+
+
+## Practice checkpoint
+
+Your mark record should name an exact part, use its matching scheme allocation and identify a specific repair. “Bad at algorithms” is too broad. “I skipped the list states after each swap, so I will trace a new four-item list” gives an action you can complete.
+
+For the course mock, use the <a href="https://tutors.dev/note/lc-cs/topic-16-exam-preparation/note-04-mock-guide">separate worked marking guide</a>. The nine quiz answers above do not mark the mock or an SEC paper.
+
+
+**Next:** <a href="https://tutors.dev/note/lc-cs/topic-16-exam-preparation/note-03-exam-practice">5. Exam practice</a>.

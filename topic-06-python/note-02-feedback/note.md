@@ -1,6 +1,8 @@
-# Python fundamentals: feedback
+# 4. Answers: Python
 
-Check the reasoning behind each expression, branch, and repeated step.
+Check your reasoning and repair one gap.
+
+Use this after an attempt. Find the question or lab step you missed, explain the correction in one sentence, then rerun that case yourself.
 
 ## Quiz explanations
 
@@ -15,28 +17,58 @@ Check the reasoning behind each expression, branch, and repeated step.
 9. **`2.50`.** Fixed-point formatting with precision 2 displays two digits after the decimal point.
 10. **To preserve earlier additions.** Resetting the total inside the body discards earlier work.
 
-## Lab answers
 
-The expression answers are 3, 2, 11, 14. The text expression is `"34"`; numeric addition gives 7.
+## Stage 1: expressions and one ticket
 
-| Age | Price in cents | Reason |
+The six expression lines are `3`, `2`, `11`, `14`, `34`, `7`. The fifth is text concatenation; the sixth is numeric addition.
+
+The completed price selection, after the supplied validation, is:
+
+```python
+if age < 16:
+    return 800
+elif age < 65:
+    return 1200
+else:
+    return 900
+```
+
+| Age | Expected cents | Why |
 |---:|---:|---|
-| 0 | 800 | Valid lower boundary; below 16 |
+| 0 | 800 | Valid minimum; child band |
 | 15 | 800 | Last child age |
 | 16 | 1200 | First standard age |
 | 64 | 1200 | Last standard age |
 | 65 | 900 | First senior age |
-| 120 | 900 | Valid upper boundary |
-| -1, 121 | Error | Outside the accepted range |
+| 120 | 900 | Valid maximum |
+| -1, 121 | Error | Out of range |
 
-The complete model rejects an invalid type or age before selecting a price. Within the valid range, `< 16`, then `< 65`, then the final branch cover all cases exactly once.
+The `< 16` → `<= 16` experiment puts 16 in the wrong band. The age-16 assertion exposes it; restoring `< 16` makes the test pass.
 
-For `[12, 16, 70]`, prices are 800, 1200, 900, and running totals are 800, 2000, 2900. Displaying the final total produces `29.00`. Resetting before every addition leaves 900, which exposes a logical error. Empty input leaves the initial total at zero.
+## Stage 2: input and totals
 
-Sentinel input `[40, 60, -1, 99]` produces count 2 and total 100. Processing stops at -1, so 99 is not read as another score. An immediate -1 yields `(0, 0)`. Rejecting -2 separately shows that the sentinel is a deliberate protocol, not a general rule to accept any negative score.
+`input()` returns text. `int("-1")` succeeds but the range check fails. `int("sixteen")` and `int("16.5")` fail conversion. Each should produce a useful message rather than a made-up price.
 
-The checked [`solutions.py`](https://github.com/jouwdan/lc-cs/blob/main/code/topic-06-python/solutions.py) includes the functions, a reusable prompt, and assertions. Run `python3 code/topic-06-python/solutions.py`; expect `Topic 06 checks passed`. The self-check does not prompt for input. To practise the interface, call `prompt_for_age()` explicitly and try `sixteen`, `16.5`, -1, and 16 in sequence.
+| Age | Price | Running total |
+|---:|---:|---:|
+| 12 | 800 | 800 |
+| 16 | 1200 | 2000 |
+| 70 | 900 | 2900 |
 
-## Review your evidence
+The group display is `Group total: EUR 29.00`. Empty input leaves zero and displays `0.00`. Moving the initialisation into the loop discards earlier totals, leaving 900 cents and a display of `9.00`.
 
-A test record needs input, expected result, actual result, and a conclusion. “It works” is not a record. If a branch failed, add a neighbouring value on each side of its threshold. If an input failed to convert, state the conversion error separately from the range check. If a loop failed, trace its state before rewriting it.
+## Sentinel extension
+
+Add `count = count + 1` only after the input has converted, passed the sentinel test and passed range validation. For 40, 60, -1, final lines are `Count: 2` and `Total: 100`. Immediate -1 leaves both zero. For -2, 101, hello, 50, -1, only 50 counts: count 1, total 50.
+
+The sentinel is checked before addition so -1 is not treated as a real score. `while` suits an unknown number of entries; `for` suits the known ages list.
+
+## Find the stage you need
+
+The [completed guided files](https://github.com/jouwdan/lc-cs/tree/main/code/topic-06-python) match the lab filenames. Keep `tickets.py` beside `ticket_input.py` and `group_tickets.py` so the imports work. Run each file independently.
+
+The older, fuller [solutions.py](https://github.com/jouwdan/lc-cs/blob/main/code/topic-06-python/solutions.py) provides reusable models and additional assertions. Its direct run prints `Topic 06 checks passed` and does not prompt. The guided `ticket_input.py` and `score_entry.py` are the files to run for keyboard practice.
+
+**Repair one gap:** if the function was confusing, run `double(6)` from Learn and label parameter, argument and return value. If your loop failed, trace the running total before changing the code.
+
+**Next:** <a href="https://tutors.dev/note/lc-cs/topic-06-python/note-03-exam-practice">5. Exam practice: apply one skill</a>. <a href="https://tutors.dev/note/lc-cs/topic-06-python/note-02-feedback">Open the answers</a>.

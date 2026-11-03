@@ -1,69 +1,176 @@
-# Computer systems: from input to execution
+# 1. Learn: Systems
 
-Explain how hardware, software and operating systems work together, and justify choices for a task.
+See how CPU, memory and the OS work.
 
-## Outcomes
+Follow a library loan from scanning a book to saving the record. Use that example to learn each computer part.
 
-Identify input, processing, storage and output; distinguish RAM, ROM and secondary storage; explain operating-system services; trace a simple instruction cycle; compare language translators; and relate hardware developments to practical capability. Higher Level extensions examine CPU components and a more detailed fetch–decode–execute cycle.
+**Split this lesson:** first study sections 1–4, then do the diagram in the lab. Return for sections 5–8 before the quiz. Read the Higher Level sections when ready.
 
-## A system is a set of interacting parts
+## 1. Input, process, output and storage
 
-A library self-service station reads a card and a book code, checks a database, records the loan, then displays a due date. The scanner is input hardware, the CPU processes instructions, storage holds the catalogue, and the screen is output hardware. A touchscreen performs both input and output. A sensor converts a physical measurement into an electrical signal; an actuator changes the physical world. Do not identify a component by its shape alone: explain its role in the scenario.
+A library machine scans your card and a book, records the loan and shows a due date.
 
-Hardware is the physical equipment. Software is the instructions and associated data that make it perform tasks. System software supports the computer itself; an operating system and device drivers are examples. Application software serves a user task, such as editing a document or analysing measurements. Firmware is software stored in a device to support its operation; it is not a third category of physical material.
+| Job | Library example |
+|---|---|
+| **Input:** receives data | Scanner reads the book code. |
+| **Process:** follows instructions | CPU checks whether the book can be borrowed. |
+| **Output:** presents a result | Screen shows the due date. |
+| **Storage:** keeps data | A saved loan record stays on storage. |
 
-## Memory and storage
+**Hardware** is physical equipment, such as a scanner. **Software** is the instructions and associated data, such as the loan program.
 
-| Component | Main role | What happens without power? | Suitable example |
-|---|---|---|---|
-| RAM | Instructions and data actively in use | Ordinary RAM is volatile | An unsaved program and its variables |
-| ROM/non-volatile firmware memory | Persistent start-up or device instructions | Retains data | Boot firmware |
-| Secondary storage | Longer-term files and programs | Normally retains data | A saved photo on an SSD |
-| CPU registers | Very small, fast working locations inside the CPU | Normally volatile | An instruction address or arithmetic operand |
-| Cache | Keeps copies of likely-needed instructions/data close to the CPU | Normally volatile | Recently used memory contents |
+A touchscreen is both input and output: it detects a touch and displays a result. A **sensor** measures something, such as temperature. An **actuator** changes something, such as a motor turning a fan.
 
-ROM is traditionally read-only; modern firmware often uses electrically rewritable non-volatile memory. Avoid saying that every modern firmware chip can never change. RAM capacity and storage capacity describe different resources. More storage does not by itself let a running program hold more active data in RAM. A solid-state drive has no moving read head and offers fast access; a magnetic hard drive may offer economical capacity but moving parts affect latency and robustness. Choose using the actual task, cost and environment, not “newer is always better”.
+**Try:** is a printer input or output? What about a microphone?
 
-## What an operating system does
+**Check:** a printer is output; a microphone is input.
 
-The OS schedules processor time, manages memory, controls devices through drivers, organises files and directories, and enforces access permissions. It provides an interface and services for applications. Resource management allocates CPU time and memory between competing programs. File management includes names, folders, read/write operations and permissions. These are different functions; merely repeating “it manages resources” does not explain either.
+## 2. RAM is not the same as saved storage
 
-Suppose a pupil edits a report while music plays. The OS schedules work from both programs; it allocates memory and handles keyboard, display and audio devices. A scheduling decision can make interactive input responsive without giving one application permanent exclusive use of the processor. If a program crashes, protected process memory can help contain the damage, although isolation is not an absolute guarantee against every fault.
+**Volatile** means the contents are lost when power is removed.
 
-An interface can be graphical, command based, menu driven, touch or voice based. A command line can support precise repeatable operations but requires command knowledge. A menu can make common options discoverable but can become slow or restrictive with deeply nested choices. Compare against a user's needs and environment; a loud room and a speech impairment affect a voice interface differently.
+| Part | What it holds | Keeps its contents without power? |
+|---|---|---|
+| **RAM** | Programs and data currently being used | No, ordinary RAM is volatile. |
+| **ROM / firmware memory** | Start-up or device instructions | Yes. |
+| **SSD or hard drive** | Saved files and programs | Yes, normally. |
+| **CPU register** | A tiny amount of data the CPU is working on | No, normally. |
+| **Cache** | Copies of data/instructions likely to be needed soon | No, normally. |
 
-## CPU and the stored-program idea — Higher Level extension
+**Example:** you type a paragraph but do not save it. It is working data in RAM. Saving writes a copy to storage, so the saved version can remain after shutdown.
 
-A stored-program computer keeps instructions as well as data in memory. The **control unit** coordinates instruction execution. The **arithmetic logic unit (ALU)** performs arithmetic and logical operations. Registers hold working values. The **program counter (PC)** holds the address of the next instruction; an instruction register holds the current instruction. Buses carry information between components: address information identifies a location, data carries values, and control signals coordinate actions.
+Registers are very small, fast working locations **inside the CPU**. RAM is larger main memory and is slower to access than registers.
 
-A simplified fetch–decode–execute cycle is: use the PC to fetch an instruction from memory; update the PC as appropriate; decode the instruction; execute it; repeat. A branch can change the next instruction address. The precise internal sequence varies by processor, so use the model specified in a question.
+ROM traditionally means read-only memory. Modern firmware often uses rewritable non-volatile memory, so firmware can sometimes be updated.
 
-Consider a simplified machine with `LOAD 6`, `ADD 4`, `STORE answer`, `HALT`. After LOAD the working register contains 6. After ADD it contains 10. STORE writes 10 to the named memory location. HALT stops this program. The ALU performs the addition; the control unit directs the sequence. Do not describe the PC as holding every program instruction: it identifies the next one.
+An **SSD** has no moving read head. It is usually faster to access and better suited to being moved. A **hard drive (HDD)** has moving parts and may offer more capacity for the price. Choose for the task and budget.
 
-## Languages and translation
+**Try:** will a larger SSD alone give a running program more RAM?
 
-Machine code is the CPU's encoded instruction language. Assembly uses symbolic operation names and is translated by an assembler. High-level languages express ideas with more human-oriented constructs, usually improving portability and readability. A compiler translates source into another form before execution of the translated result. An interpreter executes or evaluates program instructions using a runtime. Real implementations combine techniques; Python commonly compiles source to bytecode that a virtual machine executes. Therefore “Python is interpreted” is a useful introductory description, not proof that no compilation ever happens.
+**Check:** no. Storage capacity and RAM capacity are different.
 
-A syntax error violates language rules. A runtime error arises during execution, such as dividing by zero. A logic error produces the wrong result even though the program runs. Translation success cannot establish that the program solves the intended problem. Topics 06 and 09 turn this distinction into debugging practice.
+## 3. What does an operating system do?
 
-## Hardware development and performance
+An **operating system (OS)** manages the computer and provides services for applications. It is software, not a CPU.
 
-Mechanical devices automated physical operations; electronic switching made very rapid operations possible. Transistors replaced many vacuum-tube roles with smaller, more reliable and lower-power components. Integrated circuits put many components on one chip; microprocessors enabled compact general-purpose computers. Explain a milestone through its effect, rather than listing a date alone.
+| OS job | Example |
+|---|---|
+| Schedule CPU time | Share processing time between a report editor and music player. |
+| Manage memory | Allocate RAM to running programs. |
+| Manage files | Save, name and organise files in folders. |
+| Control devices | Use a **driver** to communicate with a printer. |
+| Manage access | Decide which accounts can open or change a file. |
 
-Moore's law describes a historical observation about growth in transistor counts, often summarised as doubling roughly every two years. It is not a physical law and does not say every program's speed doubles on that schedule. Clock rate, instructions per cycle, memory access, core count, software and energy limits all affect performance. Multiple cores help work that can be divided; they do not make every sequential algorithm proportionally faster.
+The OS and drivers are **system software**. A document editor or game is **application software**: it does a user's task. **Firmware** is software stored in a device to help operate it.
 
-## Worked selection problem
+**Try:** name two OS services used when saving and printing a report.
 
-A school needs a classroom sensor logger that operates quietly for hours. A suitable design prioritises low energy use, sufficient memory for readings, compatible sensor inputs and dependable storage. A high-powered gaming graphics card adds cost and power demand without addressing the task. State one advantage and one limitation of your selected device: for example, low power helps battery life, but limited memory restricts how much data can be buffered. A justified answer ties both points to the actual scenario.
+**Check:** file management saves it; a printer driver controls printing. Memory and CPU scheduling also support the work.
 
-## Misconceptions to repair
+## 4. Choose an interface for its user
 
-Saving a file and storing a variable in RAM are different actions. An OS is software, not the CPU. A faster CPU does not fix a slow network connection automatically. A register is not a file on disk. More cores are not equivalent to the same factor of improvement for every workload. Use a labelled input–process–output–storage diagram to check where each operation happens.
+An **interface** is how a person interacts with a system.
 
-## Virtual memory and the accumulator — worked extension
+- **Graphical:** windows, icons and buttons make options visible.
+- **Command line:** typed commands can repeat precise tasks, but must be learned.
+- **Menu:** users choose from listed options; many nested menus can be slow.
+- **Touch or voice:** useful in some settings, but affected by access needs and surroundings.
 
-When active memory demand exceeds available physical RAM, an operating system can use secondary storage as backing for virtual memory, moving pages between storage and RAM. This allows a process to use a virtual address space that is not simply a one-to-one view of installed RAM. It is not equivalent to installing equally fast extra RAM: accessing storage-backed pages can be much slower, and excessive page movement can make the system unresponsive. A useful exam explanation names both the capacity benefit and performance limitation.
+**Worked choice:** a touchscreen with large labelled buttons suits a public loan station. A command line would require visitors to know commands. Voice controls could be difficult in a noisy room or for a person with a speech impairment.
 
-An **accumulator** is a register used to hold intermediate arithmetic or logical results in a simplified CPU model. In `LOAD 7; ADD 5; SUBTRACT 2`, the accumulator values become 7, 12, 10. Meanwhile the program counter tracks the address of the next instruction. If these instructions are at addresses 20, 21 and 22 and each advances to the next address, after executing the third instruction the next address is 23. The data result 10 and instruction address 23 have different purposes.
+**Pause here:** <a href="https://tutors.dev/lab/lc-cs/topic-02-computer-systems/book-01-practice">start the library diagram in the lab</a>. Return for the next sections afterwards.
 
-Practice: trace an accumulator through LOAD 4; MULTIPLY 3; ADD 1. The final result is 13. Explain why the accumulator cannot replace secondary storage for a permanent file: it is a small volatile working register, designed for current execution.
+## 5. The CPU follows instructions
+
+The **central processing unit (CPU)** executes instructions.
+
+| CPU part | Job |
+|---|---|
+| **Control unit** | Coordinates instruction execution. |
+| **Arithmetic logic unit (ALU)** | Performs arithmetic and logic. |
+| **Register** | Holds a working value or address. |
+| **Program counter (PC)** | Holds the address of the next instruction. |
+| **Instruction register** | Holds the current instruction. |
+
+A **stored-program computer** keeps instructions and data in memory.
+
+The simplified cycle is **fetch → decode → execute → repeat**:
+
+1. Fetch the instruction at the address held in the PC.
+2. Decode it: determine what operation it requests.
+3. Execute it, such as adding two numbers.
+4. Continue with the next instruction. A branch can change its address.
+
+The PC is updated during this process; follow the precise CPU model supplied in an exam question.
+
+### Worked trace
+
+These are instructions for an invented machine, not Python. Here, `STORE` copies a value to a named **main-memory location**. It does not save a file to disk; this memory value can be lost when power is removed.
+
+| Instruction | Working register afterwards | Memory value `answer` |
+|---|---:|---|
+| LOAD 6 | 6 | Not set |
+| ADD 4 | 10 | Not set |
+| STORE answer | 10 | 10 |
+| HALT | 10 | 10 |
+
+The ALU does the addition. The control unit directs the steps. The PC holds an **instruction address**, not the answer 10.
+
+**Try:** change `ADD 4` to `ADD 7`. What value is written to memory?
+
+**Check:** 13.
+
+### Higher Level: buses and the accumulator
+
+A **bus** carries information between components. The address bus identifies a location; the data bus carries values; control signals coordinate operations.
+
+An **accumulator** is a register used for intermediate results in a simple CPU model. `LOAD 7; ADD 5; SUBTRACT 2` gives 7, 12, then 10. If those instructions occupy addresses 20, 21 and 22, the next address is 23 in this simple sequential model. The result **10** and the address **23** have different jobs.
+
+### Higher Level: virtual memory
+
+An OS can move memory pages between RAM and secondary storage. This supports a virtual address space and helps when physical RAM is under pressure.
+
+**Benefit:** more data can be managed than fits in physical RAM at once. **Limit:** accessing storage-backed pages is much slower than RAM; frequent transfers can slow the computer badly. It is not the same as installing equally fast extra RAM.
+
+## 6. Languages and translators
+
+| Term | Meaning |
+|---|---|
+| Machine code | Encoded instructions a CPU executes. |
+| Assembly language | Symbolic names for machine operations. |
+| Assembler | Translates assembly into machine code. |
+| High-level language | Uses constructs closer to human problem solving, such as Python loops. |
+| Compiler | Translates source into another form before that result is run. |
+| Interpreter | Executes or evaluates instructions using a runtime. |
+
+Real systems can combine these approaches. Python commonly compiles to bytecode which a virtual machine executes.
+
+Successful translation does **not** prove correct results:
+
+- A **syntax error** breaks language rules, such as missing punctuation.
+- A **runtime error** occurs while running, such as division by zero.
+- A **logic error** gives a wrong answer even though the program runs.
+
+## 7. Hardware milestones and speed
+
+| Development | Why it mattered |
+|---|---|
+| Mechanical devices | Automated physical operations. |
+| Electronic switching | Allowed much faster operations. |
+| Transistors | Replaced many vacuum tubes with smaller, lower-power, more reliable components. |
+| Integrated circuits | Put many components on one chip. |
+| Microprocessors | Helped make compact general-purpose computers possible. |
+
+**Moore's law** is a historical observation about growing transistor counts, often described as roughly doubling every two years. It is not a physical law or a promise that every program gets twice as fast.
+
+Performance also depends on clock rate, work per clock cycle, RAM access, cores, software and energy limits. More cores help tasks that can be split up. A faster CPU will not automatically fix a slow internet connection.
+
+## 8. Give a reason for a hardware choice
+
+For a quiet battery-powered sensor logger, choose low energy use, enough memory, compatible sensor inputs and dependable storage. A gaming graphics card adds power use and cost without helping this job.
+
+Use this answer pattern: **choice → benefit for this task → limitation**.
+
+Example: “Choose a low-power processor so the logger runs longer on its battery. Check that it is fast enough to process each reading on time.”
+
+**Next:** <a href="https://tutors.dev/lab/lc-cs/topic-02-computer-systems/book-01-practice">2. Practise: Design a library computer →</a>

@@ -1,10 +1,19 @@
-# From this topic to the exam
+# 5. Exam: Binary & logic
 
-Apply the taught ideas to original papers, then use the matching marking scheme to diagnose your answer.
+Try a past question, then use its scheme.
 
-Choose one Ordinary Level question to secure a core skill and one Higher Level question for extension where available. Work before opening the scheme. Read the exact part and its marks; a multi-part question may span several topics. Page numbers below are PDF pages. These links open repository copies; the same documents are also in Topic 17.
+Start with one question. You do not need to work through the whole table.
 
-After marking, record the missing concept or communication step, repair it with the relevant lesson or lab, and attempt a different year. Marking schemes provide illustrative, non-exhaustive answers and formative guidance; they do not predict future marking.
+## Try one
+
+1. Open **[2022 Ordinary B Q13 (p. 11)](https://raw.githubusercontent.com/jouwdan/lc-cs/main/topic-17-past-papers/unit-2022/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf#page=11)**. Find the printed question number; links use PDF page numbers.
+2. Read its instructions and marks. Focus on this skill: Interpret binary-coded digits, storage units and encoding capacity; compare primary and secondary storage.
+3. Write your own answer before opening **[Scheme p. 10](https://raw.githubusercontent.com/jouwdan/lc-cs/main/topic-17-past-papers/unit-2022/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf#page=10)**. A question may include parts from later topics; return to those later.
+4. Compare your answer. Add one missing fact or working step, then explain it without copying the scheme.
+
+These are past-paper examples, not predictions. Choose your own level from the full list below when ready. Historical timings and choices can differ.
+
+## More questions by year and level
 
 | Paper and question | Practise this skill | Matching scheme |
 |---|---|---|
@@ -34,3 +43,5 @@ After marking, record the missing concept or communication step, repair it with 
 | [2025 Higher A Q5 (p. 5)](https://raw.githubusercontent.com/jouwdan/lc-cs/main/topic-17-past-papers/unit-2025/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf#page=5) | Convert hexadecimal RGB channels into decimal values. | [Scheme p. 5](https://raw.githubusercontent.com/jouwdan/lc-cs/main/topic-17-past-papers/unit-2025/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf#page=5) |
 | [2025 Ordinary A Q3 (p. 4)](https://raw.githubusercontent.com/jouwdan/lc-cs/main/topic-17-past-papers/unit-2025/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf#page=4) | Match number bases and explain binary electronic representation. | [Scheme p. 5](https://raw.githubusercontent.com/jouwdan/lc-cs/main/topic-17-past-papers/unit-2025/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf#page=5) |
 | [2025 Ordinary A Q4 (p. 4)](https://raw.githubusercontent.com/jouwdan/lc-cs/main/topic-17-past-papers/unit-2025/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf#page=4) | Explain Unicode's broader character repertoire. | [Scheme p. 5](https://raw.githubusercontent.com/jouwdan/lc-cs/main/topic-17-past-papers/unit-2025/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf#page=5) |
+
+**Finished one?** <a href="https://tutors.dev/topic/lc-cs/topic-03-representation-logic">Return to the topic</a> or use <a href="https://tutors.dev/talk/lc-cs/topic-03-representation-logic/talk-01-recap">6. Recap</a>.

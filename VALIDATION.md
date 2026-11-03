@@ -16,10 +16,27 @@ Validated on 3 November 2026 before the initial repository publication.
 
 This is educational review and automated checking, not official SEC endorsement or a classroom trial. Irish PDFs were archived intact; their equivalence to the English versions was not independently certified. Every PDF page was not visually inspected. The 176 entries are numbered question groups, not separate records for every subpart.
 
-Physical wiring, sensor calibration and device timing require checks on actual classroom hardware. External video/podcast availability and playback can vary; written alternatives are included. The notebook and quiz source contains answers and is suitable for self-study, not secure assessment. A hosted Netlify deployment has not been created by this repository publication; configuration and instructions are supplied.
+Physical wiring, sensor calibration and device timing require checks on actual classroom hardware. External video/podcast availability and playback can vary; written alternatives are included. The notebook and quiz source contains answers and is suitable for self-study, not secure assessment. The course is now hosted at https://tutors.dev/course/lc-cs. An already-open reader tab retains its course data until a full reload.
 
 ## Lab navigation correction — 3 November 2026
 
 The original generator-only checks missed a reader naming constraint: a `lab-*` root is mistaken for a chapter URL, while `book-*` opens correctly. Renamed all 16 topic lab folders to `book-01-practice`; their contents and runtime `lab` type are unchanged. The reference study journal already used `book-*`.
 
 A regression check using the actual course service, Markdown conversion, LiveLab and lab page loader reproduced the failure against the original deployed JSON. Against the corrected build, all **17 lab roots and 67 step URLs** pass, including first-step activation, cached reopening, step indexes and previous/next boundaries (2 Vitest tests passed). The repository validator now enforces the compatible `book-*` source and generated IDs. Existing bookmarks containing `lab-01-practice` should be replaced by the updated links from the course topic page.
+
+## Student-experience revision — 3 November 2026
+
+See [the complete walkthrough](STUDENT-EXPERIENCE.md) for the pain points and topic-by-topic repairs.
+
+- Rebuilt successfully with `@tutors/tutors@5.3.0`: **292 objects/steps**, all **14** simple learning-object types, **17** topics, **16 quizzes / 153 questions**. All **63** source PDFs and generated copies retain their original hashes; all **176** indexed question groups remain.
+- Used the actual Tutors course service, lab page loader, Markdown conversion and quiz parser. **3 integration checks passed**, covering the prior failure reproduction, all **17 lab roots / 67 steps**, all **17 topic routes / 53 notes**, all quiz questions and same-tab study-route anchors. Tests used the built course JSON and mocked only network delivery and Svelte state seams.
+- Rendered all **17 Marp decks / 153 slides** with the installed Marp engine. Every quiz passed the actual parser; the Python quiz was completed in the browser, including its code-trace question, submission and results. Corrected a quoted-string option that the reader had displayed with a missing opening quote.
+- Programming topics 05–09: **56 execution/content checks** passed. These include completing the published inline starters, valid/invalid interactive input, exact outputs, CSV failures, empty inputs, original model assertions and JavaScript checks. Four expected-failure scenarios are intentional teaching examples, not unexplained failing checks.
+- Extracted all four new starter packs for Topics 10–13 into fresh folders. Executed every instructed core edit and checked the stated results. Notebook cells run independently and match saved output. Library database/HTTP self-checks passed; browser checks confirmed initial results, keyboard submission, case-insensitive search, visible keyboard focus and the no-results message.
+- Refreshed the complete practical ZIP to **40 files**. The validator checks its code/notebook bytes and the separate starter ZIPs against their source files.
+- Checked short metadata in **251 source entries**. The built course's **190 cards** have titles of at most **27 characters** and descriptions of at most **45**. Browser measurement across the course home and all 17 topics found no clipped titles or descriptions in the tested desktop viewport after shortening the remaining seven titles. The validator enforces title/description limits for future edits.
+- Every course-owned Tutors, repository-file and hosted-file link is checked locally. All 63 year-table document links match the archive manifest. The 176-row index has matching scheme links and valid PDF page references.
+- Source lesson notes went from **79 prose blocks over 70 words to zero** using a simple paragraph count (excluding headings, tables, lists and code). This is evidence of shorter chunks, not a formal reading-age or learning-outcome measurement.
+- Downloader tests: **2 passed**. `scripts/check_course.py` and `git diff --check` pass.
+
+This remains an editorial and software walkthrough, not a classroom trial. Browser checks used desktop Tutors; every viewport, browser and assistive technology was not tested. Hardware, Irish/English equivalence and streaming limits still apply. Reload an already-open course tab after publication to replace its cached course data.

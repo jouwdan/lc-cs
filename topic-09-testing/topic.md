@@ -3,24 +3,20 @@ icon:
   type: mdi:test-tube
   color: "#c2410c"
 ---
-# 09 · Software design, testing, and debugging
+# 09 · Testing
 
-Turn requirements into test evidence and fix faults without breaking working behaviour.
+Find a fault, repair it and retest.
 
-## Study route
+**Before you start:** Complete Topic 06 functions/input and Topic 07 list basics. Topic 08 tracing practice helps.
 
-Read the concepts, predict the worked examples, complete the lab, take the quiz, then use the feedback to correct your reasoning. Finish with the recap slides.
+**Suggested pace:** Session 1 (30 min): requirements, test data and the failing case. Session 2 (30 min): repair and input tests. Optional 15 min: JavaScript operator trace.
 
-## Prerequisites
+## Your route
 
-Topics 05–08: functions, control flow, lists, and tracing.
+<a href="https://tutors.dev/note/lc-cs/topic-09-testing/note-01-concepts">1. Learn</a> → <a href="https://tutors.dev/lab/lc-cs/topic-09-testing/book-01-practice">2. Practise</a> → <a href="https://tutors.dev/quiz/lc-cs/topic-09-testing/quiz-01-check">3. Quiz</a> → <a href="https://tutors.dev/note/lc-cs/topic-09-testing/note-02-feedback">4. Answers</a> → <a href="https://tutors.dev/note/lc-cs/topic-09-testing/note-03-exam-practice">5. Exam practice</a> → <a href="https://tutors.dev/talk/lc-cs/topic-09-testing/talk-01-recap">6. Recap</a>
 
-## Success criteria
+Start with the worked examples, attempt the small task, then check the answer. Keep a note of one mistake and your correction. The exam bank is for choosing a question, not completing every row in one sitting.
 
-- Turn a requirement into a measurable acceptance criterion.
-- Distinguish test levels and functional versus non-functional checks.
-- Select normal, boundary, and invalid test data with expected results.
-- Use traces and minimal failing examples to diagnose errors.
-- Apply regression tests and explain language-specific operator behaviour.
+**Ready to move on when you can:** Choose test data and expected results; distinguish test levels; repair a boundary; evaluate what was and was not checked.
 
-Core tasks support both levels. Extension tasks add depth for Higher Level; they do not replace the core. Work at the level specified by your teacher and the current syllabus.
+<a href="https://tutors.dev/topic/lc-cs/topic-10-data-analytics">Continue to Topic 10</a>.

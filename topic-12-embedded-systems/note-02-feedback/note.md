@@ -1,39 +1,44 @@
-# 12 · Embedded systems: quiz feedback
+# 4. Answers: Embedded
 
-Use these explanations after your first attempt. Correct the reasoning, then retry after a delay.
+Check your reasoning and repair one gap.
 
-## Question 1
+Compare each row with the controller's stated rules.
 
-**Answer: A moisture sensor.** The sensor supplies information. LEDs and motors receive output commands.
+## Practical checkpoints
 
-## Question 2
+Calibration uses dry 800 and wet 300. Raw values 800, 550, 300 give relative levels 0, 50, 100. For 655, `100 × -145 / -500 = 29`.
 
-**Answer: 1024.** There are 2^10 = 1024 combinations. Counting from zero gives a maximum code of 1023.
+| Level | Previous state | New state | Reason |
+|---:|---|---|---|
+| 45 | Off | Off | Above 40 |
+| 29 | Off | On | Below 30 |
+| 32 | On | On | Keep state in the band |
+| 39 | On | On | Keep state in the band |
+| 41 | On | Off | Above 40 |
 
-## Question 3
+At 30, 35, and 40, **both** prior-state tests are needed. Previously off stays off; previously on stays on. At 29.9 both turn on; at 40.1 both turn off. Disabled monitoring always forces off. Re-enabling at level 20 turns on at the next update.
 
-**Answer: 50.** 100 × (550−800)/(300−800) = 50. A negative denominator handles the direction correctly.
+For noisy levels `[29,31,29,31]`, the single-threshold rule gives on/off/on/off. Hysteresis gives on/on/on/on. The second rule remembers the state until the upper threshold is exceeded.
 
-## Question 4
+Identical dry/wet values are invalid calibration because the formula would divide by zero. A simulator can detect that software condition. It cannot measure the actual sensor or prove wiring is safe.
 
-**Answer: Reject the calibration and investigate.** The denominator is zero, and the references provide no usable distinction. Check conditions and wiring.
+## Quiz explanations
 
-## Question 5
+| Question | Correct choice | Why |
+|---:|---|---|
+| 1 | Moisture sensor | It supplies input; an LED or motor receives output commands. |
+| 2 | 1024 | `2^10` possible codes, numbered 0–1023. |
+| 3 | 50 | A negative denominator correctly handles the sensor direction. |
+| 4 | Reject and investigate | Equal references provide no usable range. |
+| 5 | Stays on | Level 35 lies inside the keep-state band. |
+| 6 | No | Physical calibration needs actual reference measurements. |
+| 7 | PWM with changing duty cycle | The output switches on/off; it is not arbitrary smooth voltage. |
+| 8 | Delayed response | A blocked program cannot immediately react to an input. |
+| 9 | False | An offline dedicated controller is still embedded. |
 
-**Answer: It stays on.** Inside the hysteresis band the previous state is preserved.
+**Retry:** if calibration failed, substitute each reference into the formula. If hysteresis failed, draw the two states and trace from both starting states. For a hardware explanation, name one input, one decision, and one output; then distinguish a simulated test from a physical one.
 
-## Question 6
 
-**Answer: No.** Simulation checks the model and decision logic. Physical calibration requires actual reference measurements.
+---
 
-## Question 7
-
-**Answer: PWM with varying duty cycle.** The output switches digitally; changing the duty cycle changes average delivered energy for appropriate loads.
-
-## Question 8
-
-**Answer: It may delay response to a stop or enable input.** Polling cannot respond while the program is blocked. Choose timing to meet the system requirements.
-
-## Question 9
-
-**Answer: False.** Dedicated offline controllers are embedded systems too. Network connectivity is an additional design choice.
+**Next:** <a href="https://tutors.dev/note/lc-cs/topic-12-embedded-systems/note-03-exam-practice">5. Try one exam question</a>. <a href="https://tutors.dev/topic/lc-cs/topic-12-embedded-systems">Back to the topic</a>.

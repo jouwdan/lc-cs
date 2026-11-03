@@ -1,3 +1,5 @@
-# Start here: learn, practise, reflect: lesson recap
+# 6. Recap: Start here
 
-A short teaching deck. Pause at each task; use Concepts for the full explanation.
+Review the key ideas in a few slides.
+
+Pause at each question. The next slide gives a short answer. Use these for revision after the lesson.

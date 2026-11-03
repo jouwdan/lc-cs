@@ -1,70 +1,127 @@
-# Design a solution and demonstrate that it works
+# 1. Learn: Testing
 
-Testing supplies evidence against requirements; debugging explains and repairs the cause of a failure.
+Find a fault, repair it and retest.
 
-## Start with an observable requirement
+**Testing** compares actual behaviour with an expected result. **Debugging** finds and repairs the cause of a failure. This lesson uses one small ticket calculator so the evidence is easy to check by hand.
 
-“Make a good booking system” is too vague to test. “Accept an integer party size from 1 to 8, inclusive, and show the total price before confirming” is observable. Identify the user, the task, the accepted inputs, the output, and any constraints. A requirement can be functional, describing behaviour, or non-functional, describing a quality such as response time, accessibility, or reliability.
+## 1. Make the requirement observable
 
-For a fictional club booking function, specify the price rule exactly: one to four tickets cost 1200 cents each; five to eight tickets cost 1000 cents each. Quantities outside 1–8 are invalid. The function returns total cents and does not alter any external booking record. Those details tell a tester what to expect at 4 and 5 and prevent ambiguity about whether the cheaper rate applies to every ticket or only tickets after the fourth.
+“Make a good booking system” is too vague. A **requirement** says what users need or what the system must do. Our function has this precise contract:
 
-An acceptance criterion might be “given quantity 5, the displayed total is €50.00”. A design then chooses a calculation function and a separate user interface. The separation supports direct tests of the calculation without requiring keyboard input or a live payment system. The test still has to check the displayed value separately: a correct function can be connected to the wrong input field.
+| Quantity | Rule |
+|---|---|
+| 1–4 whole tickets | 1200 cents per ticket |
+| 5–8 whole tickets | 1000 cents per ticket, for **every** ticket |
+| Anything else | Reject with a useful error |
+| Result | Return total cents; do not create a booking |
 
-## A development process is a feedback cycle
+An **acceptance criterion** is a concrete condition for judging whether a requirement is met: “For quantity 5, return 5000 cents.” The display layer should show `Total: EUR 50.00`.
 
-A useful process includes analysis, design, implementation, testing, evaluation, and maintenance. Real projects revisit earlier decisions when evidence shows a problem. Analysis clarifies what is needed; design plans structure, algorithms, data, and interfaces; implementation constructs the program; testing compares behaviour with expectations; evaluation considers how well the complete solution meets user needs.
+**Try:** calculate the total for 4, then 5 tickets.
 
-A sequential or waterfall-style process moves through defined phases and can suit stable requirements. An iterative approach builds and reviews smaller increments, making it easier to incorporate feedback and changing requirements. Neither label guarantees quality. Explain why an approach fits a scenario: a prototype can reveal an inaccessible interaction early, while a fixed-interface project may require particularly explicit documentation.
+**Check:** 4800 and 5000 cents. At 5, the lower price applies to all tickets, not only the fifth.
 
-A prototype is a model used to investigate a question. A paper interface can test whether labels make sense before calculations exist. A working calculation prototype can test a formula without representing the final interface. State its limits; a demonstration using fake data is not evidence that production data import, security, or capacity have been tested.
+## 2. Develop in a feedback cycle
 
-## Design for people as well as calculations
-
-A usable interface has clear labels, feedback, predictable controls, and understandable errors. An accessible interface must support relevant needs such as keyboard use, sufficient contrast, readable text, and alternatives to visual-only cues. “The error is red” is insufficient if colour is the only signal. Name the problem and how to correct it: “Enter a whole number from 1 to 8” is more useful than “Invalid”.
-
-Collect only data needed for the task. A ticket-quantity calculator does not need a person's date of birth or home address. Use invented data in tests, and avoid exposing private records in screenshots. Check how the system handles failure before it writes or replaces data. A failed input validation should not leave a partial booking or erase a previously valid record.
-
-## Test levels answer different questions
-
-**Unit testing** checks a small isolated component, such as a price function. **Integration testing** checks how components work together, such as input parsing passing a quantity to that function. **System testing** checks the assembled system against its requirements. **Acceptance testing** checks whether the result meets the agreed needs of its users or customer.
-
-Alpha testing commonly refers to testing in a controlled environment associated with the developer. Beta testing gives selected external users an opportunity to try a pre-release system in more realistic use. They can reveal usability and environment problems that the development team missed. They do not replace deliberate boundary or security tests.
-
-**Regression testing** reruns relevant checks after a change to find unintended breakage in previously working behaviour. Fixing the five-ticket discount should not change the one-ticket price. A test that reproduces the original bug becomes a useful permanent regression check.
-
-## Functional and non-functional testing
-
-Functional testing checks what the system does: correct totals, required messages, correct file import, permitted actions, and rejected inputs. Non-functional testing checks qualities such as performance, usability, accessibility, reliability, and security characteristics. The categories describe purpose rather than a strict set of tools; a security check may also verify a functional access-control requirement.
-
-Make a non-functional requirement measurable. “Fast” is vague; “under the agreed test conditions, show a result within one second for 95% of requests” states a threshold and population. A load test uses expected or increased demand; a stress test deliberately goes beyond normal capacity to observe failure and recovery. Report the machine, dataset, and workload rather than presenting one quick run as a universal performance guarantee.
-
-## Choose data that can expose a fault
-
-Normal data are ordinary valid examples. Boundary data are at or close to a limit. Invalid data violate a type, format, or range requirement. Testing every integer from 1 to 8 is feasible for our small booking function, but many real input spaces are too large. Equivalence partitioning groups inputs expected to follow the same rule, such as 1–4 and 5–8, then selects examples from each group and its edges.
-
-| Input | Category | Expected result |
+| Stage | What you do | Ticket example |
 |---|---|---|
-| 2 | Normal valid | 2400 cents |
+| Analysis | Clarify the need and constraints | Ask who receives the discount |
+| Design | Plan data, algorithms and interface | Separate calculation from input/display |
+| Implementation | Build the program | Write the function |
+| Testing | Compare actual and expected behaviour | Check quantity 5 returns 5000 |
+| Evaluation | Judge how well needs are met | Check errors are understandable |
+| Maintenance | Correct or adapt an existing system | Update a changed price rule and rerun tests |
+
+A **waterfall-style** process uses defined phases and can suit stable requirements. An **iterative** process builds and reviews smaller increments, helping incorporate feedback and changes. Real work can revisit earlier stages.
+
+A **prototype** is a model used to answer a question. A paper screen can test whether labels make sense before the calculations exist. A calculator prototype can test prices without being a complete booking service.
+
+**Try:** users misunderstand the quantity field. Which prototype could help first?
+
+**Check:** a paper or simple interactive screen lets users try the wording. A correct formula alone will not reveal that problem.
+
+## 3. Make the interface usable and accessible
+
+**Usability** means people can carry out their task effectively. **Accessibility** means people with different needs can use it. Use clear labels, readable text, keyboard operation and errors that explain a repair.
+
+Compare “Invalid” with “Enter a whole number from 1 to 8”. The second names the accepted input. Do not rely on red colour alone; include words and connect the message to its field.
+
+**Try:** describe one measurable check for a ticket form.
+
+**Check:** “Using only the keyboard, reach quantity, enter 5, submit and read the total without losing focus” is a concrete procedure. Also check an error can be identified without colour.
+
+Collect only needed data. A quantity calculator does not need a home address. Use fictional records in tests. If a future version saves bookings, invalid input must not leave a partial booking or overwrite a valid one.
+
+## 4. Choose the test level
+
+| Term | Question it answers | Example |
+|---|---|---|
+| Unit | Does one small component work? | Call the price function with 5; expect 5000 |
+| Integration | Do components connect correctly? | Convert `"5"`, calculate, format; expect `Total: EUR 50.00` |
+| System | Does the assembled system meet its requirements? | Complete a booking and check its saved record |
+| Acceptance | Does the result meet agreed user needs? | The customer checks the agreed booking scenarios |
+| Regression | Did a change break earlier working behaviour? | After fixing 5 tickets, rerun the 1-ticket test |
+
+The lab contains a calculator and text conversion. It does **not** contain a booking store; a system test involving storage can be designed, but cannot honestly be claimed to have run.
+
+**Alpha testing** usually happens in a controlled environment associated with the developer. **Beta testing** involves selected external users trying a pre-release version in more realistic conditions. User feedback can reveal unclear wording or environment problems missed by function tests.
+
+**Try:** does passing a calculation's unit tests prove its screen displays the correct amount?
+
+**Check:** no. A connection or formatting fault can still exist; test the full path too.
+
+## 5. Distinguish behaviour from quality
+
+**Functional tests** check what the system does: computes a total, rejects input, displays a required message. **Non-functional tests** check qualities such as performance, reliability, usability, accessibility and security.
+
+“Fast” is vague. “In the agreed test environment, 95% of responses arrive within one second” defines a measurable threshold and population. Report the machine, data and workload used.
+
+A **load test** examines expected or increased demand. A **stress test** pushes beyond normal capacity to inspect failure and recovery. Neither is established by running one small example quickly. Some checks overlap categories: checking that an unauthorised account is rejected also tests a functional access rule.
+
+## 6. Choose data that can reveal a fault
+
+| Data | Category | Expected outcome |
+|---|---|---|
+| 2 | Ordinary valid value | 2400 cents |
 | 1 | Minimum valid boundary | 1200 cents |
 | 4 | Last full-price boundary | 4800 cents |
 | 5 | First discount boundary | 5000 cents |
 | 8 | Maximum valid boundary | 8000 cents |
-| 0, 9 | Just outside allowed range | Validation error |
-| `"five"`, `2.5` | Invalid type for the function | Validation error |
+| 0, 9 | Just outside allowed range | Error |
+| `2.5`, `"five"` | Invalid types for the function | Error |
 
-State the expected result before running the program. Otherwise it is easy to accept whatever output appears. Record actual output, pass/fail, and evidence. If the function accepts only integers, numeric text may be valid for the interface but invalid for the function until conversion occurs. Test each boundary at the layer that owns it.
+A **boundary** is a limit or change in rule. For the discount, test below, at and above: 4, 5, 6. **Equivalence partitioning** groups inputs expected to follow the same rule, such as 1–4 and 5–8, then chooses representative cases and edges.
 
-## Test oracles and coverage
+The calculation function requires an integer. Numeric text `"5"` is valid for the input interface, but must be converted before reaching the function. Test each layer against its own contract.
 
-A test oracle is the source of the expected result: a hand calculation, a clear specification, or a trusted reference implementation. Copying the same faulty expression into the test can reproduce the bug and falsely appear to confirm correctness. For a discount threshold, calculate a few totals manually rather than deriving every expected result with the function's own branch logic.
+**Try:** classify quantity 7 and quantity 9.
 
-Coverage measures which code or behaviours tests exercise. Statement coverage can show that every line ran; branch coverage checks whether decision outcomes were taken. Neither proves the requirements are correct or that all combinations are covered. Tests can execute a wrong line without asserting its result. A short suite with carefully chosen expectations can provide more useful evidence than many unchecked runs.
+**Check:** 7 is ordinary valid discounted data; 9 is invalid and just beyond the upper boundary.
 
-## Debug systematically
+## 7. Know where the expected answer comes from
 
-First reproduce the failure reliably. Reduce it to the smallest input that still fails. Read any traceback, inspect the relevant variables, and form a hypothesis. Use a trace table, a temporary print, or a debugger breakpoint to test that hypothesis. Change the cause, rerun the failing example, then rerun earlier valid examples. Record why the repair works.
+A **test oracle** supplies the expected result. Here, hand calculation gives `5 × 1000 = 5000`. A specification or trusted independent implementation can also provide an oracle.
 
-Consider this faulty rule:
+Do not calculate every expected result with the same branch as the program. The same mistake could then make both wrong in the same way.
+
+Record input / expected / actual / pass or fail. An assertion compares values automatically, but you still need the right expectation.
+
+**Coverage** describes what tests exercised. Statement coverage records which statements ran; branch coverage checks decision outcomes. Neither proves correctness: the test can run a wrong calculation without checking its result, or the requirement itself may be wrong.
+
+**Try:** one test prints 6000 for 5 tickets and reports no exception. Has it passed?
+
+**Check:** no. The required 5000 differs from the actual value. “It ran” is weaker evidence than “its result matches the requirement”.
+
+## 8. Debug one cause at a time
+
+1. **Reproduce:** find an input that reliably shows the problem.
+2. **Reduce:** use the smallest useful failing case.
+3. **Inspect:** trace values, add a temporary print or use a debugger breakpoint.
+4. **Form a hypothesis:** name what you think is wrong.
+5. **Repair:** change the cause.
+6. **Retest:** rerun the failing case and earlier working cases.
+
+For this branch:
 
 ```python
 if quantity > 5:
@@ -73,13 +130,19 @@ else:
     price = 1200
 ```
 
-Quantity 5 incorrectly costs 6000 instead of 5000. The boundary test identifies a logical error. The root cause is the exclusive comparison; `>= 5` matches the requirement. Changing the expected answer to 6000 would conceal the fault. Changing an unrelated output string would not repair it.
+Quantity 5 enters the wrong branch, costing 6000. The requirement includes 5 in the discounted group, so change `>` to `>=`. Keep the expected answer 5000; changing the test would conceal the bug.
 
-Syntax errors, runtime errors, and logical errors require different evidence. A missing colon prevents parsing; an invalid list index raises an exception during execution; an off-by-one comparison can quietly produce a wrong classification. Do not assume the absence of an error message means correctness.
+| Error kind | Example | Evidence |
+|---|---|---|
+| Syntax | Missing colon | Python cannot parse the code |
+| Runtime | Index outside a list | An operation fails during execution |
+| Logical | Wrong threshold | Program runs but expected/actual results differ |
 
-## Read the language that is actually present
+A **traceback** identifies the error type and relevant call/line. A **breakpoint** pauses execution so you can inspect current values. The absence of an error message does not prove the answer is right.
 
-Some archived questions use JavaScript or pseudocode rather than Python. Operator symbols can have different meanings across languages. Python has no `++` increment operator: `x += 1` updates a variable. In JavaScript, prefix `++x` increments and evaluates to the new value, while postfix `x++` evaluates to the old value and then increments.
+## 9. Read the language actually printed
+
+Some archived questions use JavaScript or pseudocode. Similar-looking operators can behave differently.
 
 ```javascript
 let x = 4;
@@ -88,12 +151,37 @@ let after = ++x;
 console.log(x, before, after);
 ```
 
-The output values are `6 4 6`. After the second line, `before` is 4 and `x` is 5. The third line first changes `x` to 6 and assigns 6 to `after`. Trace each statement; do not apply Python rules to JavaScript syntax.
+**Postfix** `x++` produces the old value, then increments x. **Prefix** `++x` increments x, then produces the new value.
 
-JavaScript `===` compares without coercing types, so `3 === "3"` is false; loose `3 == "3"` is true. `"3" + 4` produces the string `"34"`. In Python, `3 == "3"` is false and `"3" + 4` raises `TypeError`. These examples show why type assumptions matter. In Python, `True and False` uses words; JavaScript commonly uses `true && false`.
+| After line | x | before | after |
+|---|---:|---:|---:|
+| `let x = 4` | 4 | Not declared | Not declared |
+| `let before = x++` | 5 | 4 | Not declared |
+| `let after = ++x` | 6 | 4 | 6 |
 
-## Evaluate and maintain the result
+Output: `6 4 6`. Python has no increment operator; use `x += 1` to increase x.
 
-Evaluation links evidence to requirements. State what worked, what failed, and what remains untested. “All tests passed” means those specific checks passed, not that no bugs exist. A user trial can reveal confusing labels even when every arithmetic test passes. Feedback should lead to a specific change and another relevant check.
+| Expression | JavaScript | Python |
+|---|---|---|
+| `3 == "3"` | `true` through type conversion | `False` |
+| `3 === "3"` | `false`, no type coercion | Not Python syntax |
+| `"3" + 4` | String `"34"` | `TypeError` |
+| Both conditions | `true && false` → `false` | `True and False` → `False` |
 
-For a programming exam, make requested edits incrementally and retain the working parts. The archived 2021 Higher Level A&B paper distinguishes unit, system, and regression testing; the 2023 papers examine test purposes and real-user testing; the 2020 Higher Level paper includes language/operator reasoning. Use the [year index](https://www.betterexams.ie/leaving-cert/computer-science) for the exact wording and matching schemes. Support every claim with a trace, test, or requirement, not a vague assertion that the solution is good.
+**Coercion** is automatic type conversion. JavaScript's strict equality `===` avoids it in this comparison.
+
+**Try:** start again at x = 4 and execute only `let y = ++x;`.
+
+**Check:** x = 5 and y = 5. Starting afresh matters; do not carry over the earlier x = 6.
+
+## 10. Evaluate with evidence
+
+Use three statements:
+
+1. **Met:** “The corrected price function returns the hand-calculated result for all quantities 1–8.”
+2. **Limit:** “I have not tested a booking store; the program does not contain one.”
+3. **Next:** “I will test the text input path with `five` and confirm it gives a useful message.”
+
+“All tests passed” means the checks you actually ran passed. Keep a test for the original defect and rerun it after changes. User feedback should lead to a specific improvement and another relevant check.
+
+**Next:** <a href="https://tutors.dev/lab/lc-cs/topic-09-testing/book-01-practice">2. Practise: repair the ticket calculator</a>. <a href="https://tutors.dev/note/lc-cs/topic-09-testing/note-02-feedback">Open the answers</a>.

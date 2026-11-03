@@ -1,9 +1,11 @@
-# 16 · Exam preparation and synthesis: retrieval check
+# 3. Quiz: Exam skills
 
-Attempt without notes, then explain your choices using the feedback note.
+Test yourself, then check the answers.
+
+Try these nine questions without notes. Then open <a href="https://tutors.dev/note/lc-cs/topic-16-exam-preparation/note-02-feedback">4. Answers</a> to check the reasoning. If you miss one, repair that idea and retry later.
 
 ````quiz
-title: 16 · Exam preparation and synthesis
+title: 3. Check — exam preparation
 ---
 question: Which instructions govern a historical-paper practice attempt?
 type: multiple-choice
@@ -21,7 +23,7 @@ options:
   - To copy every scheme verbatim
 correct: 1
 ---
-question: Which best answers explain?
+question: A question asks you to explain. What does your answer need?
 type: multiple-choice
 options:
   - A disconnected keyword
@@ -69,7 +71,7 @@ options:
   - Only for Higher Level
 correct: 1
 ---
-question: What is the strongest delayed retry?
+question: Which later retry best checks whether your skill improved?
 type: multiple-choice
 options:
   - Read the same answer again

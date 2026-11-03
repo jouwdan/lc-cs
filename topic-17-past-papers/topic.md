@@ -3,6 +3,8 @@ icon:
   type: mdi:file-document-multiple-outline
   color: "#475569"
 ---
-# 17 · Past-paper library
+# 17 · Past papers
 
-Every Computer Science paper and marking scheme listed by Better Exams for 2020–2025. English and Irish versions are preserved at both levels where listed. Select a year, attempt the paper under its printed instructions, then compare against the matching scheme.
+Find papers and schemes from 2020–2025.
+
+The archive contains all 63 documents listed by Better Exams for 2020–2025. Original PDFs are unchanged. Missing source variants are labelled in the year tables.

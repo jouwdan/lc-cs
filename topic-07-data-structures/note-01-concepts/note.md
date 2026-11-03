@@ -1,20 +1,54 @@
-# Working with collections and reusable functions
+# 1. Learn: Lists & files
 
-Transform small pieces of data with clear contracts, then combine the pieces into a complete program.
+Use text, lists, functions and files.
 
-## Strings are sequences
+Work through sections 1–6 before the collection lab. Use sections 7–9 for text and files. Save the extension patterns for another session; each is a reusable exam skill.
 
-A string is an ordered sequence of characters. Python uses zero-based indexing: in `word = "COMPUTER"`, `word[0]` is `C`, `word[3]` is `P`, and `word[-1]` is `R`. `len(word)` is 8, so the final non-negative index is 7. An index of 8 raises `IndexError`. A slice `word[1:4]` returns `OMP`: the start is included and the stop is excluded, just as with `range`.
+## 1. Find an item by its index
 
-Strings are immutable. You cannot assign `word[0] = "c"`; construct a new string instead, for example `word = "c" + word[1:]`. Methods such as `.lower()`, `.upper()`, and `.strip()` return strings rather than editing the original in place. `"  Ava  ".strip()` removes surrounding whitespace but preserves internal spaces. Avoid removing characters unless the task says they are irrelevant.
+An **index** is a position. Python starts at zero.
 
-String comparisons are case-sensitive. Decide whether a task treats `A` and `a` as equivalent, then normalise consistently. For a deliberately simplified anagram task, ignore spaces and letter case, retain all other characters, and compare sorted characters. `"Dormitory"` and `"Dirty room"` match under those rules. If punctuation should also be ignored, state that different contract explicitly. A solution should not invent cleaning rules to make a particular pair match.
+| Character | C | O | M | P | U | T | E | R |
+|---|---|---|---|---|---|---|---|---|
+| Index | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
 
-## Lists, mutation, and aliases
+For `word = "COMPUTER"`, `word[0]` gives `C` and `word[-1]` gives the last character, `R`. `len(word)` is 8, so `word[8]` is outside the string and raises `IndexError`.
 
-A list stores an ordered collection. `scores = [42, 67, 67, 90]` has length 4, and `scores[2]` is 67. Unlike strings, lists are mutable: `scores[0] = 50` changes the first item. `append(value)` adds one item; `pop()` removes and returns the final item; `remove(value)` removes the first matching value and raises an error if absent. A list can contain repeated values, which must not disappear accidentally during processing.
+A **slice** selects a section: `word[1:4]` includes indices 1, 2 and 3, giving `OMP`. The stop index is excluded.
 
-Assignment does not automatically copy a list:
+**Try:** predict `word[:3]` and `word[4:]`.
+
+**Check:** `COM` and `UTER`. Omitting the start means start at the beginning; omitting the stop means continue to the end.
+
+## 2. Strings return new values
+
+Strings are **immutable**: individual characters cannot be changed in place. `word[0] = "c"` fails. Build a new string with `word = "c" + word[1:]` instead.
+
+| Method | Result | What it changes |
+|---|---|---|
+| `"Ava".lower()` | `"ava"` | Letter case |
+| `"Ava".upper()` | `"AVA"` | Letter case |
+| `"  Ava  ".strip()` | `"Ava"` | Surrounding whitespace |
+| `"Dirty room".replace(" ", "")` | `"Dirtyroom"` | All ordinary spaces |
+
+A **method** is an operation attached to a value, written after the dot. These methods return a new string; save that result if you need it. `.strip()` does not remove spaces between words.
+
+**Try:** run `name = "AVA"` followed by `name.lower()` and `print(name)`.
+
+**Check:** it still prints `AVA`. Use `name = name.lower()` to keep the lower-case result.
+
+## 3. Lists can change
+
+A **list** is an ordered collection: `scores = [42, 67, 67, 90]`. It has length 4 and `scores[2]` is 67. Lists are **mutable**, meaning their contents can change.
+
+- `scores[0] = 50` replaces an item.
+- `scores.append(80)` adds one item to the end.
+- `scores.pop()` removes and returns the final item.
+- `scores.remove(67)` removes the first matching 67; it raises an error if absent.
+
+Duplicate values are still separate items. Do not discard one merely because it matches another.
+
+### Alias or copy?
 
 ```python
 a = [4, 7]
@@ -23,93 +57,36 @@ b.append(9)
 print(a)
 ```
 
-The output is `[4, 7, 9]` because both names refer to the same list. For a separate shallow copy of a flat list, use `b = a.copy()` or `b = a[:]`. For a list containing nested lists, a shallow copy still shares the inner objects; this distinction is useful when tracing a supplied program.
+This prints `[4, 7, 9]`. `a` and `b` are **aliases**: two names for the same list. Use `b = a.copy()` for a separate copy of this flat list.
 
-`sorted(values)` returns a sorted copy, while `values.sort()` changes the existing list and returns `None`. Thus `values = values.sort()` loses the list binding. Choose whether your function may modify its input and document that choice. Preserving the original is useful when you must display both initial and sorted data.
+**Try:** make that one-line change and rerun.
 
-## Functions: parameters and results
+**Check:** `a` stays `[4, 7]`. A **shallow copy** copies the outer list; nested inner lists are still shared.
 
-A function packages a named task. A parameter is the name in the definition; an argument is the actual value passed by a call. `return` sends a result back to the caller and ends the function. `print` displays text and is not a substitute for returning a value. A function that reaches its end without `return` returns `None`.
+`sorted(values)` returns a sorted copy. `values.sort()` changes the existing list and returns `None`. Therefore `values = values.sort()` replaces your list variable with `None`.
+
+## 4. Return a reusable result
+
+A function's **contract** states the accepted inputs and promised output. Here: count values strictly above a limit; return 0 for an empty list; keep the list unchanged.
 
 ```python
 def count_above(values, limit):
     count = 0
     for value in values:
         if value > limit:
-            count += 1
+            count = count + 1
     return count
 
-answer = count_above([4, 8, 8, 2], 5)
-print(answer)
+print(count_above([4, 8, 8, 2], 5))
 ```
 
-The output is `2`. `values` and `limit` are parameters, the list and 5 are arguments, and `count` is local state. Passing different arguments reuses the same rule. Keep input prompts outside this calculation so tests can call it without simulating a keyboard. A small function is easier to test when it has one clear job and a stated output.
+Output: 2. The parameter names are `values` and `limit`; the arguments are `[4, 8, 8, 2]` and 5. `return` supplies the result to the caller. `print` only displays it. A function with no explicit return gives `None`.
 
-## Counting, totals, and frequencies
+**Try:** change the arguments to `[5, 5]` and 5.
 
-Counting qualifying items, summing values, and finding a minimum are different patterns. A count begins at zero and adds one for each match. A sum begins at zero and adds each value. A minimum can start with the first value, but then the empty-list case must be handled first. Initialising the minimum to zero fails for a list of positive values because zero was never present.
+**Check:** 0. “Above” uses `>`, not `>=`.
 
-For a mean, divide the total by `len(values)`, not by a hard-coded number from an example. An empty list has no arithmetic mean. Return a stated absence value such as `None` or raise a documented error; do not claim its mean is zero. For measurement data, validate that each item has the required numeric type and units before calculating.
-
-A dictionary can count frequencies efficiently. For each item, `counts[item] = counts.get(item, 0) + 1` increases the stored count or starts it at one. A six-sided die experiment might count results 1 through 6, including zero counts for faces not observed. Total frequency must equal the number of trials. This invariant catches lost or duplicated observations. Random output changes between runs, so test counting with a fixed list before using random samples.
-
-## Median and consecutive runs
-
-The median needs a sorted copy. If there are `n` values and `n` is odd, the middle index is `n // 2`. If `n` is even, average indices `n // 2 - 1` and `n // 2`. For `[9, 2, 7]`, sorting gives `[2, 7, 9]` and the median is 7. For `[9, 2, 7, 4]`, sorting gives `[2, 4, 7, 9]` and the median is 5.5. Handle `n == 0` before indexing.
-
-A longest **consecutive increasing run** must preserve adjacency. In `[3, 5, 2, 4, 7, 7, 9]`, the longest strictly increasing run is `[2, 4, 7]`. Equal neighbouring values break a strictly increasing run. Sorting the list destroys the order information needed for this problem. Define ties: the lab returns the earliest run when several have the same maximum length.
-
-Maintain `current`, the run ending at the current item, and `best`, the longest run found so far. Extend `current` only when the new value is greater than the previous value; otherwise start a new run. Replace `best` only when `current` is longer. Use a copy when storing the best run so later appends do not change it unexpectedly. Empty input returns `[]`; a single value returns that one-item run.
-
-## Validation strings and check digits
-
-A format check can test length, character classes, and positions. A classroom identifier might require three uppercase ASCII letters followed by two digits: `ABC42` passes and `AB42` fails. This rule is only a practice format, not a complete Eircode specification. Real identifier systems can have permitted-prefix tables and exceptions; implement the rules the question actually supplies.
-
-A simple teaching check digit can be `sum(digits) % 10`. For `472`, the digit sum is 13 and the check digit is 3, giving `4723`. This detects some errors but does not detect swapping two digits because their sum is unchanged. A check digit detects certain accidental changes; it is not encryption or proof of authenticity. Reject a non-digit character before conversion and keep leading zeroes as text.
-
-A password-scoring exercise might award one point each for sufficient length, an uppercase letter, a lowercase letter, a digit, and a permitted symbol. These are classroom rules, not a guarantee of real security. Keep each condition independent if several points can be earned. An `if`/`elif` chain would award at most one condition and therefore implement a different rule. Never use real passwords in classroom datasets or submission files.
-
-## Read files as structured data
-
-Use a context manager so a file is closed reliably:
-
-```python
-import csv
-with open("scores.csv", newline="", encoding="utf-8") as source:
-    rows = csv.DictReader(source)
-    for row in rows:
-        print(row["name"], int(row["score"]))
-```
-
-The `csv` module handles quoted commas correctly; splitting every line on commas does not. Specify expected headers and validate missing or malformed fields. Distinguish a missing file, a missing column, a non-numeric value, and an out-of-range value. A clear row number makes an error actionable. Do not overwrite the input file while experimenting; write a separately named output when required.
-
-## Practice sequence and exam transfer
-
-Start by tracing a five-character string and a four-item list. Then write one function that returns a result without input or printing. Test ordinary, boundary, and empty cases. Only then connect file reading or user input. This keeps a parsing fault from being confused with an algorithm fault.
-
-The archived Higher Level Section C tasks include password rules (2020), anagrams (2021), dice outcomes (2022), and list statistics with a consecutive-run extension (2025). These are instances of the reusable patterns above. Consult each paper's exact rules, then its matching scheme; do not transfer an old question's assumptions into a new task. See [the archive year index](https://www.betterexams.ie/leaving-cert/computer-science).
-
-## Extension workshop: a weighted check digit
-
-A weighted check digit assigns different importance to positions. For an original practice scheme, multiply payload digits by alternating weights 3, 1, 3, 1 from the left. Add the products. Choose a final check digit `c = (10 - total % 10) % 10`, so weighted payload total plus `c` is divisible by 10. This is a specified classroom scheme, not a claim to implement a particular commercial standard.
-
-For payload `472`:
-
-| Position | Digit | Weight | Product |
-|---:|---:|---:|---:|
-| 0 | 4 | 3 | 12 |
-| 1 | 7 | 1 | 7 |
-| 2 | 2 | 3 | 6 |
-
-The total is 25. The required check digit is 5, because 25 + 5 = 30. The final modulo in the formula ensures that a total already divisible by 10 produces digit 0 rather than the two-character value 10. Preserve leading zeroes in the payload string.
-
-Changing `472` to `742` changes the weighted total to 31, so the old check digit 5 fails. However, `427` has weighted total 35 and still accepts check digit 5. Weighting detects this first transposition but misses the second. Explain the actual limitation rather than claiming that weighting catches every error.
-
-When tracing a supplied check-digit algorithm, write one row per digit with position, weight, product, and running total. Follow the specified direction of weighting and final modulus exactly. Swapping left-to-right for right-to-left or using `% 10` instead of the required complement implements a different rule.
-
-## Short transfer drills: scope, choices, and charts
-
-A function parameter is a local binding. Reassigning a scalar parameter does not reassign an outside name:
+### Local names and shared objects
 
 ```python
 score = 10
@@ -122,16 +99,157 @@ result = add_bonus(score)
 print(score, result)
 ```
 
-This prints `10 15`. The parameter starts by referring to the integer passed in; the local assignment then binds it to a new integer. The outside `score` stays 10. Contrast this with mutating a list passed as an argument: the caller and function can refer to the same mutable list. Avoid using global variables when an explicit parameter and return value explain the data flow.
+Output: `10 15`. The parameter is a **local** name. Assigning a new integer to it does not reassign the outside name. In contrast, mutating a list received as an argument can change the caller's shared list. Prefer explicit parameters and return values to hidden global changes.
 
-A frequency dictionary can generate a simple horizontal chart without a plotting library:
+## 5. Separate the common calculation patterns
+
+| Task | Initial value | Update |
+|---|---|---|
+| Count matches | 0 | Add 1 for a match |
+| Sum values | 0 | Add the current value |
+| Find a minimum | First value, after checking non-empty input | Replace it if a smaller value appears |
+| Mean | Sum and number of values | Divide sum by count, if count is not zero |
+
+Starting a minimum at 0 fails for `[4, 8]`: 0 was never an input. Empty data has no arithmetic mean; choose an explicit result such as `None`, rather than calling its mean zero. Validate types and units before measurement calculations.
+
+**Try:** for `[4, 8, 8, 2]`, find count above 5, sum, minimum and mean.
+
+**Check:** 2, 22, 2 and 5.5. These are different questions about the same data.
+
+## 6. Find a median
+
+The **median** is the middle of the ordered data. Sort a copy first.
+
+| Original | Ordered | Middle index/indices | Median |
+|---|---|---|---|
+| `[9, 2, 7]` | `[2, 7, 9]` | 1 | 7 |
+| `[9, 2, 7, 4]` | `[2, 4, 7, 9]` | 1 and 2 | `(4 + 7) / 2 = 5.5` |
+
+For length `n`, let `middle = n // 2`.
+
+1. If `n == 0`, return `None` before using an index.
+2. Odd `n`: use `ordered[middle]`.
+3. Even `n`: average `ordered[middle - 1]` and `ordered[middle]`.
+
+**Try:** `[6]`, `[]` and `[2, 2]`.
+
+**Check:** 6, `None`, 2. Test that the original list remains unchanged too.
+
+## 7. Compare text under stated rules
+
+An **anagram** uses the same characters in another order. Our practice rule ignores case and ordinary spaces, but keeps other characters.
 
 ```python
-counts = {1: 2, 2: 0, 3: 3, 4: 0, 5: 0, 6: 1}
+first = "Dormitory".lower().replace(" ", "")
+second = "Dirty room".lower().replace(" ", "")
+print(sorted(first) == sorted(second))
+```
+
+Output: `True`. Sorting characters gives lists, so repeated letters are counted. A set would lose repetitions and wrongly treat `aab` and `abb` as equivalent.
+
+**Try:** compare `"abc"` with `"abd"`, then two empty strings.
+
+**Check:** `False`, then `True` under this exact contract. If punctuation should be ignored, state that extra rule rather than silently removing it.
+
+### Format checks and check digits
+
+A classroom ID could require three uppercase ASCII letters followed by two digits: `ABC42` passes; `AB42` and `AbC42` fail. This is a practice format, not a complete real-world identifier specification.
+
+A **check digit** is an extra digit used to detect some accidental changes. Our simple rule is `sum of payload digits MOD 10`. For `472`, the sum is 13, the check digit is 3, and the combined text is `4723`.
+
+**Try:** calculate the check digit for `005` and then `742`.
+
+**Check:** 5 and 3. Preserve leading zeroes as text. Swapping digits leaves their sum unchanged, so this scheme misses every transposition. A check digit is neither encryption nor proof of who created the data.
+
+## 8. Read a CSV file
+
+**CSV** means comma-separated values. The first row commonly names the columns. Save this fictional data in `scores.csv`:
+
+```csv
+name,score
+Ava,42
+Ben,67
+Cian,90
+Dara,67
+```
+
+Python's standard `csv` module handles quoted commas, unlike simply splitting every line at a comma:
+
+```python
+import csv
+with open("scores.csv", newline="", encoding="utf-8") as source:
+    rows = csv.DictReader(source)
+    for row in rows:
+        print(row["name"], int(row["score"]))
+```
+
+Run from the folder containing the file. `with` closes the file when the block ends. `DictReader` uses each header as a key; each field begins as text. Expected first line: `Ava 42`; the remaining three records follow.
+
+Parsing reads the structure; **validation** still checks meaning. Require the headers `name` and `score`, non-empty names, whole-number scores and range 0–100. Report the row that failed. A missing file, missing header and invalid value are different faults.
+
+Do not silently skip an invalid row and report a misleading overall result. The lab's contract rejects the file if any record is invalid. Keep the original file and experiment with a copy.
+
+## 9. Count frequencies and draw a simple chart
+
+A **dictionary** stores key/value pairs. Here each die face is a key and its observed count is the value:
+
+```python
+counts = {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}
+for face in [1, 3, 3, 6, 1, 3]:
+    counts[face] = counts[face] + 1
 for face in range(1, 7):
     print(f"{face}: {'*' * counts[face]}")
 ```
 
-The non-empty bars are `1: **`, `3: ***`, and `6: *`; faces 2, 4, and 5 still get labelled empty lines. One star represents one observation, so total stars must equal total trials. A chart with only observed faces can hide the fact that some possible outcomes had zero observations.
+The bars contain 2 stars for 1, 3 stars for 3 and 1 star for 6. Other faces still get labels with empty bars. **Total frequency must equal the number of observations:** here 6.
 
-For a choice-based simulation, `rng.choice(items)` selects one element from a non-empty sequence, for example `items = ["pear", "plum", "apple"]`. With `rng = random.Random(42)`, repeated runs of the same code use a reproducible pseudo-random sequence. Test that each selected value belongs to the available choices; do not assert that a short sample must contain every choice or perfectly equal counts. Selecting from an empty list raises an error, so define or validate the available choices first. Random simulations and deterministic frequency counting are separate parts that should be checked separately.
+For unknown categories, `counts.get(item, 0)` retrieves an existing count or 0 if absent. Test fixed observations before using random ones.
+
+## 10. Extension: preserve a consecutive run
+
+A **consecutive run** uses neighbouring items in their original order. In `[3, 5, 2, 4, 7, 7, 9]`, the longest strictly increasing run is `[2, 4, 7]`. Equal neighbours break a strictly increasing run. Sorting would destroy the adjacency information.
+
+Keep two lists: `current`, the run ending here, and `best`, the longest so far.
+
+1. Start both with the first item; return `[]` first if input is empty.
+2. If the next value is greater than the last current value, append it.
+3. Otherwise start a new current run containing that value.
+4. Replace `best` with `current.copy()` only when current is **longer**. This keeps the earliest run on a tie.
+
+**Try:** trace `[1, 2, 1, 2]`.
+
+**Check:** the first `[1, 2]` remains best. Copying protects it from later changes to the current list.
+
+## 11. Extension: a weighted check digit
+
+A **weight** is a multiplier for one position. Our original practice scheme uses 3, 1, 3, 1… from the left, then chooses `c = (10 - total % 10) % 10`.
+
+| Digit in `472` | Weight | Product |
+|---:|---:|---:|
+| 4 | 3 | 12 |
+| 7 | 1 | 7 |
+| 2 | 3 | 6 |
+
+Total 25 needs check digit 5 to reach a multiple of 10. The final `% 10` makes a total of 0 produce digit 0, not 10.
+
+**Try:** calculate totals and check digits for `742`, `000` and `427`.
+
+**Check:** totals 31, 0, 35; check digits 9, 0, 5. The scheme detects the first swap from `472` to `742`, but misses `472` to `427`. Follow the direction, weights and modulus in the actual question; other schemes differ.
+
+## 12. Extension: independent conditions and random choices
+
+A practice password score may award one point each for length at least 10, uppercase, lowercase, a digit and a symbol from `!?@#`. Use five independent `if` checks; `if/elif` would stop after one. Use invented strings, never real passwords. Passing these rules does not guarantee security.
+
+For repeatable simulated choices:
+
+```python
+import random
+rng = random.Random(42)
+items = ["pear", "plum", "apple"]
+choices = [rng.choice(items) for _ in range(5)]
+print(choices)
+```
+
+The bracketed expression repeats a choice five times to build a list. The seed 42 makes repeated runs of this code reproducible. The choices all belong to `items`; a short run need not contain every item or equal counts. `choice` requires a non-empty sequence. Check counting separately from random generation.
+
+**Next:** <a href="https://tutors.dev/lab/lc-cs/topic-07-data-structures/book-01-practice">2. Practise: process a small dataset</a>. <a href="https://tutors.dev/note/lc-cs/topic-07-data-structures/note-02-feedback">Open the answers</a>.

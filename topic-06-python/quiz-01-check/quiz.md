@@ -1,8 +1,10 @@
-# Python fundamentals check
+# 3. Quiz: Python
 
-A formative self-check: answers and scores are not recorded.
+Test yourself, then check the answers.
 
-Answer without running code first. After submitting, explain each answer in your own words and use the separate feedback note. The answer key is visible in the source; this is practice, not a secure assessment.
+Allow 10 minutes. Answer all 10 questions without notes or running code. Submit, then write down the numbers you want to revisit. Scores are not saved.
+
+After your attempt, use **4. Answers** to explain each correction, then retry the missed questions.
 
 ````quiz
 question: What type does input() return?
@@ -51,12 +53,12 @@ question: An if/elif/else chain executes the first branch whose condition is tru
 type: true-false
 correct: true
 ---
-question: What is the result of "3" + "4"?
+question: What is the result of `"3" + "4"`?
 type: multiple-choice
 options:
   - 7
   - 34 as an integer
-  - "34" as a string
+  - `"34"` as a string
   - A syntax error
 correct: 2
 ---
@@ -64,7 +66,7 @@ question: Which is a logical error?
 type: multiple-choice
 options:
   - A missing colon
-  - Converting "hello" with int()
+  - Converting `"hello"` with `int()`
   - Using > when the required boundary is inclusive
   - Dividing by zero
 correct: 2
@@ -73,7 +75,7 @@ question: A while loop always executes its body at least once.
 type: true-false
 correct: false
 ---
-question: What does f"{2.5:.2f}" display?
+question: What does `f"{2.5:.2f}"` display?
 type: multiple-choice
 options:
   - 2.5
@@ -91,3 +93,5 @@ options:
   - So the loop runs forever
 correct: 1
 ````
+
+**Next:** <a href="https://tutors.dev/note/lc-cs/topic-06-python/note-02-feedback">4. Answers: check your reasoning</a>. <a href="https://tutors.dev/note/lc-cs/topic-06-python/note-02-feedback">Open the answers</a>.

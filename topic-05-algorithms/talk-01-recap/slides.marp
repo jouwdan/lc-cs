@@ -3,64 +3,99 @@ marp: true
 theme: default
 paginate: true
 ---
-# Algorithms: design before code
+# 6. Recap: computational thinking
 
-Pause at each prompt. Explain before revealing a model answer.
+Spend 5–10 minutes retrieving from memory.
 
----
-
-## Specify the contract
-
-- Input: non-negative whole passenger count.
-- Output: whole buses needed.
-- Capacity: 12. Zero passengers need zero buses.
-
-**Predict:** 24 passengers? 25 passengers?
+Answer each prompt before moving to its Check slide.
+Keep one correction for your revision notes.
 
 ---
 
-## Four thinking tools
+## What will the algorithm do?
 
-- Decompose into validation, calculation, reporting.
-- Abstract: keep seats; omit paint colour.
-- Recognise the repeating capacity pattern.
-- Generalise using count and capacity.
+A bus has 12 available passenger seats.
 
----
+Predict buses for **0, 24 and 25** passengers.
 
-## Three control structures
-
-- Sequence: calculate the quotient first.
-- Selection: add a bus if the remainder is positive.
-- Iteration: repeat when processing a list.
-
-**Explain:** Why does always adding one fail?
+Name one input, one output and one invalid input.
 
 ---
 
-## Trace the state
+## Check: 0, 2 and 3 buses
 
-Threshold 50; values `[48, 72, 50, 31]`.
+Input: non-negative whole passenger count.
 
-Counts after each value: `0, 1, 2, 2`.
+Output: fewest whole buses. Reject negative/fractional counts.
 
-A counter adds **one**; an accumulator adds a **quantity**.
-
----
-
-## Defend the boundary
-
-- Test 11, 12, 13 passengers.
-- Include zero and invalid negatives.
-- Label decision exits in a flowchart.
-- Show how a loop makes progress.
+Add a bus only when the remainder is positive.
 
 ---
 
-## Extension: a useful approximation
+## Which thinking tool?
 
-A nearest-next-stop heuristic may find a quick usable route.
+Match each action to a term:
 
-It does not guarantee the shortest complete route.
+1. Split reading, checking, calculating and reporting.
+2. Keep seat count, omit paint colour.
+3. Notice the repeating groups of 12.
+4. Use a capacity variable.
 
-**Exit ticket:** connect one computational-thinking technique to a concrete design choice.
+---
+
+## Check: four connected tools
+
+1. Decomposition.
+2. Abstraction.
+3. Pattern recognition.
+4. Generalisation.
+
+Explain the actual choice, not just its label.
+
+---
+
+## Trace the count
+
+Count scores **at least 50** in `[48,72,50,31]`.
+
+Write the count after each item.
+
+What changes if you add the matching score instead of 1?
+
+---
+
+## Check: 0, 1, 2, 2
+
+Final count: **2**. Equality includes 50.
+
+Adding values gives a total, not a count.
+
+An empty list leaves the starting count at 0.
+
+---
+
+## Explain a boundary and a limit
+
+Why test 11, 12 and 13 passengers?
+
+Does visiting the nearest next stop guarantee the shortest complete route?
+
+---
+
+## Check: test the change in rule
+
+11/12/13 cross the capacity boundary.
+
+A nearest-stop heuristic can be quick and useful but miss the shortest whole route.
+
+Puzzle extension: label every legal branch and whose turn it is.
+
+---
+
+## Your next step
+
+[Check the full answers](https://tutors.dev/note/lc-cs/topic-05-algorithms/note-02-feedback).
+
+[Try one exam question](https://tutors.dev/note/lc-cs/topic-05-algorithms/note-03-exam-practice).
+
+[Continue to Topic 06](https://tutors.dev/topic/lc-cs/topic-06-python).

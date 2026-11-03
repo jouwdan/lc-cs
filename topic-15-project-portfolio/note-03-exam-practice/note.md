@@ -1,10 +1,18 @@
-# From this topic to the exam
+# 5. Exam: Projects
 
-Apply the taught ideas to original papers, then use the matching marking scheme to diagnose your answer.
+Try a past question, then use its scheme.
 
-Choose one Ordinary Level question to secure a core skill and one Higher Level question for extension where available. Work before opening the scheme. Read the exact part and its marks; a multi-part question may span several topics. Page numbers below are PDF pages. These links open repository copies; the same documents are also in Topic 17.
+Start with **one** question or subpart. The longer table is a choice list, not a task to complete in one sitting.
 
-After marking, record the missing concept or communication step, repair it with the relevant lesson or lab, and attempt a different year. Marking schemes provide illustrative, non-exhaustive answers and formative guidance; they do not predict future marking.
+1. Open [2023 Ordinary Q14](https://raw.githubusercontent.com/jouwdan/lc-cs/main/topic-17-past-papers/unit-2023/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf#page=13) for a starting task, or [2025 Higher Q13](https://raw.githubusercontent.com/jouwdan/lc-cs/main/topic-17-past-papers/unit-2025/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf#page=9) for Higher Level practice. Read the whole question before choosing a relevant subpart.
+2. Write the year, level, question and subpart on your answer. Attempt without the scheme. Follow the command word and show requested working.
+3. Open the matching scheme **after** your attempt: [Scheme](https://raw.githubusercontent.com/jouwdan/lc-cs/main/topic-17-past-papers/unit-2023/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf#page=12) or [Scheme](https://raw.githubusercontent.com/jouwdan/lc-cs/main/topic-17-past-papers/unit-2025/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf#page=10). Check the allocation for the part you answered.
+4. Underline evidence that earns credit. Record one gap and a small repair. Ask a teacher about uncertain alternative answers.
+5. Retry a different question later without notes. The <a href="https://tutors.dev/lab/lc-cs/side-reference/book-01-study-journal">study journal</a> gives a short record to copy.
+
+The links open archived PDFs at their starting pages. Read diagrams and all subparts on the actual pages. Schemes can accept alternatives; historical allocations do not predict future papers.
+
+## Choose another question
 
 | Paper and question | Practise this skill | Matching scheme |
 |---|---|---|
@@ -23,3 +31,6 @@ After marking, record the missing concept or communication step, repair it with 
 | [2025 Higher B Q13 (p. 9)](https://raw.githubusercontent.com/jouwdan/lc-cs/main/topic-17-past-papers/unit-2025/tutorial-exam-paper-section-aandb-higher-level-ev/exam-paper-section-aandb-higher-level-ev.pdf#page=9) | Plan a deposit-return system with roles, lifecycle, stakeholder goals, database uses, AI, accessibility and testing. | [Scheme p. 10](https://raw.githubusercontent.com/jouwdan/lc-cs/main/topic-17-past-papers/unit-2025/tutorial-marking-scheme-higher-level-ev/marking-scheme-higher-level-ev.pdf#page=10) |
 | [2025 Ordinary B Q14 (p. 13)](https://raw.githubusercontent.com/jouwdan/lc-cs/main/topic-17-past-papers/unit-2025/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf#page=13) | Explain vending-machine conditions, complete a test plan, improve accessibility and design stock-check logic. | [Scheme p. 13](https://raw.githubusercontent.com/jouwdan/lc-cs/main/topic-17-past-papers/unit-2025/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf#page=13) |
 | [2025 Ordinary B Q15 (p. 16)](https://raw.githubusercontent.com/jouwdan/lc-cs/main/topic-17-past-papers/unit-2025/tutorial-exam-paper-section-aandb-ordinary-level-ev/exam-paper-section-aandb-ordinary-level-ev.pdf#page=16) | Identify museum-app stakeholders and needs, add assistive features, compare lifecycles and evaluate location privacy. | [Scheme p. 16](https://raw.githubusercontent.com/jouwdan/lc-cs/main/topic-17-past-papers/unit-2025/tutorial-marking-scheme-ordinary-level-ev/marking-scheme-ordinary-level-ev.pdf#page=16) |
+
+
+**Next:** <a href="https://tutors.dev/talk/lc-cs/topic-15-project-portfolio/talk-01-recap">6. Recap</a>.

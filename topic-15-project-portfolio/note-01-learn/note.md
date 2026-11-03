@@ -1,75 +1,135 @@
-# Applied tasks and the project portfolio
+# 1. Learn: Projects
 
-Concepts, worked examples and practical reasoning for applied tasks and project portfolio.
+Organise evidence from a small project.
 
-## Learn by making and explaining
+A **computational artefact** is something you make using computing: a program, website, graph, model or sensor system. A **portfolio** is a small collection showing the problem, your work, tests and improvements.
 
-A computational artefact is something created using computing: a program, interactive site, model, visualisation or embedded system, for example. A useful artefact meets an identified need. Your portfolio should show both what works and how you reached it. A folder containing only a final screenshot cannot reveal decomposition, alternative designs, testing or your contribution. Keep evidence while working so reflection can be specific rather than reconstructed from memory.
+Here you will organise **one piece of existing practice work**. You do not need to finish four new projects before starting. Allow two 40-minute sessions.
 
-The legacy course includes four collaborative applied learning tasks (ALTs): interactive information systems, analytics, modelling and simulation, and embedded systems. These learning activities develop skills for assessment. They are distinct from the SEC's individually completed coursework assessment. Collaboration is appropriate for ALTs; the assessed coursework follows the current brief and the teacher's authentication requirements. The [official coursework guidance](https://www.curriculumonline.ie/getmedia/b5e9833d-6842-4c85-b46e-a0897b72891e/CS-Coursework-Assessment-Guidelines-en.pdf) explains the distinction.
+## ALTs and the assessed project are different
 
-## A repeatable design cycle
+| | Four applied learning tasks (ALTs) | Individual coursework assessment |
+|---|---|---|
+| Purpose | Learn by investigating and making things | Complete the project in the relevant SEC brief |
+| Working with others | Collaborative learning | Individual work under the applicable assessment and authentication rules |
+| What directs the work? | Four practical contexts in the specification | The brief, official instructions and teacher supervision |
+| This course provides | Small practice examples and shared solutions | Preparation skills, not a finished project to submit |
 
-Investigate the problem, plan the work, design a representation, create a version, evaluate it and document what you learned. These actions form an iterative cycle: evaluation often changes requirements or design. A staged process completes phases in sequence, which can help when requirements are stable; an iterative process revisits decisions through working versions and feedback. Neither label excuses poor testing or missing evidence. Explain why your approach fits the task.
+**Authentication** means establishing that submitted work is your own. The specification used for these papers allocates 30% to coursework and 70% to the final examination. The ALTs are not four group submissions replacing that project. Read the [official coursework guidance](https://www.curriculumonline.ie/getmedia/b5e9833d-6842-4c85-b46e-a0897b72891e/CS-Coursework-Assessment-Guidelines-en.pdf) with your teacher. The actual brief sets your cohort's exact requirements.
 
-A good requirement is observable: “A user can search by title and receives a clear no-match message.” A weak requirement is “the program is useful”. Separate functional requirements (what happens) from quality requirements such as response time, accessibility or robustness. Decide how you will test each requirement before writing code. Decompose the system into manageable responsibilities and define the data exchanged between them.
+## Start with one clear requirement
 
-## ALT1 exemplar: community equipment library
+A **requirement** says what the system must do. An **acceptance test** checks whether it does that.
 
-**Brief:** help a fictional community centre discover what equipment is available. Interview classmates acting as users; do not collect real borrower details. Store item identifiers, descriptions, category identifiers and availability in a database. The interface must retrieve records, support a useful interaction such as search, and communicate unavailable items in text. A static page copied from a spreadsheet is insufficient evidence of retrieval.
+| Too vague | Testable version | Check |
+|---|---|---|
+| Make searching useful | Show “No items found” when no title matches | Search for an absent title |
+| Make the page accessible | Give the search field a connected text label | Check the label and use the field with a keyboard |
+| Calculate correctly | Return mean 6 for `[4,6,8]` | Compare with the hand calculation |
 
-Start from the database-to-browser pattern in topic 13, then design your own schema and interface. Deliver an entity/relationship sketch, at least two acceptance criteria, a working query, an accessible interface and a test record. **Higher Level extension:** use related tables, explain primary/foreign keys and compare two interface designs with evidence. Each learner should explain the whole data path and identify their own contributions. Evidence includes a successful search and a no-result or failed-request case.
+**Functional requirements** describe behaviour. **Quality requirements** describe qualities such as response time, accessibility and handling errors. Break the work into small parts: get input → check → process → show the result.
 
-## ALT2 exemplar: comparing fictional reading areas
+**Try:** rewrite “make a good indicator” as an input, rule and output. One answer: “When enabled and the level falls below 30, show a warning.”
 
-**Brief:** investigate whether one reading area has lower synthetic sound readings during lunch. State a hypothesis and define fields, units and sampling assumptions. Use the supplied dataset or create a clearly labelled synthetic one. Preserve original rows, log cleaning decisions, calculate appropriate summaries and choose a graph that answers the question. Include a missing reading, an outlier and an uneven sample to make limitations visible.
+## Use a small design cycle
 
-Deliver the data dictionary, reproducible cleaning code, frequency/mean/median/mode calculations as relevant, a labelled graph and a restrained conclusion. Explain why the data cannot justify claims about all schools or every time of day. **Higher Level extension:** transform messy raw input and compare the effect of alternative defensible cleaning decisions. A successful investigation may reject the initial hypothesis. Marks in our classroom rubric reward the quality of reasoning, not a predetermined result.
+1. **Investigate:** who needs what? Ask a user or use the fictional brief.
+2. **Plan and design:** write requirements; sketch the data, algorithm or screen.
+3. **Create:** build one working feature.
+4. **Test and evaluate:** compare results with requirements and the user's need.
+5. **Improve and record:** fix one issue, retest and explain the change.
 
-## ALT3 exemplar: a help-desk queue
+An **iterative** approach repeats this cycle using feedback. A **staged** approach completes phases mainly in sequence and can suit stable requirements. Both need planning and testing. If a user changes a requirement after trying a prototype, iteration gives you a way to respond.
 
-**Brief:** compare how service capacity affects a fictional queue. Define state, parameters, rules and outputs before coding. Use topic 11's model as a small starting point, then change one assumption deliberately. Run a baseline and a modified scenario over several seeds. Report variability, not only the most favourable run. Distinguish a waiting queue count from an individual's waiting time.
+## Four ALT contexts: start small, then grow
 
-Deliver the model specification, a hand trace, tested code, recorded parameters/seeds and a comparison. Explain verification and validation separately. **Higher Level extension:** represent individual agents or investigate emergent behaviour, documenting interaction and update rules. A simulation does not become realistic because it contains many lines of code. Identify a real observation that would allow you to calibrate or challenge the model. Keep limitations next to conclusions so a reader cannot overlook them.
+These are original practice briefs. The starting tasks help you build towards the full learning context.
 
-## ALT4 exemplar: plant-care indicator
+### ALT1 — interactive information systems
 
-**Brief:** combine a digital enable control, an analogue reading and an understandable output. Use the indicator in topic 12 to explore calibration, thresholds and hysteresis. A simulated sensor is acceptable for practising logic when hardware is unavailable, but mark the evidence as simulated. With hardware, use only teacher-approved low-voltage equipment and record actual calibration and response tests. The practice artefact is an indicator, not an unattended pump controller.
+**Need:** a fictional centre wants people to find available equipment. Begin with <a href="https://tutors.dev/lab/lc-cs/topic-13-information-systems/book-01-practice">Topic 13&#x27;s database-to-browser lab</a>.
 
-Deliver an input-process-output diagram, a connection table if physical, reference measurements, source code, logged test results and a demonstration. Include disable/re-enable, threshold boundaries and an invalid-input case. Explain the chosen sampling interval and a failure response. Each learner should be able to trace one reading from raw code to displayed state. This task connects electronics, abstraction, programming, testing and design decisions.
+- **Start:** search a small database and display matching records. Show unavailable items in text. Use fictional item IDs, descriptions, categories and availability.
+- **Keep:** a table sketch, two requirements, a working query, the screen and tests for a match and no match. A query demonstrates retrieval; a list typed into HTML does not.
+- **Build further:** compare two screen designs with classmates acting as users. **Higher Level extension:** use related tables and explain primary/foreign keys. Explain the query-to-screen path and your contribution.
 
-## Work effectively in a team
+### ALT2 — analytics
 
-Agree roles such as coordinator, developer, tester and user researcher, then rotate them so everyone practises technical and communication skills. Pair programming can use a driver who enters code and a navigator who checks reasoning; swap regularly. Record decisions and tasks without turning the portfolio into surveillance of classmates. A brief contribution log should identify evidence, not merely state “we all helped”.
+**Question:** do synthetic readings suggest one reading area is quieter? Begin with <a href="https://tutors.dev/lab/lc-cs/topic-10-data-analytics/book-01-practice">Topic 10&#x27;s data lab</a>.
 
-Resolve disagreements by returning to user needs and tests. If two designs both work, compare clarity, effort, accessibility and maintenance. A smaller complete artefact is often more educational than several half-working features. Use backups or version control and meaningful change descriptions. Keep data, code and reports organised so another learner can run the result without guessing the working directory or required files.
+- **Start:** state a prediction, describe fields/units and analyse a small labelled synthetic dataset.
+- **Keep:** original rows, cleaning log, appropriate frequency/mean/median/mode calculations, labelled graph and conclusion. Include missing data, an outlier and uneven samples to test decisions.
+- **Build further:** compare two justified missing-data policies. Explain why the sample cannot describe all schools or every time of day. **Higher Level extension:** transform messy input and measure the effect of cleaning choices. A result that disagrees with your prediction is still useful.
 
-A role should be described through duties, not its title alone:
+### ALT3 — modelling and simulation
 
-| Role | Two concrete responsibilities |
+**Question:** how does service capacity affect a fictional queue? Begin with <a href="https://tutors.dev/lab/lc-cs/topic-11-modelling-simulation/book-01-practice">Topic 11&#x27;s queue lab</a>.
+
+- **Start:** record state, parameters, rules and outputs; hand-trace a few steps; run a baseline and change one assumption.
+- **Keep:** rules, tested code, parameters/seeds and results across several runs. Queue length and a person's waiting time are different measurements.
+- **Build further:** explain verification (correct rules implemented) and validation (suitable model for the purpose). Name a real observation that could check the model. **Higher Level extension:** model agents and explain interactions, update order and patterns that emerge.
+
+### ALT4 — embedded systems
+
+**Need:** warn when a plant-care sensor level is low. Begin with <a href="https://tutors.dev/lab/lc-cs/topic-12-embedded-systems/book-01-practice">Topic 12&#x27;s indicator lab</a>.
+
+- **Start:** combine a digital enable input, analogue reading and warning output in the simulator. Practise calibration, thresholds and hysteresis.
+- **Keep:** input → process → output diagram, reference readings, code and tests. Include disable/re-enable, boundaries and invalid input. Label simulated results clearly.
+- **Build further:** with teacher-approved low-voltage hardware, record connections, real calibration and response tests. Explain the sampling interval and fault response. Simulation checks logic, not wiring safety or physical accuracy. This practice is an indicator, not an unattended pump controller.
+
+## A portfolio you can finish
+
+Choose **one** practice artefact for this workshop. Make a folder with five items:
+
+| Item | Minimum useful content |
 |---|---|
-| Project manager | Plan tasks and milestones; monitor progress and coordinate changes when work falls behind. |
-| Business analyst | Gather stakeholder requirements; translate needs into clear acceptance criteria and resolve ambiguities. |
-| Developer | Implement the agreed behaviour; diagnose and fix defects in the code. |
-| Tester | Design normal, boundary and invalid test cases; record outcomes and verify fixes. |
-| UI designer | Produce interface layouts based on user tasks; check accessibility and refine the design after usability feedback. |
+| `start-here` document | Two sentences: user need and what works; instructions to run it |
+| `design` | One sketch or trace and two requirements |
+| `code-and-data` | Program and needed fictional data; credit starter examples |
+| `tests` | Inputs, expected/actual results and a retest after a change |
+| `reflection` | Your contribution, what changed, one limit and one next step |
 
-Small teams may combine roles, but responsibilities still need to be explicit. Rotating roles supports learning while keeping decisions accountable.
+These names are **practice suggestions**, not SEC submission rules. Later, link evidence from all four ALTs. Record unfinished contexts as “next to practise”; do not claim work you have not done.
 
-## Test plans and evidence
+### Worked evidence row
 
-A test table contains requirement, input/setup, expected result, actual result, pass/fail and resulting action. Include normal, boundary and invalid cases. Test a component in isolation, then its connection to other components, then the complete user task. For a physical system, distinguish simulated expected output from measured behaviour. Save examples of a failure, its diagnosis, the fix and a successful retest.
+| Requirement | Test | Before | Change | Retest |
+|---|---|---|---|---|
+| No-match search displays a clear message | Search an absent title | Old results remained | Clear old results before showing the response | “No items found”; a normal search still works |
 
-“Tested and it worked” is weak evidence. A stronger entry says: “Searching an absent title should display a no-match message; the initial version showed old results; clearing the result list before processing the response fixed it; repeated test passed.” Explain why the change addresses the cause. Reflection should connect decisions to outcomes, including improvements still needed and the trade-offs they would introduce.
+Keep the failure: it explains the change. Check a component alone, then connected components, then a whole user task: unit, integration and system checks.
 
-## Prepare for individual coursework
+## Teamwork: describe actions
 
-Read the relevant SEC brief with your teacher. Extract required features, permitted technologies, evidence, format, dates and authentication conditions. Do not assume a practice brief or a previous year's instructions applies unchanged. The legacy assessment allocates 30% to coursework and 70% to the end-of-course examination; the individual project is not simply the combined score of the four ALTs.
+| Role | Two responsibilities |
+|---|---|
+| Project manager | Plan tasks/dates; track progress and agree changes |
+| Business analyst | Gather user needs; turn them into clear requirements |
+| Developer | Implement behaviour; find and fix code defects |
+| Tester | Design normal, boundary and invalid tests; record results and check fixes |
+| UI designer | Sketch screens for user tasks; improve accessibility after feedback |
 
-The coursework guidance describes digital artefact files and an HTML report including a demonstration video. Teach yourself to create semantic HTML, embed or link permitted local media correctly, explain design choices and demonstrate actual features. The live brief determines exact limits and structure. Keep your own code and narrative, acknowledge sources and follow supervision requirements. Practice examples in this course are learning aids, not finished work to submit as your personal assessed artefact.
+Rotate roles in collaborative practice. In pair programming, the **driver** enters code and the **navigator** checks reasoning; swap regularly. Keep one sentence about your contribution. Back up working versions. Resolve design disagreements by checking the same user need and tests.
 
-## An original formative rubric
+## Before assessed coursework
 
-Use this 20-point classroom rubric for each practice ALT; it is **not an SEC marking scheme**. Award 0–4 in each area: (1) clear user need and testable requirements; (2) correct, understandable implementation; (3) meaningful testing and evidence of improvement; (4) communication and individual explanation; (5) responsible choices, accessibility and acknowledged limitations. A 4 means convincing specific evidence, 2 partial evidence and 0 no usable evidence. Intermediate scores reflect the quality between these descriptions.
+With your teacher, read the relevant brief: required features, allowed tools, files, format, dates and authentication conditions. The coursework guidance describes artefact files and an HTML report with a demonstration video; the live instructions set exact structure and limits.
 
-Before teacher feedback, score your own evidence and justify each score with a file, result or decision. Then choose one achievable improvement. Mastery means you can explain, modify and test your artefact independently. A polished report cannot compensate for not understanding the program, and a working program still needs evidence that it meets its user's needs.
+Practise clear HTML headings, working local links, readable media and demonstrations of real behaviour. Credit sources and keep your own code and explanation. Course examples are for learning, not for submission as your own assessed artefact.
+
+## Practice self-check out of 20
+
+This is our **classroom feedback rubric**, not an SEC marking scheme. Give 0–4 per row: 0 = no evidence, 2 = partial, 4 = clear specific evidence; use 1 or 3 for stages between.
+
+| Area | Point to evidence |
+|---|---|
+| Need and requirements | Who is helped, and can you test success? |
+| Implementation | Does it work, and can you explain it? |
+| Testing and improvement | What failed, changed and passed on retest? |
+| Communication and contribution | Can someone run it, and say what you did? |
+| Responsible choices | Did you consider access, data, sources and limitations? |
+
+Choose one small improvement from your weakest row. You should be able to explain, change and test the work; a polished cover page is not enough.
+
+
+**Next:** <a href="https://tutors.dev/lab/lc-cs/topic-15-project-portfolio/book-01-practice">2. Practise</a>.

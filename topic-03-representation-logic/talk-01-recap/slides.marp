@@ -4,52 +4,64 @@ theme: default
 paginate: true
 ---
 
-# Represent the same value
+## Convert 73 to binary
 
-45₁₀ = 00101101₂ = 2D₁₆
+Use 128, 64, 32, 16, 8, 4, 2, 1.
 
----
-
-## Place value
-
-128 64 32 16 8 4 2 1
-
-Which places encode 73?
+Which places do you need?
 
 ---
 
-## Size with units
+## Check
+
+64 + 8 + 1 = 73
+
+01001001
+
+---
+
+## Calculate image size
+
+40 × 30 pixels; 24 bits per pixel.
+
+How many bytes, ignoring headers/compression?
+
+---
+
+## Check
 
 40 × 30 × 24 = 28,800 bits
 
-Divide by 8 → 3,600 bytes
+28,800 ÷ 8 = 3,600 bytes
 
 ---
 
-## Text encoding
+## OR or XOR?
 
-ASCII repertoire ≠ Unicode repertoire
-
-UTF-8 uses variable numbers of bytes.
+Both inputs are 1. What is each output?
 
 ---
 
-## Truth-table habits
+## Check
 
-All combinations; intermediate wires; final output
+OR = 1. XOR = 0.
 
----
-
-## Half-adder
-
-Sum = XOR
-
-Carry = AND
+XOR requires exactly one true input.
 
 ---
 
-## Counterexample
+## Higher Level: compare two rules
 
-C AND (B OR S) vs (C AND B) OR S
+C AND (B OR S)
+
+(C AND B) OR S
 
 Try C=0, B=1, S=1.
+
+---
+
+## Check
+
+First rule: 0. Second rule: 1.
+
+Only the first always requires a valid card.

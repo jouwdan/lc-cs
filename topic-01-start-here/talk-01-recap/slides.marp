@@ -4,48 +4,42 @@ theme: default
 paginate: true
 ---
 
-# Learn • practise • reflect
+## Start with one small task
 
-What can you explain without your notes?
-
----
-
-## Computer science
-
-Information, processes and people
-
-Code is one way to express a solution.
+What is the difference between saving and running a file?
 
 ---
 
-## A repeatable cycle
+## Check
 
-Retrieve → explain → apply → check → repair
+Save keeps your code in a file.
 
----
-
-## A useful mistake
-
-17 % 5 is 2, not 3.
-
-Name the quotient/remainder confusion.
+Run asks Python to execute it.
 
 ---
 
-## Your evidence
+## Recall, then check
 
-Keep the original attempt, tests and next action.
-
----
-
-## Assessment distinctions
-
-Collaborative ALTs, individual coursework, examination
-
-Read the current brief and each paper.
+Close your notes. Name the next step after a quiz.
 
 ---
 
-## Exit task
+## Check
 
-Choose one skill and a fresh example to practise tomorrow.
+Read the answer explanation. Correct one mistake.
+
+Try a new example later.
+
+---
+
+## What does one successful run prove?
+
+A program worked once. Does that prove it works for all inputs?
+
+---
+
+## Check
+
+No. Try other inputs, including boundaries.
+
+Next session: choose one topic and one small task.

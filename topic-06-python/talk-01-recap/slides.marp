@@ -3,65 +3,108 @@ marp: true
 theme: default
 paginate: true
 ---
-# Python fundamentals: predict then run
+# 6. Recap: Python fundamentals
 
-Pause at each prompt. Explain before revealing a model answer.
+Spend 5–10 minutes retrieving from memory.
 
----
-
-## Types carry meaning
-
-- `input()` returns text.
-- Convert numeric quantities explicitly.
-- Keep identifiers with leading zeroes as strings.
-
-**Predict:** `"3" + "4"` versus `3 + 4`.
+Answer each prompt before moving to its Check slide.
+Keep one correction for your revision notes.
 
 ---
 
-## Arithmetic and display
+## Predict types and output
 
-- `17 // 5` → `3`; `17 % 5` → `2`.
-- `(3 + 4) * 2` → `14`.
-- `f"{2.5:.2f}"` → `2.50`.
+What do these display?
 
-Do not confuse a formatted string with a numeric value.
-
----
-
-## Decisions
-
-`if` / `elif` / `else`: first true branch wins.
-
-Valid percentage: `0 <= score <= 100`.
-
-**Test:** just below, at, and just above a threshold.
+```python
+print("3" + "4")
+print(17 // 5, 17 % 5)
+print(f"{800 / 100:.2f}")
+```
 
 ---
 
-## For loops
+## Check: 34; 3 2; 8.00
 
-`range(1, 4)` produces `1, 2, 3`.
+`"3" + "4"` joins text.
 
-Start the running total **before** the loop.
+`//` is floor division; `%` gives remainder.
 
-**Trace:** successive totals are `1, 3, 6`.
-
----
-
-## While loops
-
-- Check the condition before executing.
-- Update the state that controls termination.
-- Check a sentinel before adding it.
-- Zero iterations can be correct.
+`:.2f` requests two displayed decimal places.
 
 ---
 
-## Diagnose the failure
+## Explain the function call
 
-- Syntax: language rules broken.
-- Runtime: an operation fails during execution.
-- Logic: execution succeeds but the answer is wrong.
+```python
+def double(number):
+    return number * 2
 
-**Exit ticket:** explain a boundary test and a loop invariant in your own program.
+answer = double(6)
+print(answer)
+```
+
+Name the parameter, argument and returned result.
+
+---
+
+## Check: number; 6; 12
+
+`number` is the parameter. The call supplies argument 6.
+
+`return` sends 12 back; `print` displays it.
+
+Defining a function alone does not execute its body.
+
+---
+
+## Choose the price
+
+Child: below 16. Standard: 16–64. Senior: 65–120.
+
+Which branches do ages **15, 16, 64, 65** reach?
+
+Why must range validation happen too?
+
+---
+
+## Check the boundaries
+
+Prices: **800, 1200, 1200, 900 cents**.
+
+Conversion alone accepts `-1`; range validation rejects it.
+
+`input()` returns text; `int("sixteen")` raises ValueError.
+
+---
+
+## Trace the loop
+
+```python
+total = 0
+for number in range(1, 4):
+    total += number
+print(total)
+```
+
+What if total is reset inside the loop?
+
+---
+
+## Check: 6, or incorrectly 3
+
+Range supplies 1, 2, 3; stop 4 is excluded.
+
+Successive totals: 1, 3, 6. Resetting each time leaves 3.
+
+A while loop can run zero times; test a sentinel before adding it.
+
+---
+
+## Your next step
+
+[Check the full answers](https://tutors.dev/note/lc-cs/topic-06-python/note-02-feedback).
+
+[Try one exam question](https://tutors.dev/note/lc-cs/topic-06-python/note-03-exam-practice).
+
+[Continue to Topic 07](https://tutors.dev/topic/lc-cs/topic-07-data-structures).

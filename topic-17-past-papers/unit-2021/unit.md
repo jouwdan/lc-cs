@@ -1,3 +1,5 @@
-# 2021 examination resources
+# 2021 papers
 
-Choose your level, language and section. Attempt questions before opening a marking scheme. The archive reflects the source listing; an absent variant is not supplied or invented.
+Choose your level, language and paper.
+
+Choose your level and language in the table. Try a paper question before opening the matching scheme.

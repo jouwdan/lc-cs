@@ -3,47 +3,65 @@ marp: true
 theme: default
 paginate: true
 ---
-# Start with a task
-Who needs what information?
-Write measurable acceptance criteria.
+# 6. Recap: Interactive information systems
+
+Explain each example aloud before checking the answer.
 
 ---
 
-# Separate responsibilities
-HTML: meaning
-CSS: presentation
-JavaScript: behaviour
-Database: structured records
+## Start with a task
+
+Search `river` and read availability.
+
+Expected: two titles, with text status.
+This is testable; “make it nice” is not.
 
 ---
 
-# Trace the data
-Form → HTTP → Python → SQL
-→ JSON → DOM → user
+## Separate the jobs
+
+HTML: structure and meaning.
+CSS: presentation.
+JavaScript: behaviour.
+
+JSON: returned data values.
 
 ---
 
-# Design for access
-Labels · Semantic controls · Visible focus
-Text alternatives · Clear status and errors
+## Trace the search
 
-Test with keyboard and zoom.
+Form → HTTP → Python → SQLite
+→ JSON → JavaScript → result list
+
+**Try:** where is the query executed?
 
 ---
 
-# Relational structure
+## Connect two tables
+
 Book.category_id → Category.category_id
-Join related records; parameterise values.
+
+Primary key identifies a row.
+Foreign key relates rows.
+A join retrieves the category name.
 
 ---
 
-# Test every state
-Loading · Results · No match · Failure
+## Make the result usable
 
-A correct query and a usable interface both matter.
+Persistent label, real button, visible focus.
+Text availability, clear no-match and error states.
+
+`textContent` keeps returned data as text.
+Server validation remains necessary.
 
 ---
 
-# ALT1 evidence
-User need · Schema · Actual query
-Working interaction · Test record · Reflection
+## Prove the whole interaction
+
+Try empty, river, no match, and stopped server.
+Use Tab/Enter; zoom to 200%.
+
+**Exit:** explain one user need, change, test, and limitation.
+
+[Worked answers](https://tutors.dev/note/lc-cs/topic-13-information-systems/note-02-feedback) · [Exam practice](https://tutors.dev/note/lc-cs/topic-13-information-systems/note-03-exam-practice)

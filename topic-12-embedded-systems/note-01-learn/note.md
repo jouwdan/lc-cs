@@ -1,63 +1,128 @@
-# Embedded systems
+# 1. Learn: Embedded
 
-Concepts, worked examples and practical reasoning for embedded systems.
+Connect sensor inputs to useful outputs.
 
-## A computer inside a product
+Trace a plant warning indicator on your screen. You can complete this topic without buying or connecting hardware.
 
-An embedded system is a computing system designed for a specific role within a larger device or environment. A washing-machine controller, thermostat or bicycle light can contain a processor, memory, inputs, outputs and a program. “Embedded” does not mean “connected to the Internet”: an offline controller is still embedded. An Internet of Things device adds network communication, introducing benefits such as remote monitoring and concerns such as security, power use and connectivity failure.
+## 1. What makes a system embedded?
 
-A general-purpose laptop supports many tasks. A microcontroller typically combines a processor, memory and peripheral interfaces on a chip and is often used for a dedicated control task. Select hardware according to inputs, outputs, timing, power, cost and operating conditions. A faster processor is not automatically the best choice for a battery-powered sensor that spends most of its time waiting.
+An **embedded system** is a computer with a specific job inside a product. A washing-machine controller reads inputs and controls a wash cycle. A general-purpose laptop can run many unrelated applications. A **microcontroller** commonly combines a processor, memory, and input/output interfaces on one chip.
 
-## Electronics and real-time requirements
+An embedded system does not need the Internet. An **Internet of Things (IoT)** device also communicates over a network, which can support remote monitoring but adds power, connectivity, and security concerns.
 
-Voltage is electrical potential difference, measured in volts; current is the rate of charge flow, measured in amperes; resistance opposes current, measured in ohms. For an ohmic resistor, `V = I × R`. A resistor limits current or forms part of a voltage divider. A capacitor stores charge and can help smooth supply fluctuations or contribute to timing circuits. A transistor can act as an electronically controlled switch or amplifier; its switching behaviour is fundamental to digital logic. These components have different roles and are not interchangeable.
+**Try:** does a thermostat stop being embedded when Wi-Fi fails?
 
-A **real-time system** must respond within a specified deadline. Correctness includes timing as well as the computed value. “Very fast” alone is not a definition: a response after the deadline may be useless even if it is numerically correct. A vehicle safety controller has stricter timing consequences than a classroom plant indicator. State a response requirement and test the worst relevant delay, including sampling and blocking operations.
+**Check:** no. Its dedicated control role remains. A good design specifies what it should do without a connection.
 
-## Follow the signal
+## 2. Follow one signal
 
-Use an input-process-output diagram. In a plant-care indicator, the input is a moisture sensor reading and an enable button; processing converts the reading, compares thresholds and updates state; output is a warning symbol or LED. A sensor measures something in the environment. An actuator changes something physically, such as a motor moving a valve. A display is an output too, even when it does not control the environment.
-
-Digital signals are interpreted as discrete states, often 0 and 1. Analogue signals vary over a continuous range. An analogue-to-digital converter (ADC) samples a voltage and represents it with a discrete number. With ten-bit readings there are 1024 possible codes, 0 through 1023. The code is not automatically a percentage or a temperature. It must be interpreted using the sensor and circuit's behaviour. A higher bit count gives finer code resolution, but accuracy also depends on calibration, noise and sensor quality.
-
-On micro:bit MicroPython, `pin0.read_analog()` returns an integer from 0 to 1023, while a digital input returns 0 or 1. `write_analog` produces pulse-width modulation (PWM), not an arbitrary smooth output voltage. PWM varies the fraction of time a digital output is on. These API details come from the [official pin documentation](https://microbit-micropython.readthedocs.io/en/v2-docs/pin.html). Other boards may use different ranges and voltage limits; read their documentation rather than copying constants.
-
-## Calibration is part of the algorithm
-
-Suppose a sensor reads 800 in your chosen dry reference and 300 in your chosen wet reference. A simple relative scale is:
+Our example is an indicator, not an automatic pump:
 
 ```text
-relative level = 100 × (reading − dry) / (wet − dry)
+Moisture reading → conversion → decision → warning message
+                                  ↑
+                             enable button
 ```
 
-At 800 the scale is 0; at 300 it is 100; at 550 it is 50. The denominator is negative in this example, which correctly handles a sensor whose reading decreases as moisture increases. Do not assume all sensors have the same direction. If dry equals wet, calibration has failed and division would be invalid. Re-measure the references and inspect wiring.
+- A **sensor** measures something: moisture, light, or temperature.
+- A digital enable button supplies a second input.
+- The processor runs the decision rules.
+- A display or LED is an output. An **actuator**, such as a motor, changes the physical environment.
 
-This is a two-point relative calibration, not a scientifically certified percentage of water in soil. Sensor response may be nonlinear and affected by temperature or material. Record the physical conditions, several readings at each reference and the chosen values. Recheck when changing a sensor or environment. Values outside the reference range should be investigated and reported; clipping them to 0–100 can conceal a fault. Our practice program returns the calculated value so that this evidence remains visible.
+**Try:** identify one input, one processing step, and one output above.
 
-## State, thresholds and hysteresis
+**Check:** moisture sensor; compare a converted reading with a threshold; display a warning.
 
-A threshold controller makes a decision from a measurement. Turn a warning on below 30, for example. If the reading fluctuates between 29.9 and 30.1, a single threshold may cause repeated switching. Hysteresis uses two thresholds and remembers previous state: turn the warning on below 30, turn it off above 40, and keep the existing state in between. At exactly 30 or 40 our stated rules preserve state. Another convention is possible, but the tests must match it.
+## 3. An ADC code is not a percentage
 
-For levels `45, 29, 32, 39, 41`, starting off, warning states are `off, on, on, on, off`. Explain the memory in this system: an input of 35 does not determine the output on its own; the previous state matters. A finite-state diagram with two states makes the logic clear. An enable switch can force the output off. Define what happens when it is re-enabled and test that transition.
+An **analogue** signal varies across a continuous range. A **digital** signal is interpreted as separate states. An **analogue-to-digital converter (ADC)** takes a voltage reading and represents it with a number.
 
-## Timing and noisy inputs
+Ten bits give `2^10 = 1024` possible codes, numbered **0–1023**. The maximum code is not the number of codes. More bits allow finer code steps, but do not automatically make an inaccurate sensor accurate.
 
-Polling repeatedly checks an input. An event-driven program reacts to events. The chosen sampling interval should match the rate of meaningful change. Sampling soil moisture thousands of times per second wastes energy and storage; sampling a fast-moving object once a minute misses important events. A blocking delay may make a stop button unresponsive, so consider how long the program can safely wait between checks.
+For a micro:bit, `read_analog()` returns 0–1023; a digital reading is 0 or 1. `write_analog()` uses **pulse-width modulation (PWM)**: it switches a digital output on and off while varying the fraction of time it is on. It does not create an arbitrary smooth analogue voltage. These details are board-specific; see the [official micro:bit pin reference](https://microbit-micropython.readthedocs.io/en/v2-docs/pin.html).
 
-Mechanical switches can bounce, creating several transitions during one press. Debouncing rejects changes that occur too quickly to be intentional, or uses an appropriate hardware circuit. A moving average can reduce random measurement fluctuations, but smoothing introduces delay and can hide brief changes. Explain the trade-off; do not add a filter simply because it looks sophisticated. Separate sensor-reading code from decision logic so simulated readings can test the controller.
+## 4. Calibrate before interpreting
 
-## Build and test safely
+**Calibration** connects a raw reading with a known reference condition. Our invented dry reference is 800 and wet reference is 300. The sensor's number gets smaller as it gets wetter.
 
-For this course use an on-board display or a low-power LED indicator; do not connect mains electricity or drive a pump or motor directly from a board pin. A teacher should check the board's supply, pin limits, sensor compatibility and circuit before power is applied. An external LED needs the appropriate current-limiting component; a motor requires a suitable driver and protection. A labelled connection table is more reliable than relying only on wire colours.
+```text
+relative level = 100 × (raw − dry) / (wet − dry)
+```
 
-Test individual components before integration: read the sensor, read the digital control, display a known pattern, then join the parts. Keep expected and actual results for dry/wet references, threshold boundaries, mid-band values, disable/re-enable and disconnected or implausible inputs. A software simulation verifies decision logic but cannot prove the wiring, calibration, voltage safety or response of real hardware. Record those limits explicitly.
+| Raw code | Calculation | Relative level |
+|---:|---|---:|
+| 800 | `100 × 0 / -500` | 0 |
+| 550 | `100 × -250 / -500` | 50 |
+| 300 | `100 × -500 / -500` | 100 |
 
-## Data logging and automation
+**Try:** raw 655 gives `100 × (655−800)/(300−800)`. Predict the result.
 
-A useful log records time, raw reading, converted reading, digital input and output state. Include units and calibration identifiers. Store only what answers the investigation; long logs can fill limited memory. An offline system should continue to behave predictably if a network becomes unavailable. Decide a safe response to a failed sensor instead of assuming every reading is trustworthy. For our indicator, a distinct error message is better than displaying a plausible but invented moisture value.
+**Check:** 29. This is a relative scale between two chosen references, **not a certified percentage of water in soil**.
 
-Automation can improve consistency and reduce repetitive work, but it also transfers responsibility into the design. Who notices a failed sensor? Can a user override the decision? Is the output understandable without relying only on colour? These questions connect hardware, testing, accessibility and social impact. In an examination answer, explain a complete path from input through decision to output, and justify a chosen threshold with evidence rather than a guess.
+If dry equals wet, the denominator is zero and the references distinguish nothing. Reject the calibration and investigate. A raw code outside 0–1023 is invalid for this example. A valid code outside the dry/wet references can produce a relative level outside 0–100; report it rather than clipping away evidence. Real sensors need repeated reference measurements and may respond nonlinearly.
 
-## Practical achievement
+## 5. Remember state to avoid flickering
 
-The embedded ALT includes digital input/output and analogue measurement. A completed classroom task should include a design diagram, calibrated readings, executable control logic, a test record and an individual reflection. A simulator route supports learning when hardware is unavailable, but identify it clearly. The final practical check is whether you can predict a sequence of outputs, explain an unexpected reading and show which evidence would establish that the physical system works.
+One threshold can flicker when readings move just above and below it. **Hysteresis** uses two thresholds and remembers the previous output.
+
+| Condition | New warning state |
+|---|---|
+| Monitoring disabled | Off |
+| Level below 30 | On |
+| Level above 40 | Off |
+| Level from 30 to 40, including endpoints | Keep previous state |
+
+Starting off, levels `45, 29, 32, 39, 41` give **off, on, on, on, off**. The warning does not turn off at 32, because it stays on until the reading is above 40.
+
+**Try:** level 35, previously off. Then level 35, previously on.
+
+**Check:** off in the first case, on in the second. The same input can give different outputs because the controller has memory. At exactly 30 or 40, our rules also preserve state. Always test the exact boundaries.
+
+```mermaid
+stateDiagram-v2
+  [*] --> Off
+  Off --> On: enabled and level below 30
+  On --> Off: disabled or level above 40
+```
+
+A disabled controller is forced off. Re-enabling at level 20 turns it on again on the next update.
+
+## 6. Time matters as well as the answer
+
+A **real-time system** must respond within a stated deadline. “Fast” is not a sufficient definition. A stop action that arrives after its deadline can be wrong even if the computed result is correct.
+
+**Polling** checks an input repeatedly. An event-driven program reacts to an event. A five-second blocking sleep can delay a button response by almost five seconds. Choose a sampling interval that fits the change you need to detect: soil moisture changes much more slowly than a moving object's position.
+
+A switch can **bounce**, briefly making several electrical transitions during one press. Debouncing prevents them being treated as separate presses. A moving average can smooth noisy sensor readings, but adds delay and can hide short changes. Explain the trade-off before adding a filter.
+
+## 7. Electronics reference: three different components
+
+| Quantity/component | What it means or does |
+|---|---|
+| Voltage, volts (V) | Electrical potential difference |
+| Current, amperes (A) | Rate of charge flow |
+| Resistance, ohms (Ω) | Opposition to current |
+| Resistor | Limits current or forms part of a voltage divider |
+| Capacitor | Stores charge; can smooth a supply or help with timing |
+| Transistor | Can act as an electronically controlled switch or amplifier |
+
+For an ohmic resistor, `V = I × R`. With 6 V across 300 Ω, `I = 6/300 = 0.02 A` (20 mA). This is a calculation exercise, not an instruction to wire a particular board. Components are not interchangeable.
+
+## 8. What your simulation proves
+
+A simulator can check conversion formulas, decision logic, boundaries, and sequences. It cannot check wiring, actual sensor response, electrical limits, or physical calibration. Keep the two kinds of evidence separate.
+
+In a supervised hardware extension, use teacher-approved low-voltage parts and an on-board display or indicator. Check supply voltage, pin limits, signal/ground connections, and sensor compatibility before connecting power. An external LED needs appropriate current limiting; motors need suitable drivers and protection. Do not connect mains or power a motor/pump directly from a board pin.
+
+Test components separately before joining them. A useful log records raw reading, converted level, enable state, output, and time. Keep an error indication distinct from a normal reading. Make the output understandable without colour alone. For a real device, record a calibration and a response-time test; those requirements remain even when the software passed its tests.
+
+
+## Optional discussion: hardware that helps people learn
+
+You can skip streaming and still complete the topic. Compare two imagined light loggers: one costs less but has unclear pin labels; the other has clear labels and a built-in display. Name one advantage, one difficulty, and one test you would run before choosing. A low price helps access, but does not by itself guarantee a suitable learning tool.
+
+If you want a listening prompt, [balenaPodcast's interview with Eben Upton](https://open.spotify.com/episode/4XJBARiHmj0vwcszygKieJ) discusses hardware and computing education. Listen for one design constraint and connect it to the comparison above. The written task is an original alternative, not a transcript.
+
+---
+
+**Next:** <a href="https://tutors.dev/lab/lc-cs/topic-12-embedded-systems/book-01-practice">2. Practise</a>. <a href="https://tutors.dev/note/lc-cs/topic-12-embedded-systems/note-02-feedback">Open the answers when you have tried it</a>.

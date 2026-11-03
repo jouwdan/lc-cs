@@ -1,6 +1,8 @@
-# Start here: learn, practise, reflect: feedback
+# 4. Answers: Start here
 
-Use explanations to repair misconceptions, then redo one similar question without notes.
+Check your reasoning and repair one gap.
+
+Check the questions you missed or guessed. Explain one correction, then try a fresh example. A score alone does not tell you what to study next.
 
 ## Question 1
 
@@ -8,7 +10,7 @@ Use explanations to repair misconceptions, then redo one similar question withou
 
 ## Question 2
 
-**Answer: The specific misconception and a next practice task.** A cause and repair task turn feedback into an action you can repeat.
+**Answer: What you misunderstood and what to practise next.** For example: “I ran the wrong file; next time I will check the filename before pressing Run.”
 
 ## Question 3
 
@@ -36,8 +38,18 @@ Use explanations to repair misconceptions, then redo one similar question withou
 
 ## Question 9
 
-**Answer: Formative retrieval and diagnosis.** Their role is feedback. Scores are not an official or complete assessment.
+**Answer: Practising recall and finding gaps.** Quizzes show what needs another attempt. They do not give an official grade.
 
 ## Question 10
 
 **Answer: Solving a new example and explaining it.** Transfer and explanation show more than recognition or time spent.
+
+## Check the lab
+
+Your saved `hello.py` should print the message you typed, without its quotation marks. Change the text, save, and run again. Keep the command or editor action that worked.
+
+Optional starting-check answers: an OS manages resources and provides services; decimal 9 is `1001` in binary; `2 + 3 * 4` is **14**, because multiplication happens first. You will practise each in its own topic.
+
+If saving/running was difficult, repeat the Workspace step. If it worked, move to Topic 02; you do not need to master binary or Python before starting it.
+
+**Next:** <a href="https://tutors.dev/note/lc-cs/topic-01-start-here/note-03-exam-practice">5. Exam practice</a>. Choose one question; you do not need to complete the whole list.

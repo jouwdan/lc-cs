@@ -1,62 +1,77 @@
-# Learning computer science well
+# 1. Learn: Start here
 
-Build a repeatable cycle of understanding, practice, feedback and improvement.
+Run Python and plan your first study session.
 
-## Outcomes and starting point
+Start with one small task. You do not need to understand every computer-science term yet.
 
-By the end you should be able to explain the difference between a concept and an example, organise a programming workspace, keep an evidence log, choose a useful next study task and distinguish the different forms of assessment. You need ordinary arithmetic and willingness to try unfamiliar problems; previous coding is not assumed. A mistake is information about what to practise next.
+## Your first 25 minutes
 
-Computer science studies information and the processes that transform it. A computer can execute instructions quickly, but people must decide the problem, representation, rules and criteria for a good result. Writing code is one part of this. Explaining why a model is limited, selecting suitable data and evaluating a system's effects on people are equally important.
+1. Read this page. Allow **5 minutes**.
+2. Open <a href="https://tutors.dev/lab/lc-cs/topic-01-start-here/book-01-practice">2. Practise: Your first Python file</a>. Allow **15 minutes** for its first two steps.
+3. Write down one thing you learned and one question. Allow **5 minutes**.
 
-## The study cycle
+Finish the remaining steps next time. The times are guides, not deadlines.
 
-**Retrieve:** close the notes and write what you remember. A blank page exposes a gap more clearly than rereading familiar words. **Explain:** describe one example to another person using precise terms. **Apply:** solve a new problem, without copying the worked example line by line. **Check:** compare with tests or an answer guide. **Repair:** record the cause of an error and solve a similar problem again a few days later.
+## What is computer science?
 
-For example, knowing that `%` gives a remainder is not enough. Predict `17 % 5`, explain why the answer is 2, use remainders to recognise an even number, and test your rule on 0 and an odd input. If you said 3, you confused quotient and remainder. Record that specific confusion; writing “I am bad at Python” gives no useful next action.
+Computer science is about solving problems using information and instructions. Coding is one part of it. You will also explain how computers work, make decisions using data and consider how technology affects people.
 
-Use a simple log: date; skill; task; your original answer; evidence of error; corrected reasoning; next retrieval date. Keep the original attempt. Editing it until it looks perfect hides the learning. Plan short revisits after a day, a week and a month, adjusting intervals to your memory. Mix an older skill into each practice session instead of finishing a topic and abandoning it.
+For example, a bus-ticket system must take a destination, choose a price and print a ticket. **Decomposition** means splitting that problem into smaller jobs. You will practise this in Topic 05.
 
-## Learn to show working
+## The same route in every topic
 
-An algorithm trace records state after each executed instruction. A conversion shows place values or division steps. An explanation links a mechanism to an outcome. A comparison uses the same criterion for both alternatives. A design answer names a user need and shows how a feature meets it.
+| Open | What to do |
+|---|---|
+| **1. Learn** | Read a short section and try its example. |
+| **2. Practise** | Work through the lab steps. Check the expected results. |
+| **3. Quiz** | Try the quiz with your notes closed. |
+| **4. Answers** | Find out why an answer is right. Correct one mistake. |
+| **5. Exam practice** | Attempt one linked question before reading its scheme. |
+| **6. Recap** | Use the slides for a quick review later. |
 
-Compare “RAM is better” with “RAM holds the instructions and data currently in use; it offers rapid access but ordinarily loses its contents when power is removed.” The second sentence answers a specific technical question. Compare “AI is dangerous” with “A classifier trained on unrepresentative examples may make more errors for an underrepresented group; testing error rates by group can reveal that limitation.” The second answer has a mechanism and consequence. Practise this pattern throughout the course.
+You can skip optional videos and downloads on a first pass. Each has a written route. The numbered links at the top of a topic show the order, even when Tutors displays the resource cards in a different order.
 
-## Your workspace
+## Make a mistake useful
 
-Install Python 3 using your school's approved process. Use a text editor or the IDE provided by your teacher. Save a file named `hello.py` containing `print("Ready to learn")`; run it and check the exact output. Know the difference between editing a file, saving it and executing it. A notebook is useful for experiments, but practise ordinary `.py` files for tasks that ask you to edit and save a program.
+Try a question **before** checking the answer. Then write one short correction.
 
-Keep a folder for each task, with a clear filename, input data, version history and test record. Store a backup separately from your working copy and practise restoring one file. Do not commit passwords, actual student records or API keys. The example datasets in this course are synthetic. Hardware tasks can begin in simulation, but simulation does not replace real sensor calibration when a physical device is used.
+| My attempt | What I learned | What I will try next |
+|---|---|---|
+| I thought an unsaved file would stay after power was lost. | Working data is in RAM. I need to save the file to keep it. | Explain saving and RAM in Topic 02. |
 
-## Both levels, appropriate depth
+Keep your first answer. You do not need a long report or a perfect study log.
 
-The core path builds a secure vocabulary, single-step traces and short programs before moving to longer problems. Work through a supplied trace table, complete missing lines, then solve independently. Higher Level extensions investigate more complex algorithms, recursion, efficiency, detailed CPU operation and reasoning about models. A whole topic is rarely exclusive to one level; the required depth differs. The official specification identifies Higher Level material in bold, so use its distinctions rather than assuming a hard-looking question cannot appear at Ordinary Level.
+**Try it:** close this page and name the next activity after the quiz.
 
-An educator can scaffold one task in three ways: supply a partially completed trace table; supply input/output examples but no algorithm; or ask learners to design and justify their own algorithm. Keep the intended concept the same. Offer oral rehearsal before written answers, text alternatives for media, adjustable font sizes and sufficient contrast. Do not make colour the only way to distinguish categories in a graph.
+**Check:** open **4. Answers**, explain one mistake, then try a similar question. Rereading the correct option alone is not enough.
 
-## The course and assessment
+## Set up once
 
-The legacy specification weights the final examination at 70% and the individual coursework assessment at 30%. Four collaborative applied learning tasks develop practical understanding during the course: interactive information systems, analytics, modelling and simulation, and embedded systems. Completing an ALT is not the same thing as submitting the individual SEC coursework project. Your teacher and the current official brief determine the conditions for assessed work.
+Use Python 3 in the editor your teacher recommends. An **editor** is where you type and save code. **Run** means ask Python to carry out the instructions. The lab shows a complete first program and its output.
 
-Historical papers differ in marks and choices. Read the instructions for the paper in front of you. Section C develops programming in addition to the conceptual and written reasoning in Sections A and B. Do not calculate a predicted final grade from a Tutors quiz: these are low-stakes self-checks and their scores are not stored as assessed records.
+Save each task in its own folder. Keep a backup in your normal school backup location. The examples use invented data; use those examples rather than personal records.
 
-## A two-year teaching sequence
+If Python is not available today, do the paper tasks and return to the program with your teacher. You can study Topics 02–05 on paper.
 
-A suggested 180-hour allocation is shown below. It is an editable teaching plan, not an official timetable. Integrate ethical discussion, teamwork and programming throughout rather than postponing them to one final week.
+## Answer clearly
 
-| Topics | Focus | Hours |
-|---|---|---:|
-| 01–04 | Study practice, systems, representation, networks | 30 |
-| 05–09 | Algorithms, Python, data structures, testing | 50 |
-| 10–13 | Data, models, embedded and interactive systems, including ALT practice | 55 |
-| 14 | Society, history, accessibility and AI | 10 |
-| 15 | Integrate ALTs, project process and reflection | 20 |
-| 16–17 | Revision, mocks, feedback and exam library | 15 |
+A good explanation links a fact to a reason or an effect.
 
-Year one can introduce Topics 01–09 and a small interactive/data task; year two revisits programming while extending Topics 10–15 and interleaving past questions. Reserve independent project time according to the actual assessment schedule. Review this plan after the diagnostic rather than rushing through it unchanged.
+- Too vague: “Text labels are good.”
+- Clear: “Text labels let a user distinguish graph categories without relying on colour.”
 
-## Decide your next action
+For a calculation, show your working and units. For code, predict the output and test it. One successful run tells you that the program worked **for those inputs**, not for every possible input.
 
-After a quiz, categorise errors as vocabulary, method, trace accuracy, interpretation or communication. If you cannot define a term, make a short retrieval prompt. If you know the definition but cannot apply it, use the lab. If your algorithm is right but output is wrong, trace and test. If your answer is vague, practise one causal sentence. Move on when you can solve a fresh example and explain why the answer works.
+## Ordinary and Higher Level
 
-Source for qualification scope: [Curriculum Online Computer Science](https://www.curriculumonline.ie/senior-cycle/senior-cycle-subjects/computer-science/). The teaching strategies and hour allocation above are original suggestions.
+Start with the core activities at either level. Try the labelled Higher Level sections when appropriate. A difficult-looking task is not automatically Higher Level: check with your teacher.
+
+The four **applied learning tasks (ALTs)** are practical learning activities. They are different from the **individual assessed coursework project**. Topic 15 explains both. For the specification used here, the final examination is 70% and the individual coursework is 30%; use your teacher's official brief for the conditions applying to you.
+
+Quizzes help you spot gaps. They do not give an official grade, and the course does not store them as assessed results. When using a past paper, follow that paper's own instructions: choices and timings can differ by year.
+
+## Know when to move on
+
+You are ready when you can try a fresh example and explain your answer. You do not need a perfect quiz score. If you are stuck, return to the worked example, change one value and try again.
+
+**Next:** <a href="https://tutors.dev/lab/lc-cs/topic-01-start-here/book-01-practice">2. Practise: Your first Python file →</a>

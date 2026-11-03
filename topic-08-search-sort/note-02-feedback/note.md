@@ -1,6 +1,8 @@
-# Algorithms: traces, answers, and explanations
+# 4. Answers: Search & sort
 
-A correct final list is only part of the evidence; intermediate states explain how it was reached.
+Check your reasoning and repair one gap.
+
+Use this after an attempt. Find the question or lab step you missed, explain the correction in one sentence, then rerun that case yourself.
 
 ## Quiz explanations
 
@@ -15,36 +17,68 @@ A correct final list is only part of the evidence; intermediate states explain h
 9. **False.** Repeated extreme partitions can produce quadratic time. The implementation and input arrangement matter.
 10. **4.** For example, searching above the maximum of an eight-item list probes four middle positions with this inclusive algorithm.
 
-## Search traces
 
-Linear search of `[6, 3, 8, 2]` for 8 probes indices 0, 1, 2 and returns 2. Searching for 5 probes all four indices and returns -1.
+## Search answers
 
-Binary search for 23 uses `(low, high, middle)` states `(0,6,3)`, `(4,6,5)`, `(4,4,4)` and returns 4. Searching for 24 follows the same middle positions but then sets `low = 5`, beyond `high = 4`, and returns -1.
+Linear search on `[6,3,8,2]` returns 2 for target 8 after three probes. It returns -1 for target 5 after four probes. The return for absence belongs outside the loop.
 
-On the invalid unsorted example `[8,1,6]`, searching for 8 first sees 1 and discards the left portion containing the answer. This demonstrates a violated precondition; it is not evidence that binary search is incorrect when its precondition holds.
+The missing binary interval update is:
 
-## Sorting traces
+```python
+if target < values[middle]:
+    high = middle - 1
+else:
+    low = middle + 1
+```
 
-| Algorithm | Pass 1 | Pass 2 | Pass 3 |
+For both 23 and 24, the trace starts `(low,high,middle)` = `(0,6,3)`, `(4,6,5)`, `(4,4,4)`. Target 23 returns index 4; target 24 moves low to 5, beyond high 4, and returns -1.
+
+For `[3,7,7,11]`, this version returns index 1 for target 7; accepting index 2 is also consistent with the any-match contract. The unsorted `[8,1,6]` example discards its answer after seeing middle value 1, showing why the precondition matters.
+
+## Sort answers
+
+| Algorithm and input | Pass 1 | Pass 2 | Pass 3 |
 |---|---|---|---|
-| Bubble on `[7,2,5,1]` | `[2,5,1,7]` | `[2,1,5,7]` | `[1,2,5,7]` |
-| Insertion on `[7,2,5,1]` | `[2,7,5,1]` | `[2,5,7,1]` | `[1,2,5,7]` |
-| Selection on `[6,3,8,2]` | `[2,3,8,6]` | `[2,3,8,6]` | `[2,3,6,8]` |
+| Bubble `[7,2,5,1]` | `[2,5,1,7]` | `[2,1,5,7]` | `[1,2,5,7]` |
+| Insertion `[7,2,5,1]` | `[2,7,5,1]` | `[2,5,7,1]` | `[1,2,5,7]` |
+| Selection `[6,3,8,2]` | `[2,3,8,6]` | `[2,3,8,6]` | `[2,3,6,8]` |
 
-A selection pass can leave the list unchanged when the smallest remaining item is already in place. That pass still performed comparisons.
+The unchanged second selection pass still compares values. Bubble grows a sorted suffix; insertion and selection grow a sorted prefix using different methods.
 
-Quicksort around pivot 5 produces less `[2,1]`, equal `[5,5]`, greater `[7]`. Recursing on the unequal parts gives `[1,2,5,5,7]`. An all-equal list puts every value in the equal partition, leaving empty recursive sides, which terminate immediately.
+Quicksort's groups around 5 are `[2,1]`, `[5,5]`, `[7]`. Keep both copies of 5. For all equal values, all items go into the equal group and the recursive sides are empty. Our model builds extra lists rather than sorting in place.
 
-## GCD and growth
+## GCD and cost answers
 
-The GCD values for `(7,0)`, `(0,7)`, and `(18,48)` are 7, 7, and 6. Equal nonzero arguments return their absolute value. The model's explicit contract accepts integer arguments, normalises signs, and returns zero for `(0,0)`.
+A completed recursive version for the exercise's integer arguments is:
 
-For a missing target above all values, linear-search item probes for sizes 8, 16, 32 are 8, 16, 32. Binary-search probes are 4, 5, 6. Doubling the input adds roughly one binary probe while doubling the linear probes. This supports a growth comparison; it does not give a universal wall-clock time.
+```python
+def gcd_recursive(a, b):
+    a, b = abs(a), abs(b)
+    if b == 0:
+        return a
+    return gcd_recursive(b, a % b)
+```
 
-The [`checked source`](https://github.com/jouwdan/lc-cs/blob/main/code/topic-08-search-sort/solutions.py) contains all algorithms and seeded repeatable checks against Python's sorted output and `math.gcd`. Run `python3 code/topic-08-search-sort/solutions.py`; expect `Topic 08 checks passed`.
+The requested GCD results are 7, 7, 6, 6, 6, 0. The last is the stated `(0,0)` convention. The base case is `b == 0`; otherwise the next nonzero second argument is smaller.
 
-The recursive counter-game model is deliberately for small learning examples: it repeats subproblems and grows expensive. For larger input, use the derived modulo-3 strategy or store previously computed positions. This illustrates why an elegant recurrence is not automatically an efficient implementation.
+For missing targets above the maximum, `cost_lab.py` prints:
 
-Pivot choices include first, last, middle position, random, and median-of-three. Median-of-three compares values at three chosen positions; it is not simply choosing the middle position. The supplied three-way quicksort handles an all-equal input in linear time because it creates one equal partition and two empty sides. The notes' balanced `O(n log n)` comparison refers to distinct-key input; that qualification avoids a misleading universal best-case claim.
+```text
+8 8 4
+16 16 5
+32 32 6
+```
 
-For the Fibonacci supplement, generation totals are 1, 1, 2, 3, 5, 8, 13. Generations six and seven therefore contain 8 and 13 nodes, with type counts `(3,5)` and `(5,8)`. The eight-term sequence ends with 21. Starting conditions and index labels are essential; a zero-indexed definition may include an initial zero without contradicting this one-indexed sequence. The checked `fibonacci_terms` function uses the explicitly stated `1,1` starting pair.
+Input size is the number of items. We counted inspected items. Binary search requires ascending input. Doubling size doubles linear probes and adds about one binary probe here. This supports a growth comparison, not a universal stopwatch result.
+
+## Recurrence reminders
+
+The last-taker-wins game has losing multiples of 3. The simple recursive evaluator repeats subproblems, so use small teaching inputs; the derived strategy is much cheaper for large counts.
+
+The Fibonacci sequence with starting pair 1,1 reaches 21 after eight terms. Generation 8 in the A/B model has A = 8, B = 13, total 21. State your index convention and base values.
+
+[Completed guided files and full models](https://github.com/jouwdan/lc-cs/tree/main/code/topic-08-search-sort) include all sorts, both GCD versions, game positions and Fibonacci checks. Running `solutions.py` prints `Topic 08 checks passed`.
+
+**Repair one gap:** for binary search, circle the excluded middle and write the new bounds. For a sort, distinguish one comparison, one swap and one full pass before retrying.
+
+**Next:** <a href="https://tutors.dev/note/lc-cs/topic-08-search-sort/note-03-exam-practice">5. Exam practice: apply one skill</a>. <a href="https://tutors.dev/note/lc-cs/topic-08-search-sort/note-02-feedback">Open the answers</a>.

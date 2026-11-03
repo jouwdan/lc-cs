@@ -3,65 +3,95 @@ marp: true
 theme: default
 paginate: true
 ---
-# Testing: evidence against requirements
+# 6. Recap: design and testing
 
-Pause at each prompt. Explain before revealing a model answer.
+Spend 5–10 minutes retrieving from memory.
+
+Answer each prompt before moving to its Check slide.
+Keep one correction for your revision notes.
 
 ---
 
-## Make requirements observable
+## Reproduce a failure
 
 1–4 tickets: 1200 cents each.
-5–8 tickets: 1000 cents each.
-Other quantities: reject.
+5–8: 1000 cents each.
 
-**Predict:** total for quantity 5?
+Faulty condition: `quantity > 5`.
 
----
-
-## Choose revealing cases
-
-- Normal: 2.
-- Boundary: 1, 4, 5, 8.
-- Invalid: 0, 9, text, fractional count.
-
-Write the expected result **before** running.
+Choose the smallest valid failing input. Predict expected and actual totals.
 
 ---
 
-## Test levels
+## Check: quantity 5
 
-- Unit: price calculation.
-- Integration: parsed input reaches calculation.
-- System: complete workflow.
-- Acceptance: agreed user needs.
+Expected **5000** cents; actual **6000**.
 
-Regression: earlier behaviour survives a change.
+Change `>` to `>=`; keep the expected result.
+This is a logical boundary error.
 
 ---
 
-## Debug with a hypothesis
+## Choose the test level
 
-Reproduce → reduce → inspect → explain → repair → rerun.
-
-`> 5` wrongly excludes quantity 5.
-`>= 5` matches the inclusive requirement.
-
----
-
-## Language matters
-
-JavaScript `y = x++`: use old value, then increment.
-JavaScript `y = ++x`: increment, then use new value.
-
-Python uses `x += 1`; it has no increment operator.
+1. Call the price function with 5.
+2. Convert text, calculate, format the total.
+3. After a repair, rerun the 1-ticket case.
+4. Complete a future stored booking.
 
 ---
 
-## Evaluate honestly
+## Check: unit, integration, regression, system
 
-Passing selected tests is evidence, not proof of no faults.
+A passing function does not prove its interface works.
 
-Coverage does not prove correctness.
+The current calculator has no booking store.
+Designing a future system test is not evidence that it ran.
 
-**Exit ticket:** name one passing check, one limitation, and the next useful test.
+---
+
+## Trace JavaScript
+
+```javascript
+let x = 4;
+let before = x++;
+let after = ++x;
+```
+
+What are x, before and after?
+
+---
+
+## Check: 6, 4, 6
+
+Postfix produces the old value, then increments.
+Prefix increments, then produces the new value.
+
+Python uses `x += 1`; read the language actually printed.
+
+---
+
+## Evaluate the evidence
+
+Does full branch coverage prove no faults exist?
+
+Complete: “I checked ___. I have not checked ___. My next useful check is ___.”
+
+---
+
+## Check: describe what passed
+
+Coverage records execution, not complete correctness.
+
+Use an independent expected result.
+Name a requirement, its test evidence and a specific remaining limit.
+
+---
+
+## Your next step
+
+[Check the full answers](https://tutors.dev/note/lc-cs/topic-09-testing/note-02-feedback).
+
+[Try one exam question](https://tutors.dev/note/lc-cs/topic-09-testing/note-03-exam-practice).
+
+[Continue to Topic 10](https://tutors.dev/topic/lc-cs/topic-10-data-analytics).
